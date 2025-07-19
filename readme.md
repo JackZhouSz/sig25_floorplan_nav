@@ -16,8 +16,8 @@ This project aims to create a digital solution for exhibition floor plans, with 
 -   [x] **Grid Creation & Management**: Convert the map into structured grid data (`data/grid.json`).
 -   [x] **Manual Annotation Tool**: Provide a GUI tool (`core/annotate.py`) for manual addition, modification, and deletion of grid cells.
 -   [x] **OCR Information Extraction**: Automatically identify booth names and IDs and populate them into the grid data.
--   [ ] **Path Calculation**: Develop pathfinding algorithms (e.g., A*) to calculate routes between booths.
--   [ ] **Path Visualization**: Visualize the calculated paths on the map.
+-   [x] **Path Calculation**: Implement A* algorithm (`core/pathfinder.py`) & batch pre-compute script (`scripts/precompute_routes.py`).
+-   [x] **Path Visualization**: New visualization module (`core/viz.py`) & helper scripts (`scripts/visualize_routes.py`, `scripts/batch_visualize.py`).
 -   [ ] **Text Navigation Generation**: Convert paths into natural language navigation instructions.
 
 > For detailed technical planning and historical progress, please refer to: [`task.md`](./task.md)
@@ -81,44 +81,36 @@ After grid creation, perform OCR to automatically fill in booth names and IDs.
     python scripts/apply_ocr_results.py --backup
     ```
 
-> For more detailed instructions on the OCR module, please refer to: [`docs/OCR_USAGE.md`](./docs/OCR_USAGE.md)
+### Step 3: Path Calculation & Pre-compute
+
+```python
+# Compute a single route (interactive usage)
+from core.pathfinder import Pathfinder
+pf = Pathfinder()
+route = pf.find_route(start_idx=1, target_idx=53)
+print(route)
+```
+```bash
+# Batch pre-compute from one booth to all others   
+python scripts/precompute_routes.py --start 1
+```
+
+### Step 4: Path Visualization (NEW)
+
+1.  **Quick preview (generate one or few routes)**
+    ```bash
+    python scripts/visualize_routes.py routes/1_to_all.json --limit 3
+    ```
+2.  **Generate all routes grouped by type (recommended)**
+    ```bash
+    python scripts/batch_visualize.py routes/1_to_all.json --show-stats
+    ```
+    -   Outputs to `visualizations_by_type/{type}/viz_{src}_to_{dst}.png`
+    -   All cells are drawn with 30 % opacity; start/end cells highlighted.
+
+>  For detailed parameters (`--crop-padding`, `--route-color`, etc.), run `-h` on each script.
 
 ---
-
-## �� Environment Setup
-
-1.  **Clone the Project**:
-    ```bash
-    git clone <repository-url>
-    cd <repository-name>
-    ```
-
-2.  **Install Python Dependencies**:
-    It is recommended to use a virtual environment (e.g., `venv` or `conda`).
-    ```bash
-    # Create virtual environment
-    python -m venv venv
-    # Activate virtual environment
-    source venv/bin/activate  # on Windows: venv\Scripts\activate
-    
-    # Install core dependencies
-    pip install opencv-python numpy Pillow
-    ```
-
-3.  **Install and Configure Ollama (Required for OCR functionality)**:
-    ```bash
-    # 1. Install Ollama (if not already installed)
-    curl -fsSL https://ollama.com/install.sh | sh
-
-    # 2. Start Ollama service (usually starts automatically)
-    ollama serve
-
-    # 3. Download the vision model required for OCR
-    ollama pull qwen2.5vl:7b
-    
-    # 4. Install Ollama Python client
-    pip install ollama
-    ```
 
 ## 📚 Detailed Documentation
 

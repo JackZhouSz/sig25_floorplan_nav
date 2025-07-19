@@ -16,8 +16,8 @@
 -   [x] **網格建立與管理**: 將地圖轉換為結構化的網格資料 (`data/grid.json`)。
 -   [x] **手動標註工具**: 提供 GUI 工具 (`core/annotate.py`) 進行人工新增、修改、刪除網格。
 -   [x] **OCR 資訊擷取**: 自動識別展位名稱與編號，並填入網格資料中。
--   [ ] **路徑計算**: 開發尋路演算法 (如 A*)，計算展位間的路徑。
--   [ ] **路徑可視化**: 將計算出的路徑繪製在地圖上。
+-   [x] **路徑計算**: 已實作 A* 演算法 (`core/pathfinder.py`) 與批次預運算腳本 (`scripts/precompute_routes.py`)。
+-   [x] **路徑可視化**: 新增視覺化模組 (`core/viz.py`) 與輔助腳本 (`scripts/visualize_routes.py`, `scripts/batch_visualize.py`)。
 -   [ ] **文字導航生成**: 將路徑轉換為自然語言的導航指令。
 
 > 詳細的技術規劃與歷史進度請參閱：[`task.md`](./task.md)
@@ -82,6 +82,35 @@
     ```
 
 > 關於 OCR 模組更詳細的說明，請參閱：[`docs/OCR_USAGE.md`](./docs/OCR_USAGE.md)
+
+### 步驟 3: 路徑計算與預運算 (NEW)
+
+```python
+# 互動式計算單一路徑
+from core.pathfinder import Pathfinder
+pf = Pathfinder()
+route = pf.find_route(start_idx=1, target_idx=53)
+print(route)
+```
+```bash
+# 批次預運算：從指定展位到所有展位
+python scripts/precompute_routes.py --start 1
+```
+
+### 步驟 4: 路徑可視化 (NEW)
+
+1. **快速預覽（生成少量路徑）**
+   ```bash
+   python scripts/visualize_routes.py routes/1_to_all.json --limit 3
+   ```
+2. **完整生成（依類型分組，推薦）**
+   ```bash
+   python scripts/batch_visualize.py routes/1_to_all.json --show-stats
+   ```
+   - 輸出至 `visualizations_by_type/{type}/viz_{src}_to_{dst}.png`
+   - 全域格子以 30 % 透明度顯示，起 / 終點格子 60 % 不透明度高亮
+
+> 其他參數（`--crop-padding`, `--route-color`, `--line-width`, `--uniform-color` 等）可透過 `-h` 查看說明。
 
 ---
 

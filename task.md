@@ -35,17 +35,33 @@
 -   **批次處理**：提供 `scripts/ocr_batch.py`，可一次性處理所有需要 OCR 的格子。
 
 ### 階段四：路徑計算 (`core/pathfinder.py`)
-1.  **建立成本地圖**：
-    -   讀取 `grid.json`，將其轉換為 2D 的可行走矩陣 (`occupancy matrix`)。
-    -   `walkway` 為可走，`booth`, `stage` 等為障礙物。
-    -   `area` 型別可透過參數 (`allow_enter_area`) 設定是否可穿越。
-2.  **尋路演算法**：
-    -   使用 A* 或 BFS 演算法計算指定起點 `idx` 到終點 `idx` 的最短路徑。
-3.  **路徑語意標註**：
-    -   對計算出的路徑（一系列 `Cell`）進行標註：
-        -   `through`: 實際路徑**穿越**的格子。
-        -   `pass_by`: 路徑**旁邊相鄰**的格子（地標）。
-        -   `start` / `end`: 起點與終點。
+1.  **建立可行走 (walkable) 與成本 (cost) 矩陣**
+    -   讀取 `data/grid.json`，依 `cell.type` 參照 `data/grid_types.json` 生成：
+        * `walkable`: `np.ndarray[bool]` – `is_walkable=True` 為 True，其餘 False。
+        * `cost`: `np.ndarray[float]` – 取 `grid_types.json.cost` 欄位，若缺省則預設 1.0。
+    -   `allow_enter_area=True` 時，可將 `exp hall`、`stage` 等「大區域」暫時視為可行走並給予較高 cost。
+    -   Cell 可能佔多個 unit (`unit_w`, `unit_h`)，需展開填入矩陣。
+
+2.  **起點／終點映射策略**
+    -   `booth` 自身視為障礙，但需計算路徑起終點：
+        1. 先取 booth 幾何中心(unit 座標)。
+        2. 以 8 向 BFS 搜尋最近 `walkable==True` 的 unit 作為實際 A* 起點／終點。
+    -   預留未來多入口或手動 `entry_points` 擴充。
+
+3.  **A* 尋路演算法 (支援斜向)**
+    -   鄰接點採 8 向；若兩側直向格皆為障礙，該斜向移動無效 (corner-cutting)。
+    -   移動成本 = 目標單元 `cost` × (直向 1 或斜向 √2)。
+    -   回傳 `route`: Cell `idx` 序列 (含起終點) 及 `meta`: `{steps, length, total_cost}`。
+
+4.  **批次 1 → All 預運算**
+    -   `scripts/precompute_routes.py`：給定 `start_idx`，遍歷所有 `type=="booth"` 目標。
+    -   共用鄰接表與成本矩陣，以 NumPy 加速多次 A* 計算。
+    -   結果輸出 `routes/{start}_to_all.json`，含 `unreachable` 清單。
+
+5.  **路徑語意標註**
+    -   `through`: 路徑實際穿越的格子。
+    -   `pass_by`: 與路徑相鄰且 `is_landmark=True` 之格子。
+    -   `start` / `end`: 起點與終點格子。
 
 ### 階段五：可視化與導航 (`core/viz.py`)
 -   **路徑繪製**：
@@ -63,20 +79,24 @@
 3. 格子類型統計與維護
    - `scripts/check_grid_types.py`：列出各 type 數量，少於閾值詳細列出 idx/name
    - `scripts/build_type_metadata.py`：掃描 grid.json，自動建立/更新 `data/grid_types.json`
-   - `data/grid_types.json`：type metadata（description / is_walkable / display_color）
-4. **OCR 模組 (新增)**
+   - `data/grid_types.json`：type metadata（description / is_walkable / display_color / **cost**）
+4. **OCR 模組** ✅ **已完成**
    - `core/ocr_ollama.py`：使用 Ollama qwen2.5vl:7b 進行 booth 資訊識別
    - `scripts/ocr_batch.py`：批次處理腳本，支援續傳和錯誤重試
    - `scripts/test_ocr.py`：OCR 功能測試腳本
    - `docs/OCR_USAGE.md`：完整使用說明文檔
+5. **Path-finding 模組** ✅ **已完成**
+   - `core/pathfinder.py`：完整的 A* 路徑計算模組，支援 8 向移動
+   - `scripts/precompute_routes.py`：批次預運算腳本，從一點到所有 booth
+   - `routes/1_to_all.json`：完整預運算結果（100% 成功率，92 條路徑）
+   - **矩陣建立邏輯**：預設可行走，標記障礙物（`not walkable` 優先）
+   - **RouteResult 結構**：同時提供語意路徑（Cell idx）和幾何路徑（unit 座標）
 
 ## 後續實作方向
 1. ~~OCR 模組（Ollama Vision + JSON Schema）~~ ✅ **已完成**
-   - ~~讀取 `crops/`，自動填 `name`、`booth_id`~~ ✅
-   - ~~失敗項目進 GUI 快速修正~~ (可通過批次腳本處理)
-2. Path-finding
-   - 依 `grid_types.json` 的 `is_walkable` 決定可走區域
-   - A* / BFS，預先計算 Dell → 其他 booth 路徑
+2. ~~Path-finding~~ ✅ **已完成**
+   - ~~依 `grid_types.json` 的 `is_walkable` 決定可走區域~~ ✅
+   - ~~A* / BFS，預先計算起點到其他 booth 路徑~~ ✅
 3. 自然語言導航
    - 先以模板，之後可接 LLM
 4. 視覺化

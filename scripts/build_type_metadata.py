@@ -1,73 +1,90 @@
+#!/usr/bin/env python3
+"""
+建立或更新 grid_types.json 的腳本。
+掃描 grid.json 中所有的 type，確保每個 type 都有對應的 metadata。
+"""
+
 import json
-import os
-import sys
+from pathlib import Path
 
-# 將專案根目錄加到 Python 路徑中
-script_dir = os.path.dirname(__file__)
-project_root = os.path.abspath(os.path.join(script_dir, '..'))
-if project_root not in sys.path:
-    sys.path.append(project_root)
-
-from core.grid import load_grid
-
-def build_type_metadata(grid_path="data/grid.json", type_meta_path="data/grid_types.json"):
-    """
-    掃描 grid.json 中的所有 type，並更新/建立 type_metadata.json。
-    """
-    cells = load_grid(grid_path)
-    if not cells:
-        print(f"錯誤：找不到 {grid_path} 或檔案為空，無法建立 type metadata。")
-        return
-
-    # 1. 收集 grid.json 中所有的 unique types
-    unique_types = set()
+def build_type_metadata():
+    # 路徑設定
+    data_dir = Path("data")
+    grid_file = data_dir / "grid.json"
+    types_file = data_dir / "grid_types.json"
+    
+    # 讀取現有的 grid.json
+    print(f"讀取 {grid_file}...")
+    with open(grid_file, 'r', encoding='utf-8') as f:
+        cells = json.load(f)
+    
+    # 收集所有的 type
+    all_types = set()
     for cell in cells:
-        unique_types.add(cell.type)
-
-    print(f"從 {grid_path} 掃描到以下 unique types: {unique_types}")
-
-    # 2. 載入現有的 type_metadata.json (如果存在)
-    existing_metadata = {}
-    if os.path.exists(type_meta_path):
-        try:
-            with open(type_meta_path, 'r', encoding='utf-8') as f:
-                existing_metadata = json.load(f)
-            print(f"成功載入現有的 type metadata 從 {type_meta_path}。")
-        except json.JSONDecodeError:
-            print(f"警告：{type_meta_path} 檔案格式錯誤，將會重新建立。")
-            existing_metadata = {}
-    else:
-        print(f"{type_meta_path} 不存在，將建立新檔案。")
-
-    # 3. 合併新舊資料
-    # 遍歷所有 unique_types，如果不存在於 existing_metadata，則新增，
-    # 否則保持現有資訊不變。
-    updated_metadata = existing_metadata.copy() # 保持原有資料
-    for cell_type in unique_types:
-        if cell_type not in updated_metadata:
-            # 新增 type，給予預設值
-            updated_metadata[cell_type] = {
-                "description": f"描述 {cell_type} 類型的區域。",
-                "is_walkable": True if cell_type == "walkway" else False, # 預設 walkway 可走
-                "display_color": "" # 可以從 grid.py 的 def_colors 拿，但這裡先留空
-            }
-            print(f"新增類型 '{cell_type}' 到 metadata。")
+        if 'type' in cell and cell['type']:
+            all_types.add(cell['type'])
+    
+    print(f"發現 {len(all_types)} 種類型: {sorted(all_types)}")
+    
+    # 讀取現有的 types 檔案（如果存在）
+    existing_types = {}
+    if types_file.exists():
+        print(f"讀取現有的 {types_file}...")
+        with open(types_file, 'r', encoding='utf-8') as f:
+            existing_types = json.load(f)
+    
+    # 預設值設定
+    default_metadata = {
+        "description": "",
+        "is_walkable": False,
+        "cost": 1.0
+    }
+    
+    # 特殊類型的預設值
+    walkable_types = {
+        "road": True,
+        "exp hall": True,
+        "Lounge": True
+    }
+    
+    # 為每個 type 建立或更新 metadata
+    updated_types = {}
+    for type_name in sorted(all_types):
+        if type_name in existing_types:
+            # 更新現有的 metadata
+            metadata = existing_types[type_name].copy()
+            
+            # 確保必要欄位存在
+            if "cost" not in metadata:
+                metadata["cost"] = 1.0
+            if "is_walkable" not in metadata:
+                metadata["is_walkable"] = walkable_types.get(type_name, False)
+            if "description" not in metadata:
+                metadata["description"] = f"描述 {type_name} 類型的區域。"
+            if "display_color" not in metadata:
+                metadata["display_color"] = ""
         else:
-            print(f"類型 '{cell_type}' 已存在於 metadata，保持不變。")
-
-    # 4. 儲存更新後的 type_metadata.json
-    try:
-        with open(type_meta_path, 'w', encoding='utf-8') as f:
-            json.dump(updated_metadata, f, indent=4, ensure_ascii=False)
-        print(f"\n成功更新 type metadata 到 {type_meta_path}。")
-    except Exception as e:
-        print(f"儲存 type metadata 到 {type_meta_path} 時發生錯誤: {e}")
+            # 建立新的 metadata
+            metadata = default_metadata.copy()
+            metadata["description"] = f"描述 {type_name} 類型的區域。"
+            metadata["is_walkable"] = walkable_types.get(type_name, False)
+            print(f"新增類型: {type_name}")
+        
+        updated_types[type_name] = metadata
+    
+    # 寫回檔案
+    print(f"寫入 {types_file}...")
+    with open(types_file, 'w', encoding='utf-8') as f:
+        json.dump(updated_types, f, ensure_ascii=False, indent=4)
+    
+    print("完成！")
+    
+    # 顯示統計資訊
+    walkable_count = sum(1 for meta in updated_types.values() if meta["is_walkable"])
+    print(f"\n統計資訊:")
+    print(f"  總類型數: {len(updated_types)}")
+    print(f"  可行走類型: {walkable_count}")
+    print(f"  障礙類型: {len(updated_types) - walkable_count}")
 
 if __name__ == "__main__":
-    import argparse
-    parser = argparse.ArgumentParser(description="Build or update type metadata from grid.json.")
-    parser.add_argument("--grid", default="data/grid.json", help="Path to the grid JSON file.")
-    parser.add_argument("--output", default="data/grid_types.json", help="Path to the output type metadata JSON file.")
-    args = parser.parse_args()
-    
-    build_type_metadata(args.grid, args.output) 
+    build_type_metadata() 

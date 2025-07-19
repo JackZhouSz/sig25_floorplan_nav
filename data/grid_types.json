@@ -1,47 +1,56 @@
 {
-    "road": {
-        "description": "描述 road 類型的區域。",
+    "Lounge": {
+        "description": "描述 Lounge 類型的區域。",
         "is_walkable": true,
-        "display_color": ""
-    },
-    "exp hall": {
-        "description": "描述 exp hall 類型的區域。",
-        "is_walkable": true,
-        "display_color": ""
-    },
-    "wall": {
-        "description": "描述 wall 類型的區域。",
-        "is_walkable": false,
-        "display_color": ""
+        "display_color": "",
+        "cost": 1.0
     },
     "booth": {
         "description": "描述 booth 類型的區域。",
         "is_walkable": false,
-        "display_color": ""
+        "display_color": "",
+        "cost": 1.0
     },
     "desk": {
         "description": "描述 desk 類型的區域。",
         "is_walkable": false,
-        "display_color": ""
-    },
-    "exit_far": {
-        "description": "描述 exit_far 類型的區域。",
-        "is_walkable": false,
-        "display_color": ""
-    },
-    "Lounge": {
-        "description": "描述 Lounge 類型的區域。",
-        "is_walkable": true,
-        "display_color": ""
+        "display_color": "",
+        "cost": 1.0
     },
     "door": {
         "description": "描述 door 類型的區域。",
         "is_walkable": false,
-        "display_color": ""
+        "display_color": "",
+        "cost": 1.0
+    },
+    "exit_far": {
+        "description": "描述 exit_far 類型的區域。",
+        "is_walkable": false,
+        "display_color": "",
+        "cost": 1.0
+    },
+    "exp hall": {
+        "description": "描述 exp hall 類型的區域。",
+        "is_walkable": true,
+        "display_color": "",
+        "cost": 1.0
+    },
+    "road": {
+        "description": "描述 road 類型的區域。",
+        "is_walkable": true,
+        "display_color": "",
+        "cost": 1.0
     },
     "stage": {
         "description": "描述 stage 類型的區域。",
         "is_walkable": false,
-        "display_color": ""
+        "display_color": "",
+        "cost": 1.0
+    },
+    "wall": {
+        "description": "描述 wall 類型的區域。",
+        "is_walkable": false,
+        "display_color": "",
+        "cost": 1.0
     }
 }

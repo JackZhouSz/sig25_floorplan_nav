@@ -91,16 +91,22 @@
    - `routes/1_to_all.json`：完整預運算結果（100% 成功率，92 條路徑）
    - **矩陣建立邏輯**：預設可行走，標記障礙物（`not walkable` 優先）
    - **RouteResult 結構**：同時提供語意路徑（Cell idx）和幾何路徑（unit 座標）
+6. **Path-finding 2.0** ✅ **已完成**
+   - 支援「多邊界候選」起點/終點，並實作 multi-source & multi-target A*。
+   - `allow_diag` 參數化（預設為 `False`，僅 4 向移動）。
+   - `turn_weight` 轉彎成本納入計算。
+   - 新增 `PathfindingOptions` dataclass 統一管理路徑參數。
+   - `find_route()` / `find_route_from_files()` 介面已調整。
+   - `scripts/precompute_routes.py` 已更新以呼叫新 API。
+7. **自動化腳本** ✅ **已完成**
+   - 新增 `run_routes.bat` 批次檔，整合預運算與視覺化流程。
 
 ## 後續實作方向
-1. ~~OCR 模組（Ollama Vision + JSON Schema）~~ ✅ **已完成**
-2. ~~Path-finding~~ ✅ **已完成**
-   - ~~依 `grid_types.json` 的 `is_walkable` 決定可走區域~~ ✅
-   - ~~A* / BFS，預先計算起點到其他 booth 路徑~~ ✅
-3. 自然語言導航
+1. **自然語言導航**
    - 先以模板，之後可接 LLM
-4. 視覺化
-   - `core/viz.py`: 顯示路徑、經過地標
-5. 進一步優化
-   - `grid_types.json` 增加顏色配置，供 overlay 使用
-   - Scripts 自動同步 def_colors → type metadata 
+
+---
+_以下為已完成項目，僅供參考_
+- **視覺化** ✅ **已完成**
+  - `core/viz.py` 已提供強大的路徑繪製功能。
+  - `scripts/batch_visualize.py` 支援按類型分組輸出和自訂顏色。 

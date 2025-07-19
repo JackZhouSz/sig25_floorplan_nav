@@ -81,18 +81,17 @@ After grid creation, perform OCR to automatically fill in booth names and IDs.
     python scripts/apply_ocr_results.py --backup
     ```
 
-### Step 3: Path Calculation & Pre-compute
+### Step 3: Path Calculation & Pre-compute (Path-finding 2.0)
+The path calculation module has been upgraded to **Path-finding 2.0**, offering more flexible and accurate pathfinding:
+-   **Multi-Source/Target A***: Instead of a single entry point, the algorithm now considers all walkable boundary cells of a booth, finding the optimal path.
+-   **Configurable Movement**: Supports both 4-directional (default) and 8-directional (diagonal) movement.
+-   **Turn Cost**: Ability to add a penalty for turns, resulting in straighter paths (default is 0).
 
-```python
-# Compute a single route (interactive usage)
-from core.pathfinder import Pathfinder
-pf = Pathfinder()
-route = pf.find_route(start_idx=1, target_idx=53)
-print(route)
-```
 ```bash
-# Batch pre-compute from one booth to all others   
-python scripts/precompute_routes.py --start 1
+# Batch pre-compute from one booth to all others (now with more options)
+# --allow-diag: Enables 8-directional movement
+# --turn-weight: Adds a cost for each turn
+python scripts/precompute_routes.py --start 1 --allow-diag
 ```
 
 ### Step 4: Path Visualization (NEW)
@@ -107,6 +106,18 @@ python scripts/precompute_routes.py --start 1
     ```
     -   Outputs to `visualizations_by_type/{type}/viz_{src}_to_{dst}.png`
     -   All cells are drawn with 30 % opacity; start/end cells highlighted.
+
+### Step 5: Automated Execution (NEW)
+For convenience, a batch script `run_routes.bat` is provided to automate path pre-computation and visualization.
+
+```bash
+# Run pre-computation and visualization for start_idx 1 with default settings
+run_routes.bat 1
+
+# Run for start_idx 52, output to 'my_output' directory, with diagonal movement
+run_routes.bat 52 my_output true
+```
+> For detailed script usage, please see the comments within `run_routes.bat`.
 
 >  For detailed parameters (`--crop-padding`, `--route-color`, etc.), run `-h` on each script.
 

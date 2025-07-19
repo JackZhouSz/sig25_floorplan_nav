@@ -39,7 +39,7 @@
         "description": "描述 road 類型的區域。",
         "is_walkable": true,
         "display_color": "",
-        "cost": 1.0
+        "cost": 0.5
     },
     "stage": {
         "description": "描述 stage 類型的區域。",

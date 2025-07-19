@@ -83,21 +83,21 @@
 
 > 關於 OCR 模組更詳細的說明，請參閱：[`docs/OCR_USAGE.md`](./docs/OCR_USAGE.md)
 
-### 步驟 3: 路徑計算與預運算 (NEW)
+### 步驟 3: 路徑計算與預運算（Path-finding 2.0）
 
-```python
-# 互動式計算單一路徑
-from core.pathfinder import Pathfinder
-pf = Pathfinder()
-route = pf.find_route(start_idx=1, target_idx=53)
-print(route)
-```
+路徑計算模組已升級為 **Path-finding 2.0**，提供更彈性且精確的路徑搜尋：
+-   **多邊界候選 A***：不再只取單一入口，演算法會自動考慮 booth 所有可行走邊界，找出最佳路徑。
+-   **可參數化移動**：支援 4 向（預設）與 8 向（斜向）移動。
+-   **轉彎成本**：可設定每次轉彎的額外成本（預設為 0），讓路徑更直。
+
 ```bash
-# 批次預運算：從指定展位到所有展位
-python scripts/precompute_routes.py --start 1
+# 批次預運算：從指定展位到所有展位（可加參數）
+# --allow-diag：啟用 8 向移動
+# --turn-weight：設定轉彎成本
+python scripts/precompute_routes.py --start 1 --allow-diag
 ```
 
-### 步驟 4: 路徑可視化 (NEW)
+### 步驟 4: 路徑可視化（NEW）
 
 1. **快速預覽（生成少量路徑）**
    ```bash
@@ -109,6 +109,19 @@ python scripts/precompute_routes.py --start 1
    ```
    - 輸出至 `visualizations_by_type/{type}/viz_{src}_to_{dst}.png`
    - 全域格子以 30 % 透明度顯示，起 / 終點格子 60 % 不透明度高亮
+
+### 步驟 5: 自動化執行（NEW）
+
+為方便操作，專案提供 `run_routes.bat` 批次腳本，可一鍵完成路徑預運算與視覺化：
+
+```bat
+:: 預設起點 1，預設資料夾
+run_routes.bat 1
+
+:: 指定起點 52，輸出到 my_output 資料夾，並啟用斜向移動
+run_routes.bat 52 my_output true
+```
+> 詳細參數與用法請參閱 `run_routes.bat` 內註解。
 
 > 其他參數（`--crop-padding`, `--route-color`, `--line-width`, `--uniform-color` 等）可透過 `-h` 查看說明。
 

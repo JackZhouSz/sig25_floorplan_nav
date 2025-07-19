@@ -32,6 +32,14 @@ except ImportError:
 
 
 @dataclass
+class PathfindingOptions:
+    """路徑計算選項配置"""
+    allow_diag: bool = False        # 是否允許斜向移動（預設為 False，僅 4 向）
+    turn_weight: float = 0.0        # 轉彎額外成本（預設 0，不加彎折成本）
+    allow_enter_area: bool = False  # 是否允許進入大區域（沿用舊邏輯）
+
+
+@dataclass
 class RouteResult:
     """路徑計算結果"""
     route: List[int]                  # 語意路徑 (Cell idx 序列)
@@ -44,10 +52,13 @@ class RouteResult:
 class PathfindingGrid:
     """路徑計算網格類別"""
     
-    def __init__(self, cells: List[Cell], grid_types: dict, allow_enter_area: bool = False):
+    def __init__(self, cells: List[Cell], grid_types: dict, options: PathfindingOptions = None):
         self.cells = cells
         self.grid_types = grid_types
-        self.allow_enter_area = allow_enter_area
+        self.options = options or PathfindingOptions()
+        
+        # 向後相容性
+        self.allow_enter_area = self.options.allow_enter_area
         
         # 建立 idx 到 Cell 的對應
         self.cell_by_idx = {cell.idx: cell for cell in cells}
@@ -129,6 +140,34 @@ class PathfindingGrid:
         row = matrix_row + self.min_row
         return col, row
     
+    def find_walkable_candidates(self, booth_idx: int) -> List[Tuple[int, int]]:
+        """找出 booth 周圍所有可行走的邊界點"""
+        if booth_idx not in self.cell_by_idx:
+            return []
+        
+        booth = self.cell_by_idx[booth_idx]
+        candidates = []
+        
+        # booth 佔據的範圍
+        min_col, max_col = booth.col, booth.col + booth.unit_w - 1
+        min_row, max_row = booth.row, booth.row + booth.unit_h - 1
+        
+        # 檢查 booth 四周的相鄰格子
+        for col in range(min_col - 1, max_col + 2):
+            for row in range(min_row - 1, max_row + 2):
+                # 跳過 booth 內部的格子
+                if min_col <= col <= max_col and min_row <= row <= max_row:
+                    continue
+                
+                # 轉換為矩陣座標並檢查是否可行走
+                matrix_row, matrix_col = self.grid_to_matrix(col, row)
+                if (0 <= matrix_row < self.grid_height and 
+                    0 <= matrix_col < self.grid_width and 
+                    self.walkable[matrix_row, matrix_col]):
+                    candidates.append((col, row))
+        
+        return candidates
+    
     def find_walkable_near_booth(self, booth_idx: int) -> Optional[Tuple[int, int]]:
         """找到 booth 附近最近的可行走點（8向BFS）"""
         if booth_idx not in self.cell_by_idx:
@@ -201,6 +240,121 @@ class PathfindingGrid:
                     queue.append((new_row, new_col, dist + 1))
         
         return None
+    
+    def astar_multi(self, start_nodes: List[Tuple[int, int]], goal_set: set) -> Optional[RouteResult]:
+        """
+        多源多目標 A* 演算法，支援轉彎成本
+        
+        Args:
+            start_nodes: 起點候選列表 [(col, row), ...]
+            goal_set: 終點候選集合 {(col, row), ...}
+        
+        Returns:
+            RouteResult 或 None
+        """
+        if not start_nodes or not goal_set:
+            return None
+        
+        # 轉換為矩陣座標
+        start_matrix_nodes = []
+        goal_matrix_set = set()
+        
+        for col, row in start_nodes:
+            matrix_row, matrix_col = self.grid_to_matrix(col, row)
+            if (0 <= matrix_row < self.grid_height and 
+                0 <= matrix_col < self.grid_width and 
+                self.walkable[matrix_row, matrix_col]):
+                start_matrix_nodes.append((matrix_row, matrix_col))
+        
+        for col, row in goal_set:
+            matrix_row, matrix_col = self.grid_to_matrix(col, row)
+            if (0 <= matrix_row < self.grid_height and 
+                0 <= matrix_col < self.grid_width and 
+                self.walkable[matrix_row, matrix_col]):
+                goal_matrix_set.add((matrix_row, matrix_col))
+        
+        if not start_matrix_nodes or not goal_matrix_set:
+            return None
+        
+        # A* 演算法初始化
+        open_set = []
+        came_from = {}  # (row, col) -> (prev_row, prev_col, prev_dir)
+        g_score = {}
+        f_score = {}
+        
+        # 初始化所有起點
+        for matrix_row, matrix_col in start_matrix_nodes:
+            pos = (matrix_row, matrix_col)
+            g_score[pos] = 0
+            f_score[pos] = self._heuristic_to_goal_set(matrix_row, matrix_col, goal_matrix_set)
+            heapq.heappush(open_set, (f_score[pos], matrix_row, matrix_col))
+        
+        # 決定移動方向
+        if self.options.allow_diag:
+            # 8 向移動
+            directions = [
+                (-1,-1, np.sqrt(2)), (-1,0, 1), (-1,1, np.sqrt(2)),
+                (0,-1, 1),                      (0,1, 1),
+                (1,-1, np.sqrt(2)),  (1,0, 1),  (1,1, np.sqrt(2))
+            ]
+        else:
+            # 4 向移動
+            directions = [
+                (-1,0, 1), (0,-1, 1), (0,1, 1), (1,0, 1)
+            ]
+        
+        while open_set:
+            current_f, current_row, current_col = heapq.heappop(open_set)
+            current_pos = (current_row, current_col)
+            
+            # 找到目標
+            if current_pos in goal_matrix_set:
+                path = self._reconstruct_path_with_direction(came_from, current_pos)
+                return self._path_to_route_result(path)
+            
+            for dr, dc, move_cost_multiplier in directions:
+                neighbor_row, neighbor_col = current_row + dr, current_col + dc
+                neighbor_pos = (neighbor_row, neighbor_col)
+                
+                # 檢查邊界
+                if not (0 <= neighbor_row < self.grid_height and 0 <= neighbor_col < self.grid_width):
+                    continue
+                
+                # 檢查是否可行走
+                if not self.walkable[neighbor_row, neighbor_col]:
+                    continue
+                
+                # 檢查 corner-cutting（僅在斜向移動時）
+                if self.options.allow_diag and move_cost_multiplier == np.sqrt(2):
+                    side1_row, side1_col = current_row + dr, current_col
+                    side2_row, side2_col = current_row, current_col + dc
+                    
+                    side1_blocked = (not (0 <= side1_row < self.grid_height and 0 <= side1_col < self.grid_width) or 
+                                   not self.walkable[side1_row, side1_col])
+                    side2_blocked = (not (0 <= side2_row < self.grid_height and 0 <= side2_col < self.grid_width) or 
+                                   not self.walkable[side2_row, side2_col])
+                    
+                    if side1_blocked and side2_blocked:
+                        continue  # 禁止 corner-cutting
+                
+                # 計算移動成本
+                neighbor_cost = self.cost[neighbor_row, neighbor_col]
+                tentative_g_score = g_score[current_pos] + neighbor_cost * move_cost_multiplier
+                
+                # 計算轉彎成本
+                if self.options.turn_weight > 0 and current_pos in came_from:
+                    prev_row, prev_col, prev_dir = came_from[current_pos]
+                    curr_dir = (dr, dc)
+                    if prev_dir != curr_dir:  # 發生轉彎
+                        tentative_g_score += self.options.turn_weight
+                
+                if neighbor_pos not in g_score or tentative_g_score < g_score[neighbor_pos]:
+                    came_from[neighbor_pos] = (current_row, current_col, (dr, dc))
+                    g_score[neighbor_pos] = tentative_g_score
+                    f_score[neighbor_pos] = tentative_g_score + self._heuristic_to_goal_set(neighbor_row, neighbor_col, goal_matrix_set)
+                    heapq.heappush(open_set, (f_score[neighbor_pos], neighbor_row, neighbor_col))
+        
+        return None  # 無法找到路徑
     
     def astar(self, start_col: int, start_row: int, end_col: int, end_row: int) -> Optional[RouteResult]:
         """A* 路徑搜尋"""
@@ -280,11 +434,34 @@ class PathfindingGrid:
         """A* 啟發式函數（歐幾里得距離）"""
         return np.sqrt((row1 - row2)**2 + (col1 - col2)**2)
     
+    def _heuristic_to_goal_set(self, row: int, col: int, goal_set: set) -> float:
+        """計算到目標集合中最近點的啟發式距離"""
+        if not goal_set:
+            return 0.0
+        
+        min_dist = float('inf')
+        for goal_row, goal_col in goal_set:
+            dist = self._heuristic(row, col, goal_row, goal_col)
+            if dist < min_dist:
+                min_dist = dist
+        
+        return min_dist
+    
     def _reconstruct_path(self, came_from: dict, current: Tuple[int, int]) -> List[Tuple[int, int]]:
         """重建路徑"""
         path = [current]
         while current in came_from:
             current = came_from[current]
+            path.append(current)
+        path.reverse()
+        return path
+    
+    def _reconstruct_path_with_direction(self, came_from: dict, current: Tuple[int, int]) -> List[Tuple[int, int]]:
+        """重建路徑（處理包含方向資訊的 came_from）"""
+        path = [current]
+        while current in came_from:
+            prev_row, prev_col, prev_dir = came_from[current]
+            current = (prev_row, prev_col)
             path.append(current)
         path.reverse()
         return path
@@ -348,8 +525,10 @@ def find_route(
     start_idx: int, 
     end_idx: int,
     grid_types: Optional[dict] = None,
-    diag: bool = True,
-    allow_enter_area: bool = False
+    options: Optional[PathfindingOptions] = None,
+    # 向後相容性參數
+    diag: Optional[bool] = None,
+    allow_enter_area: Optional[bool] = None
 ) -> Optional[RouteResult]:
     """
     計算兩個 booth 之間的路徑
@@ -359,8 +538,9 @@ def find_route(
         start_idx: 起點 Cell idx
         end_idx: 終點 Cell idx
         grid_types: 網格類型定義（若為 None 則自動載入）
-        diag: 是否允許斜向移動（目前固定為 True）
-        allow_enter_area: 是否允許進入大區域（如 exp hall）
+        options: 路徑計算選項（若為 None 則使用預設）
+        diag: 向後相容性參數，是否允許斜向移動
+        allow_enter_area: 向後相容性參數，是否允許進入大區域
     
     Returns:
         RouteResult: 包含路徑資訊的結果物件，若無法找到路徑則為 None
@@ -368,23 +548,39 @@ def find_route(
     if grid_types is None:
         grid_types = load_grid_types()
     
+    # 處理向後相容性：如果有舊參數，建立對應的 options
+    if options is None:
+        options = PathfindingOptions()
+        if diag is not None:
+            options.allow_diag = diag
+        if allow_enter_area is not None:
+            options.allow_enter_area = allow_enter_area
+    
     # 建立路徑計算網格
-    pathfinding_grid = PathfindingGrid(cells, grid_types, allow_enter_area)
+    pathfinding_grid = PathfindingGrid(cells, grid_types, options)
     
-    # 找到起點和終點的可行走位置
-    start_pos = pathfinding_grid.find_walkable_near_booth(start_idx)
-    end_pos = pathfinding_grid.find_walkable_near_booth(end_idx)
+    # 使用新的多邊界演算法
+    start_candidates = pathfinding_grid.find_walkable_candidates(start_idx)
+    end_candidates = pathfinding_grid.find_walkable_candidates(end_idx)
     
-    if start_pos is None:
-        print(f"Warning: Cannot find walkable position near start booth {start_idx}")
-        return None
+    if not start_candidates:
+        print(f"Warning: Cannot find walkable candidates near start booth {start_idx}")
+        # 降級到舊方法
+        start_pos = pathfinding_grid.find_walkable_near_booth(start_idx)
+        if start_pos is None:
+            return None
+        start_candidates = [start_pos]
     
-    if end_pos is None:
-        print(f"Warning: Cannot find walkable position near end booth {end_idx}")
-        return None
+    if not end_candidates:
+        print(f"Warning: Cannot find walkable candidates near end booth {end_idx}")
+        # 降級到舊方法
+        end_pos = pathfinding_grid.find_walkable_near_booth(end_idx)
+        if end_pos is None:
+            return None
+        end_candidates = [end_pos]
     
-    # 執行 A* 搜尋
-    result = pathfinding_grid.astar(start_pos[0], start_pos[1], end_pos[0], end_pos[1])
+    # 執行多源多目標 A* 搜尋
+    result = pathfinding_grid.astar_multi(start_candidates, set(end_candidates))
     
     if result is None:
         return None
@@ -412,8 +608,10 @@ def find_route_from_files(
     end_idx: int,
     grid_path: str = "data/grid.json",
     grid_types_path: str = "data/grid_types.json",
-    diag: bool = True,
-    allow_enter_area: bool = False
+    options: Optional[PathfindingOptions] = None,
+    # 向後相容性參數
+    diag: Optional[bool] = None,
+    allow_enter_area: Optional[bool] = None
 ) -> Optional[RouteResult]:
     """
     從檔案載入資料並計算路徑
@@ -425,7 +623,7 @@ def find_route_from_files(
     
     grid_types = load_grid_types(grid_types_path)
     
-    return find_route(cells, start_idx, end_idx, grid_types, diag, allow_enter_area)
+    return find_route(cells, start_idx, end_idx, grid_types, options, diag, allow_enter_area)
 
 
 if __name__ == "__main__":

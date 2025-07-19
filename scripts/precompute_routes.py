@@ -18,7 +18,7 @@ project_root = os.path.abspath(os.path.join(script_dir, '..'))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
-from core.pathfinder import find_route, load_grid_types, PathfindingGrid
+from core.pathfinder import find_route, load_grid_types, PathfindingGrid, PathfindingOptions
 from core.grid import load_grid
 
 
@@ -27,7 +27,7 @@ def precompute_routes(
     grid_path: str = "data/grid.json",
     grid_types_path: str = "data/grid_types.json",
     output_dir: str = "routes",
-    allow_enter_area: bool = False
+    options: PathfindingOptions = None
 ):
     """
     計算從 start_idx 到所有 booth 的路徑
@@ -37,9 +37,15 @@ def precompute_routes(
         grid_path: 網格資料檔案路徑
         grid_types_path: 網格類型定義檔案路徑
         output_dir: 輸出目錄
-        allow_enter_area: 是否允許進入大區域
+        options: 路徑計算選項
     """
     print(f"=== 批次路徑預運算：起點 {start_idx} ===")
+    
+    # 處理選項
+    if options is None:
+        options = PathfindingOptions()
+    
+    print(f"路徑選項：allow_diag={options.allow_diag}, turn_weight={options.turn_weight}, allow_enter_area={options.allow_enter_area}")
     
     # 載入資料
     cells = load_grid(grid_path)
@@ -65,15 +71,19 @@ def precompute_routes(
     print(f"找到 {len(booth_cells)} 個目標 booth")
     
     # 建立路徑計算網格（共用以提升效率）
-    pathfinding_grid = PathfindingGrid(cells, grid_types, allow_enter_area)
+    pathfinding_grid = PathfindingGrid(cells, grid_types, options)
     
-    # 預先計算起點的可行走位置
-    start_pos = pathfinding_grid.find_walkable_near_booth(start_idx)
-    if start_pos is None:
+    # 預先計算起點的可行走候選位置
+    start_candidates = pathfinding_grid.find_walkable_candidates(start_idx)
+    if not start_candidates:
         print(f"錯誤：無法找到起點 {start_idx} 附近的可行走位置")
-        return
+        # 降級到舊方法
+        start_pos = pathfinding_grid.find_walkable_near_booth(start_idx)
+        if start_pos is None:
+            return
+        start_candidates = [start_pos]
     
-    print(f"起點可行走位置：{start_pos}")
+    print(f"起點可行走候選位置：{start_candidates}")
     
     # 結果收集
     results = {
@@ -100,16 +110,16 @@ def precompute_routes(
         print(f"進度 [{i}/{len(booth_cells)}] 計算到 Cell {target_idx} ({target_cell.name or target_cell.type})", end="... ")
         
         try:
-            # 找到目標的可行走位置
-            end_pos = pathfinding_grid.find_walkable_near_booth(target_idx)
-            if end_pos is None:
+            # 找到目標的可行走候選位置
+            end_candidates = pathfinding_grid.find_walkable_candidates(target_idx)
+            if not end_candidates:
                 print("無法找到可行走位置")
                 results["unreachable"].append(target_idx)
                 results["statistics"]["failed"] += 1
                 continue
             
-            # 執行 A* 搜尋
-            path_result = pathfinding_grid.astar(start_pos[0], start_pos[1], end_pos[0], end_pos[1])
+            # 執行多源多目標 A* 搜尋
+            path_result = pathfinding_grid.astar_multi(start_candidates, set(end_candidates))
             
             if path_result is None:
                 print("無路徑")
@@ -167,16 +177,25 @@ def main():
     parser.add_argument("--grid", default="data/grid.json", help="網格資料檔案路徑")
     parser.add_argument("--grid-types", default="data/grid_types.json", help="網格類型定義檔案路徑")
     parser.add_argument("--output-dir", default="routes", help="輸出目錄")
+    parser.add_argument("--allow-diag", action="store_true", help="允許斜向移動")
+    parser.add_argument("--turn-weight", type=float, default=0.0, help="轉彎額外成本（預設 0）")
     parser.add_argument("--allow-enter-area", action="store_true", help="允許進入大區域（如 exp hall）")
     
     args = parser.parse_args()
+    
+    # 建立路徑計算選項
+    options = PathfindingOptions(
+        allow_diag=args.allow_diag,
+        turn_weight=args.turn_weight,
+        allow_enter_area=args.allow_enter_area
+    )
     
     precompute_routes(
         start_idx=args.start_idx,
         grid_path=args.grid,
         grid_types_path=args.grid_types,
         output_dir=args.output_dir,
-        allow_enter_area=args.allow_enter_area
+        options=options
     )
 
 

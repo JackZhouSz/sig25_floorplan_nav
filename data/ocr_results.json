@@ -1,0 +1,554 @@
+{
+  "1": {
+    "name": "Luma AI",
+    "booth_id": "733",
+    "confidence": 0.95,
+    "error": null
+  },
+  "2": {
+    "name": "Lightwheel",
+    "booth_id": "731",
+    "confidence": 0.95,
+    "error": null
+  },
+  "3": {
+    "name": "SKY ENGINE AI",
+    "booth_id": "729",
+    "confidence": 0.95,
+    "error": null
+  },
+  "4": {
+    "name": "Bria Visual AI Platform",
+    "booth_id": "725",
+    "confidence": 0.95,
+    "error": null
+  },
+  "5": {
+    "name": "Computational Visual Media",
+    "booth_id": "723",
+    "confidence": 0.95,
+    "error": null
+  },
+  "6": {
+    "name": "ASRock Rack Inc.",
+    "booth_id": "721",
+    "confidence": 0.95,
+    "error": null
+  },
+  "7": {
+    "name": "Houdini",
+    "booth_id": "717",
+    "confidence": 0.95,
+    "error": null
+  },
+  "8": {
+    "name": "NC AI",
+    "booth_id": "715",
+    "confidence": 0.95,
+    "error": null
+  },
+  "9": {
+    "name": "International Computer Computer Concepts",
+    "booth_id": "713",
+    "confidence": 0.95,
+    "error": null
+  },
+  "10": {
+    "name": "CGS ORIS",
+    "booth_id": "709",
+    "confidence": 0.95,
+    "error": null
+  },
+  "11": {
+    "name": "Greneta",
+    "booth_id": "707",
+    "confidence": 0.95,
+    "error": null
+  },
+  "12": {
+    "name": "Blender",
+    "booth_id": "701",
+    "confidence": 0.95,
+    "error": null
+  },
+  "13": {
+    "name": "Tripo AI",
+    "booth_id": "700",
+    "confidence": 0.95,
+    "error": null
+  },
+  "14": {
+    "name": "PLASK",
+    "booth_id": "702",
+    "confidence": 0.95,
+    "error": null
+  },
+  "15": {
+    "name": "RenderHub",
+    "booth_id": "601",
+    "confidence": 0.95,
+    "error": null
+  },
+  "16": {
+    "name": "Maxon",
+    "booth_id": "501",
+    "confidence": 0.95,
+    "error": null
+  },
+  "17": {
+    "name": "RapidPipeline",
+    "booth_id": "606",
+    "confidence": 0.95,
+    "error": null
+  },
+  "18": {
+    "name": "Puget Systems",
+    "booth_id": "507",
+    "confidence": 0.95,
+    "error": null
+  },
+  "19": {
+    "name": "CenterGrid Virtual Studio",
+    "booth_id": "511",
+    "confidence": 0.95,
+    "error": null
+  },
+  "20": {
+    "name": "Hosted Advantage",
+    "booth_id": "610",
+    "confidence": 0.95,
+    "error": null
+  },
+  "21": {
+    "name": "Autodesk",
+    "booth_id": "515",
+    "confidence": 0.95,
+    "error": null
+  },
+  "22": {
+    "name": "Think Tank Training Centre",
+    "booth_id": "510",
+    "confidence": 0.95,
+    "error": null
+  },
+  "23": {
+    "name": "XIMEA",
+    "booth_id": "411",
+    "confidence": 0.95,
+    "error": null
+  },
+  "24": {
+    "name": "XGRIDS",
+    "booth_id": "413",
+    "confidence": 0.95,
+    "error": null
+  },
+  "25": {
+    "name": "Backlight",
+    "booth_id": "415",
+    "confidence": 0.95,
+    "error": null
+  },
+  "26": {
+    "name": "4Dviews",
+    "booth_id": "417",
+    "confidence": 0.95,
+    "error": null
+  },
+  "27": {
+    "name": "Xsens | Movella",
+    "booth_id": "514",
+    "confidence": 0.95,
+    "error": null
+  },
+  "28": {
+    "name": "Xencelabs/XOOT",
+    "booth_id": "617",
+    "confidence": 0.95,
+    "error": null
+  },
+  "29": {
+    "name": "Bones Studio",
+    "booth_id": "615",
+    "confidence": 0.95,
+    "error": null
+  },
+  "30": {
+    "name": "IO Industries Inc.",
+    "booth_id": "613",
+    "confidence": 0.95,
+    "error": null
+  },
+  "31": {
+    "name": "FUTUREDAYS",
+    "booth_id": "611",
+    "confidence": 0.95,
+    "error": null
+  },
+  "32": {
+    "name": "ALLSIDES",
+    "booth_id": "609",
+    "confidence": 0.95,
+    "error": null
+  },
+  "33": {
+    "name": "Wacom Technology",
+    "booth_id": "706",
+    "confidence": 0.95,
+    "error": null
+  },
+  "34": {
+    "name": "Lightcraft Technology",
+    "booth_id": "710",
+    "confidence": 0.95,
+    "error": null
+  },
+  "35": {
+    "name": "Beeble AI",
+    "booth_id": "712",
+    "confidence": 0.95,
+    "error": null
+  },
+  "36": {
+    "name": "GAMFF",
+    "booth_id": "714",
+    "confidence": 0.95,
+    "error": null
+  },
+  "37": {
+    "name": "3dverse",
+    "booth_id": "716",
+    "confidence": 0.95,
+    "error": null
+  },
+  "38": {
+    "name": "HP",
+    "booth_id": "621",
+    "confidence": 0.95,
+    "error": null
+  },
+  "39": {
+    "name": "Haply Robotics",
+    "booth_id": "728",
+    "confidence": 0.95,
+    "error": null
+  },
+  "40": {
+    "name": "Roblox",
+    "booth_id": "734",
+    "confidence": 0.95,
+    "error": null
+  },
+  "41": {
+    "name": "Huawei",
+    "booth_id": "635",
+    "confidence": 0.95,
+    "error": null
+  },
+  "42": {
+    "name": "GIGABYTE",
+    "booth_id": "629",
+    "confidence": 0.95,
+    "error": null
+  },
+  "43": {
+    "name": "PAVILLON",
+    "booth_id": "529",
+    "confidence": 0.95,
+    "error": null
+  },
+  "44": {
+    "name": "colormass",
+    "booth_id": "634",
+    "confidence": 0.95,
+    "error": null
+  },
+  "45": {
+    "name": "535",
+    "booth_id": "535",
+    "confidence": 0.95,
+    "error": null
+  },
+  "46": {
+    "name": "VFXnow",
+    "booth_id": "534",
+    "confidence": 0.95,
+    "error": null
+  },
+  "47": {
+    "name": "ROТОMAKЕR",
+    "booth_id": "435",
+    "confidence": 0.95,
+    "error": null
+  },
+  "48": {
+    "name": "Microserve",
+    "booth_id": "431",
+    "confidence": 0.95,
+    "error": null
+  },
+  "49": {
+    "name": "AlmaLinux OS Foundation",
+    "booth_id": "429",
+    "confidence": 0.95,
+    "error": null
+  },
+  "50": {
+    "name": "Foundry",
+    "booth_id": "528",
+    "confidence": 0.95,
+    "error": null
+  },
+  "51": {
+    "name": "Metabuild",
+    "booth_id": "530",
+    "confidence": 0.95,
+    "error": null
+  },
+  "52": {
+    "name": "Dell Technologies",
+    "booth_id": "301",
+    "confidence": 0.95,
+    "error": null
+  },
+  "53": {
+    "name": "Pixar RenderMan",
+    "booth_id": "201",
+    "confidence": 0.95,
+    "error": null
+  },
+  "54": {
+    "name": "Sony",
+    "booth_id": "101",
+    "confidence": 0.95,
+    "error": null
+  },
+  "55": {
+    "name": "Animation Magazine",
+    "booth_id": null,
+    "confidence": 0.95,
+    "error": null
+  },
+  "56": {
+    "name": "EA Sports",
+    "booth_id": "PP443",
+    "confidence": 0.95,
+    "error": null
+  },
+  "57": {
+    "name": "Huawei",
+    "booth_id": "PP449",
+    "confidence": 0.95,
+    "error": null
+  },
+  "58": {
+    "name": "AuraML",
+    "booth_id": "PP451",
+    "confidence": 0.95,
+    "error": null
+  },
+  "59": {
+    "name": "NVIDIA",
+    "booth_id": "P1022",
+    "confidence": 0.95,
+    "error": null
+  },
+  "60": {
+    "name": "Deemos Tech",
+    "booth_id": "216",
+    "confidence": 0.95,
+    "error": null
+  },
+  "61": {
+    "name": "Corbel3D",
+    "booth_id": "214",
+    "confidence": 0.95,
+    "error": null
+  },
+  "62": {
+    "name": "Valka.AI",
+    "booth_id": "115",
+    "confidence": 0.95,
+    "error": null
+  },
+  "63": {
+    "name": "Compute Graphics World / COP Communications",
+    "booth_id": "109",
+    "confidence": 0.95,
+    "error": null
+  },
+  "64": {
+    "name": "Meshcapadapade",
+    "booth_id": "209",
+    "confidence": 0.95,
+    "error": null
+  },
+  "65": {
+    "name": "Captury",
+    "booth_id": "306",
+    "confidence": 0.95,
+    "error": null
+  },
+  "66": {
+    "name": "EIZO Inc.",
+    "booth_id": "310",
+    "confidence": 0.95,
+    "error": null
+  },
+  "67": {
+    "name": "Abstract Group",
+    "booth_id": "307",
+    "confidence": 0.95,
+    "error": null
+  },
+  "68": {
+    "name": "Vicon",
+    "booth_id": "315",
+    "confidence": 0.95,
+    "error": null
+  },
+  "69": {
+    "name": "Qualisysys",
+    "booth_id": "215",
+    "confidence": 0.95,
+    "error": null
+  },
+  "70": {
+    "name": "MOVININ",
+    "booth_id": "221",
+    "confidence": 0.95,
+    "error": null
+  },
+  "71": {
+    "name": "FACEGOOD",
+    "booth_id": "320",
+    "confidence": 0.95,
+    "error": null
+  },
+  "72": {
+    "name": "CGTrader",
+    "booth_id": "322",
+    "confidence": 0.95,
+    "error": null
+  },
+  "73": {
+    "name": "Lumio",
+    "booth_id": "321",
+    "confidence": 0.95,
+    "error": null
+  },
+  "74": {
+    "name": "imagine.io",
+    "booth_id": "420",
+    "confidence": 0.95,
+    "error": null
+  },
+  "75": {
+    "name": "Odyssey",
+    "booth_id": 424,
+    "confidence": 0.95,
+    "error": null
+  },
+  "76": {
+    "name": "GRACIA AI",
+    "booth_id": "323",
+    "confidence": 0.95,
+    "error": null
+  },
+  "77": {
+    "name": "Defined.ai",
+    "booth_id": "325",
+    "confidence": 0.95,
+    "error": null
+  },
+  "78": {
+    "name": "IBV-MOVE4D",
+    "booth_id": "428",
+    "confidence": 0.95,
+    "error": null
+  },
+  "79": {
+    "name": "Carnegie Mellon ETC",
+    "booth_id": "430",
+    "confidence": 0.95,
+    "error": null
+  },
+  "80": {
+    "name": "432",
+    "booth_id": "432",
+    "confidence": 0.95,
+    "error": null
+  },
+  "81": {
+    "name": "Savannah College of Art and Design",
+    "booth_id": 434,
+    "confidence": 0.95,
+    "error": null
+  },
+  "82": {
+    "name": "CAMPUS VFX VANCOUVER",
+    "booth_id": "337",
+    "confidence": 0.85,
+    "error": null
+  },
+  "83": {
+    "name": "Bournemouth University",
+    "booth_id": "335",
+    "confidence": 0.95,
+    "error": null
+  },
+  "84": {
+    "name": "Kwantlen Polytechnic University",
+    "booth_id": "333",
+    "confidence": 0.95,
+    "error": null
+  },
+  "85": {
+    "name": "Drexel University",
+    "booth_id": "329",
+    "confidence": 0.95,
+    "error": null
+  },
+  "86": {
+    "name": "Decart",
+    "booth_id": "229",
+    "confidence": 0.95,
+    "error": null
+  },
+  "87": {
+    "name": "334",
+    "booth_id": "334",
+    "confidence": 0.95,
+    "error": null
+  },
+  "88": {
+    "name": "336",
+    "booth_id": "336",
+    "confidence": 0.95,
+    "error": null
+  },
+  "89": {
+    "name": "237",
+    "booth_id": "237",
+    "confidence": 0.95,
+    "error": null
+  },
+  "90": {
+    "name": "235",
+    "booth_id": "235",
+    "confidence": 0.95,
+    "error": null
+  },
+  "91": {
+    "name": "BlindSimulator",
+    "booth_id": "234",
+    "confidence": 0.95,
+    "error": null
+  },
+  "92": {
+    "name": "CyberGlove Systems",
+    "booth_id": "236",
+    "confidence": 0.95,
+    "error": null
+  }
+}

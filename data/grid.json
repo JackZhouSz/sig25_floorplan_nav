@@ -276,7 +276,7 @@
         "unit_w": 2,
         "unit_h": 2,
         "type": "booth",
-        "name": "Advantage",
+        "name": "Hosted Advantage",
         "booth_id": "610"
     },
     {
@@ -738,7 +738,7 @@
         "unit_w": 4,
         "unit_h": 2,
         "type": "booth",
-        "name": "RenderMan",
+        "name": "Pixar RenderMan",
         "booth_id": "201"
     },
     {
@@ -767,7 +767,7 @@
         "unit_h": 2,
         "type": "booth",
         "name": "Animation Magazine",
-        "booth_id": null
+        "booth_id": "100"
     },
     {
         "idx": 56,
@@ -780,7 +780,7 @@
         "unit_w": 2,
         "unit_h": 1,
         "type": "booth",
-        "name": "Sports",
+        "name": "EA Sports",
         "booth_id": "PP443"
     },
     {
@@ -865,7 +865,7 @@
         "unit_h": 1,
         "type": "booth",
         "name": "Valka.AI",
-        "booth_id": "null"
+        "booth_id": "115"
     },
     {
         "idx": 63,
@@ -878,7 +878,7 @@
         "unit_w": 4,
         "unit_h": 4,
         "type": "booth",
-        "name": "Communications",
+        "name": "Compute Graphics World / COP Communications",
         "booth_id": "109"
     },
     {
@@ -934,7 +934,7 @@
         "unit_w": 6,
         "unit_h": 4,
         "type": "booth",
-        "name": "Group Group Group",
+        "name": "Abstract Group",
         "booth_id": "307"
     },
     {
@@ -1047,7 +1047,7 @@
         "unit_h": 2,
         "type": "booth",
         "name": "Odyssey",
-        "booth_id": null
+        "booth_id": 424
     },
     {
         "idx": 76,
@@ -1131,7 +1131,7 @@
         "unit_h": 2,
         "type": "booth",
         "name": "Savannah College of Art and Design",
-        "booth_id": null
+        "booth_id": 434
     },
     {
         "idx": 82,
@@ -1144,7 +1144,7 @@
         "unit_w": 2,
         "unit_h": 2,
         "type": "booth",
-        "name": "VANCOUVER",
+        "name": "CAMPUS VFX | LOST BOYS VANCOUVER",
         "booth_id": "337"
     },
     {

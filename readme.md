@@ -1,119 +1,126 @@
+ # Exhibition Floor Plan Navigation Project
 
-## 目標
-做出展場地圖 從 Dell booth 到 其他 booth (和其他區塊)的文字導航 table
+This project aims to create a digital solution for exhibition floor plans, with the ultimate goal of providing text-based navigation from a specific starting point (e.g., Dell booth) to other booths or areas.
 
-- 前提
-  - online 地圖的 booth 可以 hover 並 highlight，但 html 只有 canvas，只能 CV 抓出 booth 區塊
-  - 地圖是 axis & grid aligned，應可以做出 grid
-  - 圖片上的 booth 區塊有 booth name & id
-  - box 為 左上角 (x, y) + 整體 (h, w)
+## Project Goals and Prerequisites
 
-## 模組化實作規劃
+-   **Goal**: To build a digitized exhibition floor plan that provides text-based navigation between booths.
+-   **Prerequisites**:
+    -   The original floor plan (https://siggraph25.mapyourshow.com/8_0/exhview/index.cfm) is in web Canvas Render format, making direct extraction of booth information difficult.
+    -   The map Canvas highlights booths on hover, a characteristic we leverage for detection.
+    -   Booth layouts on the map are grid-aligned.
+    -   Leverage Computer Vision (CV) and Optical Character Recognition (OCR) technologies to parse the map.
 
-整體流程將以 Jupyter Notebook (`notebooks/01_workflow.ipynb`) 為主控，串接各個功能模組 (`core/*.py`)。所有核心邏輯都會寫在 `.py` 檔案中，方便重複使用與測試。
+## ✨ Task Progress (TODOs)
 
-### 核心資料流
-`bboxes_*.json` (偵測原始資料) -> `data/grid.json` (權威網格檔) -> `routes/*.json` (預運算路徑)
+-   [x] **Grid Creation & Management**: Convert the map into structured grid data (`data/grid.json`).
+-   [x] **Manual Annotation Tool**: Provide a GUI tool (`core/annotate.py`) for manual addition, modification, and deletion of grid cells.
+-   [x] **OCR Information Extraction**: Automatically identify booth names and IDs and populate them into the grid data.
+-   [ ] **Path Calculation**: Develop pathfinding algorithms (e.g., A*) to calculate routes between booths.
+-   [ ] **Path Visualization**: Visualize the calculated paths on the map.
+-   [ ] **Text Navigation Generation**: Convert paths into natural language navigation instructions.
+
+> For detailed technical planning and historical progress, please refer to: [`task.md`](./task.md)
 
 ---
 
-### 階段一：Grid 建立與管理 (`core/grid.py`)
-1.  **合併與轉換**：
-    -   讀取 `detect.ipynb` 產出的多個 `bboxes_*.json`。
-    -   合併、去重後，轉換成統一的網格化資料結構。
-    -   以自增的 `idx` 作為每個格子的唯一識別碼。
-2.  **權威資料檔**：
-    -   所有網格資料統一儲存於 `data/grid.json`。
-    -   `Cell` 資料結構包含：`idx`, `col`, `row`, `(x,y,w,h)`, `type`, `name`, `booth_id`。
-3.  **可視化**：
-    -   提供 `overlay_grid()` 函式，能將 `grid.json` 的格線繪製在 `large_map.png` 上，並在 Notebook 中顯示。
-    -   可根據 `type` 為不同格子自訂顏色。
+## 📸 Pre-processing Steps (Data Preparation)
 
-### 階段二：手動標註與修正 (`core/annotate.py`)
--   基於 `select_bounding_box.py` 改寫的 GUI 工具。
--   **功能**：
-    1.  **新增**：處理自動偵測遺漏的格子（如走道、特殊區塊），滑鼠框選後可手動指定 `type` 與 `name`。
-    2.  **修改**：點擊現有格子，可修改其所有屬性。
-    3.  **刪除**：移除錯誤的格子。
--   直接讀寫 `data/grid.json`，是確保資料品質的關鍵。
+Before starting grid creation, we need to obtain the raw booth data from the online map.
 
-### 階段三：OCR (`core/ocr_ollama.py`)
--   **Ollama 整合**：
-    -   針對 `type` 為 `booth` 或 `unknown` 的格子進行裁切 (`crops/cell_{idx}.png`)。
-    -   呼叫 Ollama 視覺模型 (`gemma3n:e4b`) 進行 OCR。
-    -   利用 Ollama 的 JSON Schema 功能，強制模型回傳結構化資料 (`{name: str, booth_id: str | None}`)，提升辨識穩定性。
--   **批次處理**：提供 `scripts/ocr_batch.py`，可一次性處理所有需要 OCR 的格子。
+1.  **Record Online Map**: Record a video of the online map, hovering over all booths one by one to highlight them.
+    > **Note**: The map might be too large, requiring multiple recordings to cover all areas.
 
-### 階段四：路徑計算 (`core/pathfinder.py`)
-1.  **建立成本地圖**：
-    -   讀取 `grid.json`，將其轉換為 2D 的可行走矩陣 (`occupancy matrix`)。
-    -   `walkway` 為可走，`booth`, `stage` 等為障礙物。
-    -   `area` 型別可透過參數 (`allow_enter_area`) 設定是否可穿越。
-2.  **尋路演算法**：
-    -   使用 A* 或 BFS 演算法計算指定起點 `idx` 到終點 `idx` 的最短路徑。
-3.  **路徑語意標註**：
-    -   對計算出的路徑（一系列 `Cell`）進行標註：
-        -   `through`: 實際路徑**穿越**的格子。
-        -   `pass_by`: 路徑**旁邊相鄰**的格子（地標）。
-        -   `start` / `end`: 起點與終點。
+2.  **Process Individual Videos**: Use `notebooks/single_detect.ipynb` to process each recorded video, converting all highlighted booth areas into grid boxes on the large map, and saving the results as `bboxed_{i}.json`.
+    ```
+    notebooks/single_detect.ipynb
+    ```
 
-### 階段五：可視化與導航 (`core/viz.py`)
--   **路徑繪製**：
-    -   提供 `show_route()` 函式，將計算出的路徑與語意標註視覺化。
-    -   在地圖上繪製路徑（連線）、`through` 格子（高亮）、`pass_by` 地標（外框）。
--   **文字導航**（未來實作）：
-    -   根據語意標註的路徑，生成自然語言的導航指令。
+3.  **Merge and Calculate Grid Units**: Use `notebooks/01_build_grid.ipynb` to merge grid box data from multiple videos and calculate uniform grid units. This will generate `data/grid.json` as the primary grid data source.
+    ```
+    notebooks/01_build_grid.ipynb
+    ```
 
-## 目前進度 (2025-01-09)
-1. Grid 建立
-   - `data/grid.json`：完整格子資料 (pixel 與 grid 座標)
-   - `data/grid_meta.json`：unit 大小與原點
-2. 手動標註
-   - `core/annotate.py`：支援縮放、平移、框選/刪除/編輯格子
-3. 格子類型統計與維護
-   - `scripts/check_grid_types.py`：列出各 type 數量，少於閾值詳細列出 idx/name
-   - `scripts/build_type_metadata.py`：掃描 grid.json，自動建立/更新 `data/grid_types.json`
-   - `data/grid_types.json`：type metadata（description / is_walkable / display_color）
-4. **OCR 模組 (新增)**
-   - `core/ocr_ollama.py`：使用 Ollama qwen2.5vl:7b 進行 booth 資訊識別
-   - `scripts/ocr_batch.py`：批次處理腳本，支援續傳和錯誤重試
-   - `scripts/test_ocr.py`：OCR 功能測試腳本
-   - `docs/OCR_USAGE.md`：完整使用說明文檔
+---
 
-## 使用 OCR 模組
+## 🚀 Main Workflow
 
-### 快速開始
-1. **安裝依賴**：
-   ```bash
-   pip install ollama opencv-python numpy Pillow
-   ollama pull qwen2.5vl:7b
-   ```
+This project's workflow is designed with several independent but interconnected steps, allowing you to progressively transform a map image into complete navigation information.
 
-2. **測試功能**：
-   ```bash
-   python scripts/test_ocr.py
-   ```
+### Step 1: Create and Refine the Grid
+After completing the pre-processing steps to generate initial grid data, use manual tools for fine-tuning and supplementation.
 
-3. **批次處理**：
-   ```bash
-   # 處理所有 booth 格子
-   python scripts/ocr_batch.py --limit 10  # 測試模式
-   python scripts/ocr_batch.py             # 完整處理
-   ```
+1.  **Manual Annotation and Correction**: Use the GUI tool for fine-tuning. This is the most crucial step for ensuring data quality.
+    ```bash
+    python core/annotate.py
+    ```
+    -   **Operation**: Drag with the left mouse button to add new cells, right-click to modify or delete.
+    -   **Goal**: Ensure all booths, walkways, and public areas are correctly labeled.
 
-詳細說明請參閱 `docs/OCR_USAGE.md`
+2.  **Build Type Metadata**: Scan the existing `type` fields in `grid.json` to automatically create or update `data/grid_types.json`.
+    ```bash
+    python scripts/build_type_metadata.py
+    ```
+    > **Important**: `data/grid_types.json` defines the properties of each cell type (e.g., whether it's walkable, display color, etc.), which is fundamental for path calculation. Make sure to run this step before starting OCR or path calculation.
 
-## 後續實作方向
-1. ~~OCR 模組（Ollama Vision + JSON Schema）~~ ✅ **已完成**
-   - ~~讀取 `crops/`，自動填 `name`、`booth_id`~~ ✅
-   - ~~失敗項目進 GUI 快速修正~~ (可通過批次腳本處理)
-2. Path-finding
-   - 依 `grid_types.json` 的 `is_walkable` 決定可走區域
-   - A* / BFS，預先計算 Dell → 其他 booth 路徑
-3. 自然語言導航
-   - 先以模板，之後可接 LLM
-4. 視覺化
-   - `core/viz.py`: 顯示路徑、經過地標
-5. 進一步優化
-   - `grid_types.json` 增加顏色配置，供 overlay 使用
-   - Scripts 自動同步 def_colors → type metadata
+### Step 2: Perform OCR Recognition
+After grid creation, perform OCR to automatically fill in booth names and IDs.
+
+1.  **Run Batch OCR**: This script will process all cells requiring identification.
+    ```bash
+    python scripts/ocr_batch.py
+    ```
+    > **Tip**: This process might take some time for the first run or with many cells. The script supports the `--limit` parameter for testing.
+
+2.  **Manual Review and Correction**:
+    -   Open the `data/ocr_results.json` file.
+    -   Manually inspect and correct `name` or `booth_id` errors identified by the model.
+
+3.  **Apply Corrections**: Write the corrected results back to the main `grid.json` file.
+    ```bash
+    python scripts/apply_ocr_results.py --backup
+    ```
+
+> For more detailed instructions on the OCR module, please refer to: [`docs/OCR_USAGE.md`](./docs/OCR_USAGE.md)
+
+---
+
+## �� Environment Setup
+
+1.  **Clone the Project**:
+    ```bash
+    git clone <repository-url>
+    cd <repository-name>
+    ```
+
+2.  **Install Python Dependencies**:
+    It is recommended to use a virtual environment (e.g., `venv` or `conda`).
+    ```bash
+    # Create virtual environment
+    python -m venv venv
+    # Activate virtual environment
+    source venv/bin/activate  # on Windows: venv\Scripts\activate
+    
+    # Install core dependencies
+    pip install opencv-python numpy Pillow
+    ```
+
+3.  **Install and Configure Ollama (Required for OCR functionality)**:
+    ```bash
+    # 1. Install Ollama (if not already installed)
+    curl -fsSL https://ollama.com/install.sh | sh
+
+    # 2. Start Ollama service (usually starts automatically)
+    ollama serve
+
+    # 3. Download the vision model required for OCR
+    ollama pull qwen2.5vl:7b
+    
+    # 4. Install Ollama Python client
+    pip install ollama
+    ```
+
+## 📚 Detailed Documentation
+
+-   [**Technical Tasks and Planning** (`task.md`)](./task.md): Deep dive into the design details, data flow, and historical progress of each module.
+-   [**OCR Module Usage Guide** (`docs/OCR_USAGE.md`)](./docs/OCR_USAGE.md): Contains detailed parameter settings, troubleshooting, and advanced usage for the OCR module.

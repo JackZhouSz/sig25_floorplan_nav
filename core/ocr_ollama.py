@@ -43,7 +43,7 @@ class OCRResult:
 class OllamaOCR:
     """Ollama OCR 處理器"""
     
-    def __init__(self, model_name: str = "qwen2.5vl:7b", crops_dir: str = "crops"):
+    def __init__(self, model_name: str = "qwen2.5vl:7b", crops_dir: str = "crops", check_connection: bool = True):
         self.model_name = model_name
         self.crops_dir = Path(crops_dir)
         self.crops_dir.mkdir(exist_ok=True)
@@ -72,7 +72,8 @@ class OllamaOCR:
         }
         
         # 檢查 Ollama 連線
-        self._check_ollama_connection()
+        if check_connection:
+            self._check_ollama_connection()
 
     def _check_ollama_connection(self) -> bool:
         """檢查 Ollama 服務是否可用"""

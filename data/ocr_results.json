@@ -325,7 +325,7 @@
   },
   "55": {
     "name": "Animation Magazine",
-    "booth_id": null,
+    "booth_id": "100",
     "confidence": 0.95,
     "error": null
   },
@@ -486,7 +486,7 @@
     "error": null
   },
   "82": {
-    "name": "CAMPUS VFX VANCOUVER",
+    "name": "CAMPUS VFX | LOST BOYS VANCOUVER",
     "booth_id": "337",
     "confidence": 0.85,
     "error": null

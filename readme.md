@@ -68,10 +68,7 @@ Before starting grid creation, we need to obtain the raw booth data from the onl
     
     **Example Recording:**
     
-    <video width="600" controls>
-      <source src="map_hover1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    ![Hover Recording Demo](assets/input_video.gif)
     
     *Sample hover recording showing booth highlighting detection*
 

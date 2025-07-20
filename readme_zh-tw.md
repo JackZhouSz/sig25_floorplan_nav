@@ -68,10 +68,7 @@
     
     **錄影範例：**
     
-    <video width="600" controls>
-      <source src="map_hover1.mp4" type="video/mp4">
-      您的瀏覽器不支援影片標籤。
-    </video>
+    ![Hover 錄影示範](assets/input_video.gif)
     
     *示範 hover 錄影，展示攤位高亮偵測過程*
 

@@ -1,0 +1,20 @@
+# 導航系統配置文件
+# Navigation System Configuration
+
+# 地標檢測配置
+landmark_detection:
+  search_radius: 5          # 地標搜尋半徑 (units)
+  distance_filter: 2        # 距離過濾閾值 (units)
+
+# 序列選擇配置  
+sequence_selection:
+  max_landmarks_per_side: 3              # 每側最大地標數量
+  coverage_weight: 1.0                   # 覆蓋率權重
+  min_coverage_threshold: 0.2            # 最低覆蓋率閾值 (20%)
+  use_front_fallback: true               # 低覆蓋率時使用前方landmark回退
+
+# 方位計算配置
+side_calculation:
+  long_segment_threshold: 5              # 長段閾值 (units)，超過使用segment幾何
+  front_angle_threshold: 0.966           # 前方判斷角度閾值 cos(15°)
+  use_hybrid_method: true                # 是否啟用混合方位計算方法

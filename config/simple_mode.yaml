@@ -1,0 +1,17 @@
+# 簡化模式：減少回退，多用傳統左右方描述
+# Simple Mode Configuration
+
+landmark_detection:
+  search_radius: 3
+  distance_filter: 2
+
+sequence_selection:
+  max_landmarks_per_side: 4              # 增加地標數量，更豐富描述
+  coverage_weight: 1.0
+  min_coverage_threshold: 0.1            # 降低閾值到10%，很少觸發回退
+  use_front_fallback: false              # 關閉前方回退功能
+
+side_calculation:
+  long_segment_threshold: 8              # 提高長段閾值，更多點對點計算
+  front_angle_threshold: 0.707           # 寬鬆的前方判斷 cos(45°)
+  use_hybrid_method: true

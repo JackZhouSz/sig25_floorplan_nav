@@ -101,9 +101,54 @@
 7. **自動化腳本** ✅ **已完成**
    - 新增 `run_routes.bat` 批次檔，整合預運算與視覺化流程。
 
+8. **Navigation NLG Phase 1–2** ✅ **已完成**
+   - `core/navigation.py`：Route Analyzer 與 Rule Formatter MVP
+   - `scripts/generate_navigation.py`：CLI 介面（支援單一路徑與批次）
+   - `scripts/test_navigation.py`：完整單元測試（轉向偵測、地標擇選、格式化）
+   - 預設使用 `result_f0-5/52_to_all.json` 做為示例路徑來源（僅 4 向，不含斜向）。
+
+9. **Navigation NLG Phase 1.1 – 中繼地標系統** ✅ **已完成**
+   - **擴展地標分類**：支援 `exp hall`, `stage`, `Lounge`, `booth` 多種類型
+   - **智能地標優先級**：面積越大優先級越高 (exp hall > stage > Lounge > booth)
+   - **中繼地標搜尋**：`find_intermediate_landmarks()` 搜尋路徑沿線地標
+   - **同側地標邏輯**：`find_landmarks_same_side()` 優先選擇同一側地標（最多3個）
+   - **穿越檢測**：`detect_crossing_landmarks()` 檢測路徑穿越大型區域
+   - **距離分級策略**：
+     * ≤3 units: 「走過 X 個攤位」
+     * 4-15 units: 「直走經過[中繼地標]，約 X 個攤位」
+     * >15 units: 「直走經過[多個同側地標]，約 2 分鐘」
+   - **智能描述模板**：
+     * 穿越: 「直走穿越Art Gallery」
+     * 經過: 「直走經過左手邊的Connection Lounge」
+     * 多地標: 「直走經過前方的Maxon、Blender、Puget Systems，約2分鐘」
+
+10. **Navigation NLG Phase 1.2 – 覆蓋率系統** ✅ **已完成**
+    - **問題解決**：
+      * 修復Dell Technologies (起點) 被誤認為地標
+      * 基於覆蓋率選擇地標，避免低覆蓋率地標被描述為"經過"
+      * 改進地標順序，按實際路徑順序排列
+    - **覆蓋率計算**：`find_intermediate_landmarks_with_coverage()` 計算地標在路徑上的可見度
+    - **三序列生成**：為每個segment生成crossing/left/right/front四個候選序列
+    - **序列處理流程**：覆蓋率排序 → Top-K選擇 → 路徑順序重排
+    - **配置系統**：`NavigationConfig` 支援nested config，所有參數可調整
+    - **測試驗證**：52→13排除Dell，52→10選擇高覆蓋率序列
+    - **待優化**：方位判斷邏輯 (點vs段的幾何關係)
+
 ## 後續實作方向
-1. **自然語言導航**
-   - 先以模板，之後可接 LLM
+1. **自然語言導航**（Navigation NLG）
+   - **Phase 0 – Landmark Metadata** ✅ 完成
+   - **Phase 1 – Route Analyzer & Landmark Finder** ✅ 完成
+   - **Phase 2 – Rule Formatter MVP** ✅ 完成
+   - **Phase 1.1 – 中繼地標系統** ✅ **完成**
+   - **Phase 1.2 – 覆蓋率系統** ✅ **完成**
+   - **Phase 1.3 – 方位計算優化** (下一步)：
+        * 修復方位判斷閾值問題 (front判斷過寬)
+        * 實現點對段的幾何方位計算，而非點對點
+        * 優化座標系處理邏輯
+   - **Phase 3 – LLM 整合**：
+        * 將改良版 Step JSON + 路徑截圖作為 prompt，生成多樣化口語指令。
+   - **Phase 4 – 文件與多語系**：
+        * 更新 `readme_zh-tw.md`、提供英文示例輸出。
 
 ---
 _以下為已完成項目，僅供參考_

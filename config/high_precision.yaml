@@ -1,0 +1,17 @@
+# 高精度配置：更多前方landmark指引
+# High Precision Configuration
+
+landmark_detection:
+  search_radius: 4          # 增加搜尋範圍
+  distance_filter: 3        # 增加距離過濾
+
+sequence_selection:
+  max_landmarks_per_side: 2              # 減少每側地標數量，更精確
+  coverage_weight: 1.0
+  min_coverage_threshold: 0.35           # 提高閾值到35%，更容易觸發前方指引
+  use_front_fallback: true
+
+side_calculation:
+  long_segment_threshold: 3              # 降低長段閾值，更多segment幾何計算
+  front_angle_threshold: 0.985           # 更嚴格的前方判斷 cos(10°)
+  use_hybrid_method: true

@@ -1,0 +1,14 @@
+# 廣範圍搜尋配置
+landmark_detection:
+  search_radius: 5           # 大搜尋範圍
+  distance_filter: 3         # 較大距離過濾
+
+sequence_selection:
+  max_landmarks_per_side: 4
+  min_coverage_threshold: 0.2
+  use_front_fallback: true
+
+side_calculation:
+  long_segment_threshold: 5
+  front_angle_threshold: 0.966
+  use_hybrid_method: true

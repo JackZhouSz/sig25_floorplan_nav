@@ -1,0 +1,12 @@
+landmark_detection:
+  distance_filter: 2
+  search_radius: 5
+sequence_selection:
+  coverage_weight: 1.0
+  max_landmarks_per_side: 2
+  min_coverage_threshold: 0.4
+  use_front_fallback: true
+side_calculation:
+  front_angle_threshold: 0.966
+  long_segment_threshold: 5
+  use_hybrid_method: true

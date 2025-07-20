@@ -1,0 +1,9 @@
+=== 從攤位 52 到攤位 79 的導航指令 ===
+
+總距離: 25.0 units
+約等於: 10 個攤位
+總步驟: 2
+
+導航指令:
+1. 直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。
+2. 目的地就在前方的 Carnegie Mellon ETC。

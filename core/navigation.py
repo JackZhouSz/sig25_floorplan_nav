@@ -954,43 +954,11 @@ class RuleFormatter:
         """將 units 轉換為攤位數量（粗略估算：1 攤位 ≈ 2-3 units）"""
         return max(1, round(units / 2.5))
     
-    def count_passed_booths(self, start_pos: Tuple[int, int], end_pos: Tuple[int, int], 
-                           analyzer: 'RouteAnalyzer') -> int:
-        """計算直線段實際經過的攤位數量"""
-        # 計算移動方向
-        move_dir = (end_pos[0] - start_pos[0], end_pos[1] - start_pos[1])
-        if move_dir == (0, 0):
+    def count_sequence_booths(self, landmarks: List) -> int:
+        """計算序列中的攤位數量"""
+        if not landmarks:
             return 0
-        
-        booth_count = 0
-        seen_booths = set()
-        
-        # 遍歷路徑上的每個點
-        steps = max(abs(move_dir[0]), abs(move_dir[1]))
-        for i in range(steps + 1):
-            if steps == 0:
-                current_pos = start_pos
-            else:
-                # 線性插值計算當前位置
-                t = i / steps
-                current_pos = (
-                    int(start_pos[0] + t * move_dir[0]),
-                    int(start_pos[1] + t * move_dir[1])
-                )
-            
-            # 搜尋當前位置左右兩側的攤位
-            for side_offset in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
-                check_pos = (current_pos[0] + side_offset[0], current_pos[1] + side_offset[1])
-                
-                if check_pos in analyzer.unit_to_cells:
-                    for cell in analyzer.unit_to_cells[check_pos]:
-                        if (cell.get('type') == 'booth' and 
-                            cell['idx'] not in seen_booths and
-                            analyzer.is_good_landmark(cell)):
-                            seen_booths.add(cell['idx'])
-                            booth_count += 1
-        
-        return booth_count
+        return len(landmarks)
     
     def format_distance(self, units: int, start_pos: Tuple[int, int] = None, 
                         end_pos: Tuple[int, int] = None, analyzer: 'RouteAnalyzer' = None,
@@ -999,17 +967,8 @@ class RuleFormatter:
         if units == 0:
             return ""
         
-        # 嘗試使用精確攤位計數
-        booth_count = None
-        if start_pos and end_pos and analyzer:
-            try:
-                booth_count = self.count_passed_booths(start_pos, end_pos, analyzer)
-            except:
-                pass  # 如果精確計數失敗，退回到估算
-        
-        # 如果沒有精確計數，使用估算
-        if booth_count is None:
-            booth_count = self.units_to_booth_count(units)
+        # 直接使用距離估算
+        booth_count = self.units_to_booth_count(units)
         
         # 新的距離分級策略
         if units <= 3:
@@ -1022,7 +981,7 @@ class RuleFormatter:
             # 中距離：使用中繼地標 + 攤位計數
             if start_pos and end_pos and analyzer:
                 return self.format_with_intermediate_landmarks(
-                    units, start_pos, end_pos, analyzer, booth_count, exclude_cell_ids
+                    units, start_pos, end_pos, analyzer, exclude_cell_ids
                 )
             else:
                 return f"直走約 {booth_count} 個攤位"
@@ -1038,12 +997,13 @@ class RuleFormatter:
     
     def format_with_intermediate_landmarks(self, units: int, start_pos: Tuple[int, int], 
                                          end_pos: Tuple[int, int], analyzer: 'RouteAnalyzer',
-                                         booth_count: int, exclude_cell_ids: set = None) -> str:
+                                         exclude_cell_ids: set = None) -> str:
         """使用單個中繼地標格式化距離"""
         # 檢查穿越地標
         crossing = analyzer.detect_crossing_landmarks(start_pos, end_pos)
         if crossing:
             landmark = crossing[0]  # 選擇最重要的穿越地標
+            booth_count = 1  # 穿越地標計為1個攤位
             if booth_count <= 1:
                 return f"直走穿越{landmark.get('name', '大型區域')}"
             return f"直走穿越{landmark.get('name', '大型區域')}，約 {booth_count} 個攤位"
@@ -1056,11 +1016,13 @@ class RuleFormatter:
             # 選擇覆蓋率最高的地標
             best_landmark = max(landmarks_with_coverage, key=lambda x: x.coverage_ratio)
             side_text = self.get_side_text(best_landmark.side)
+            booth_count = 1  # 單個地標計為1個攤位
             if booth_count <= 1:
                 return f"直走經過{side_text}的{best_landmark.cell.get('name', '地標')}"
             return f"直走經過{side_text}的{best_landmark.cell.get('name', '地標')}，約 {booth_count} 個攤位"
         
-        # 沒有找到地標，使用原來的格式
+        # 沒有找到地標，使用距離估算
+        booth_count = self.units_to_booth_count(units)
         return f"直走約 {booth_count} 個攤位"
     
     def format_with_multiple_landmarks(self, units: int, start_pos: Tuple[int, int], 
@@ -1077,6 +1039,9 @@ class RuleFormatter:
         if not best_sequence:
             return "直走到底，約 2 分鐘"
         
+        # 計算序列攤位數
+        booth_count = self.count_sequence_booths(best_sequence)
+        
         # 格式化描述
         if is_fallback and "_to_front" in best_sequence_name:
             # 組合序列：經過[低覆蓋率landmark] → 走至[前方landmark]
@@ -1085,26 +1050,26 @@ class RuleFormatter:
                 target = best_sequence[1].cell.get('name', '地標')
                 primary_side = best_sequence_name.split('_to_front')[0]
                 side_text = self.get_side_text(primary_side)
-                return f"直走經過{side_text}的{pass_by}，走至{target}前，約 2 分鐘"
+                return f"直走經過{side_text}的{pass_by}，走至{target}前，約 {booth_count} 個攤位"
             else:
                 # 回退情況：只有前方landmark
                 target = best_sequence[0].cell.get('name', '地標')
-                return f"直走走至{target}前，約 2 分鐘"
+                return f"直走走至{target}前，約 {booth_count} 個攤位"
         elif best_sequence_name == "crossing":
             names = [lm.cell.get('name', '區域') for lm in best_sequence]
             if len(names) == 1:
-                return f"直走穿越{names[0]}，約 2 分鐘"
+                return f"直走穿越{names[0]}，約 {booth_count} 個攤位"
             else:
-                return f"直走穿越{self.join_landmarks(names)}，約 2 分鐘"
+                return f"直走穿越{self.join_landmarks(names)}，約 {booth_count} 個攤位"
         elif best_sequence_name == "front":
             # 純前方landmark指引
             names = [lm.cell.get('name', '地標') for lm in best_sequence]
-            return f"直走走至{self.join_landmarks(names)}前，約 2 分鐘"
+            return f"直走走至{self.join_landmarks(names)}前，約 {booth_count} 個攤位"
         else:
             # 傳統的左右方landmark
             side_text = self.get_side_text(best_sequence_name)
             names = [lm.cell.get('name', '地標') for lm in best_sequence]
-            return f"直走經過{side_text}的{self.join_landmarks(names)}，約 2 分鐘"
+            return f"直走經過{side_text}的{self.join_landmarks(names)}，約 {booth_count} 個攤位"
     
     def select_best_sequence_by_coverage(self, sequences: Dict[str, List[LandmarkWithCoverage]]) -> Tuple[str, List[LandmarkWithCoverage]]:
         """

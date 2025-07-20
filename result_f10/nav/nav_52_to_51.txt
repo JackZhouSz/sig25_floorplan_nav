@@ -1,0 +1,12 @@
+=== 從攤位 52 到攤位 51 的導航指令 ===
+
+總距離: 31.0 units
+約等於: 12 個攤位
+總步驟: 5
+
+導航指令:
+1. 面向Abstract Group攤位，準備出發。
+2. 直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。
+3. 看到右手邊的 Microserve後右轉。
+4. 走過 1 個攤位。
+5. 目的地就在前方的 Metabuild。

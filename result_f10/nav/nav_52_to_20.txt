@@ -1,0 +1,12 @@
+=== 從攤位 52 到攤位 20 的導航指令 ===
+
+總距離: 17.0 units
+約等於: 7 個攤位
+總步驟: 5
+
+導航指令:
+1. 以左手邊的 Abstract Group為參考點，準備出發。
+2. 直走經過前方的Maxon。
+3. 看到左手邊的 RapidPipeline後左轉。
+4. 直走經過前方的RapidPipeline。
+5. 目的地就在前方的 Hosted Advantage。

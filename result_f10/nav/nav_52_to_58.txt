@@ -1,0 +1,12 @@
+=== 從攤位 52 到攤位 58 的導航指令 ===
+
+總距離: 27.0 units
+約等於: 11 個攤位
+總步驟: 5
+
+導航指令:
+1. 面向Pixar RenderMan攤位，準備出發。
+2. 直走經過右手邊的Sony。
+3. 看到右手邊的 Sony後右轉。
+4. 直走經過右手邊的Sony、Compute Graphics World / COP Communications，約 2 個攤位。
+5. 目的地就在前方的 AuraML。

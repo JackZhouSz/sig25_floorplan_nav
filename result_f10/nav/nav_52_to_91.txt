@@ -1,0 +1,12 @@
+=== 從攤位 52 到攤位 91 的導航指令 ===
+
+總距離: 34.0 units
+約等於: 14 個攤位
+總步驟: 5
+
+導航指令:
+1. 面向Pixar RenderMan攤位，準備出發。
+2. 直走經過左手邊的Pixar RenderMan。
+3. 走到Sony前右轉。
+4. 直走經過右手邊的Pixar RenderMan、Meshcapadapade、Qualisysys，約 3 個攤位。
+5. 目的地就在前方的 BlindSimulator。

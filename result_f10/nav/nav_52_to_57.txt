@@ -1,0 +1,14 @@
+=== 從攤位 52 到攤位 57 的導航指令 ===
+
+總距離: 29.0 units
+約等於: 12 個攤位
+總步驟: 7
+
+導航指令:
+1. 面向Pixar RenderMan攤位，準備出發。
+2. 直走經過右手邊的Sony。
+3. 看到右手邊的 Sony後右轉。
+4. 直走經過右手邊的Sony、Compute Graphics World / COP Communications，約 2 個攤位。
+5. 走到Job Fair前左轉。
+6. 走過 1 個攤位。
+7. 目的地就在前方的 Huawei。

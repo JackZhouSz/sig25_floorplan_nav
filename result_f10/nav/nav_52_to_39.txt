@@ -1,0 +1,14 @@
+=== 從攤位 52 到攤位 39 的導航指令 ===
+
+總距離: 38.0 units
+約等於: 15 個攤位
+總步驟: 7
+
+導航指令:
+1. 面向Abstract Group攤位，準備出發。
+2. 直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。
+3. 走到Connection Lounge前右轉。
+4. 直走穿越Connection Lounge。
+5. 走到HP前左轉。
+6. 走過 1 個攤位。
+7. 目的地就在前方的 Haply Robotics。

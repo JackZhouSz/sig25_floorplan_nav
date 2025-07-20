@@ -1,0 +1,12 @@
+=== 從攤位 52 到攤位 63 的導航指令 ===
+
+總距離: 8.0 units
+約等於: 3 個攤位
+總步驟: 5
+
+導航指令:
+1. 面向Pixar RenderMan攤位，準備出發。
+2. 直走經過左手邊的Pixar RenderMan。
+3. 走到Sony前右轉。
+4. 走過 1 個攤位。
+5. 目的地就在前方的 Compute Graphics World / COP Communications。

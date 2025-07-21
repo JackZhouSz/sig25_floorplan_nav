@@ -82,6 +82,25 @@ Before starting grid creation, we need to obtain the raw booth data from the onl
     notebooks/01_build_grid.ipynb
     ```
 
+4.  **Extract Booth Details (Optional)**: Extract additional exhibitor information from the online exhibition directory for enhanced navigation context.
+    
+    **Process:**
+    1. Visit `https://siggraph25.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm`
+    2. Expand all exhibitors to show the complete list
+    3. Save the HTML page as `booth.html`
+    4. Run the booth detail extraction scripts:
+    ```bash
+    # Parse basic booth data from HTML
+    python scripts/booth_detail/parse_booth_data.py
+    
+    # Fetch detailed descriptions and categories
+    python scripts/booth_detail/fetch_booth_details.py
+    ```
+    
+    **Output**: `booth_data_detailed.json` containing booth names, URLs, descriptions, and categories for all 92+ exhibitors.
+    
+    > For detailed usage, see [`scripts/booth_detail/README.md`](scripts/booth_detail/README.md)
+
 ---
 
 ## 🚀 Main Workflow

@@ -1,0 +1,646 @@
+[
+  {
+    "name": "3dverse",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=504294",
+    "booth_id": "716",
+    "description": "3dverse is a cloud-native, real-time 3D operating system that enables the creation and deployment of scalable, web-based digital twins and collaborative 3D environments. Their platform supports interoperability with IoT, APIs, and AI, and is used across industries such as architecture, manufacturing, and smart cities for real-time visualization, predictive maintenance, and immersive training.",
+    "categories": "3D Graphics, Architecture Applications, Automotive Applications, Game Engines, Web 3D"
+  },
+  {
+    "name": "4Dviews",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234625",
+    "booth_id": "417",
+    "description": "4Dviews is a software development company specializing in 3D modeling, 3D scanning, animation, and augmented reality solutions. They provide advanced tools and services for immersive systems, education, and streaming technology, supporting industries that require high-quality 3D content and visualization.",
+    "categories": "3D Modeling, 3D Scanning, Animation/Film, Augmented Reality-Software and Services, Education/Training, Immersive System, Streaming Technology"
+  },
+  {
+    "name": "Abstract Group",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1080",
+    "booth_id": "307",
+    "description": "Abstract is a group of companies focused on developing bleeding-edge 3D technology. Our tech enables a diverse range of clients to deliver their projects on time, with massive cost-saving and on top of all, having much more fun while they're doing it. From leading game developers to VFX studios and the most beloved brands, they have one thing in common — they’re all using our products.",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Automotive Applications, CAD/CAM/CAE/CIM, Game Engines, Online Network Services, Plug-ins for Software, Rendering & Modeling"
+  },
+  {
+    "name": "ALLSIDES",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234584",
+    "booth_id": "609",
+    "description": "ALLSIDES, formerly Covision Media, is a cutting-edge A.I. technology company specializing in high-performance 3D scanning. Our revolutionary 3D scanners can automatically convert any physical object into a reality-grade and relightable 3D digital twin in a matter of minutes. The scanner is trusted by leading brands in the industry, including Inditex Group (Zara, Massimo Dutti, Bershka etc), Meta, adidas and NUREG, GORE-Tex, La Sportiva, and other top-tier tech and e-commerce companies, to mass-produce tens of thousands of reality-grade 3D assets. These assets are ideal for a wide range of applications, including Virtual Try-On, 2D virtual product photography, 3D e-commerce, and video from 3D.",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Artifical Intelligence (AI), Data Visualization, Game Engines, High Resolution Technologies, Rendering & Modeling"
+  },
+  {
+    "name": "AlmaLinux OS Foundation",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1306",
+    "booth_id": "429",
+    "description": "AlmaLinux OS is an open source, community-governed and forever-free enterprise Linux distribution focused on long-term stability and delivering a robust production-grade platform. With millions of downloads from a network of over 350 mirrors, AlmaLinux is an enterprise Linux distribution compatible with RHEL(r) and pre-Stream CentOS, and powers projects for governments, the defense sector, and scientific research institutions as well as numerous global business sectors and the web hosting industry. Adopted by some of today’s foremost open source ecosystem projects such as VMware, GitLab and Tenable, it’s available on all major public cloud platforms including AWS, Azure, Google Cloud, and Oracle OCI. The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the benefit of the AlmaLinux OS community. Visit https://almalinux.org",
+    "categories": "Engineering Application, Multimedia Tools & Applications, Networking Infrastructure, Workstations"
+  },
+  {
+    "name": "Animation Magazine",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1013",
+    "booth_id": "100",
+    "description": "Animation Magazine is the no. 1 source for information about the business, art, technology and visual effects of animation. This monthly print/digital publication and daily newsletter offer informative and insightful in-depth articles as well as timely news items to readers worldwide. Editorial content covers all forms of animation, including feature film, television, gaming, anime, technology, commercials, conferences, events and trends in the animation industry. The Magazine also hosts the World Animation and VFX Summit , November 3-6 at the Garland Hotel in No. Hollywood, California. Get a FREE digital or discounted print 1-yr subscription with promo code AMINTRO24. www.animationmagazine.net/subscribe",
+    "categories": "Education/Training, Media/Publications, Online Network Services"
+  },
+  {
+    "name": "ASRock Rack Inc.",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485298",
+    "booth_id": "721",
+    "description": "ASRock Rack is a leading server hardware vendor with a passion for reimagining the future. Built on our dedication to exceptional innovation, we design and manufacture motherboards and servers.\r\n\r\nFounded and operating in Taipei, Taiwan, ASRock Rack delivers scalable and highly reliable products for a wide range of applications, including Server Appliances, High-Performance Computing, AI, Cloud Computing, Hyper-Scalers, and Storage Server.\r\n\r\nSince 2013 ASRock Rack has built a large ecosystem of technology and distribution partners worldwide, and we aim to continue our growth. Our dedication and experience enable us to push the limits of technology from the cloud to the edge for our global customers.",
+    "categories": "Artifical Intelligence (AI), Mobile Computing, Virtual Reality Software/Hardware, Workstations"
+  },
+  {
+    "name": "AuraML",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234609",
+    "booth_id": "PP451",
+    "description": "Generative simulation for Industrial robots.",
+    "categories": "Artifical Intelligence (AI), Robotics and Gadgets, Simulation"
+  },
+  {
+    "name": "Autodesk",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1206",
+    "booth_id": "515",
+    "description": "Autodesk is changing how the world is designed and made. Our technology spans media and entertainment, architecture, engineering, construction, product design, and manufacturing, empowering innovators everywhere to solve challenges big and small. From mesmerizing blockbusters to immersive game worlds and cutting-edge animation, our software provides artists and studios with the right tools to work, the ability to think flexibly, and the power to transform dreams into reality.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Motion Capture Software/Hardware, Rendering & Modeling, Simulation, Visual Effects Software"
+  },
+  {
+    "name": "Backlight",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1065",
+    "booth_id": "415",
+    "description": "Backlight replaces broken media workflows with simple, AI-powered products designed to make teams faster and businesses stronger. Through our integrated suite of video solutions, including Iconik, Wildmoka, Ftrack, Celtx, and Zype, we empower creative and production teams to focus on what matters most: crafting compelling stories that drive impact. \r\n\r\nIconik – Media asset management that handles all your assets securely with full visibility. AI-powered search finds what you need instantly.\r\n\r\nCinesync – Real-time review and collaboration. Get approvals quickly and securely, wherever your team is located.\r\n\r\nFtrack – Project management that studios trust to deliver complex productions on time and under budget.\r\n\r\nSee what seamless workflows actually look like.\r\n‍\r\nKill pipeline bottlenecks.\r\nStop the start-stop cycle that kills creative momentum. Streamlined review and asset management keeps projects flowing from one asset to the next.\r\n‍\r\nGlobal teams, zero distance.\r\nCollaborate like you're in the same room, even across continents and time zones. No more shipping drives internationally.\r\n‍\r\nFind assets in seconds, not hours.\r\nAI-powered search cuts through 200TB archives instantly. Spend time creating, not hunting through folders.\r\n‍\r\nIterate at creative speed.\r\nWhen your director wants three lighting options before lunch, you deliver them. In original quality. Every time.\r\n‍\r\nNever lose context.\r\nEvery revision, note, and approval travels with your asset. Get the full story behind every creative decision.",
+    "categories": "Animation/Film, Multimedia Tools & Applications, Streaming Technology, Visual Effects Software"
+  },
+  {
+    "name": "Beeble AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234600",
+    "booth_id": "712",
+    "description": "Beeble AI is an AI-powered platform that automates the analysis of financial reports and earnings calls, providing investors and analysts with actionable insights, sentiment analysis, and strategic recommendations. The tool is designed to simplify complex financial data and support data-driven decision-making in the investment sector.",
+    "categories": ""
+  },
+  {
+    "name": "Blender",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234575",
+    "booth_id": "701",
+    "description": "Blender is a free and open-source 3D creation suite that supports the entire 3D pipeline, including modeling, rigging, animation, simulation, rendering, compositing, and motion tracking. It is widely used by artists, studios, and developers for creating films, visual effects, art, 3D games, and more, and is supported by a global community.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, Animation/Film, Architecture Applications, Automotive Applications, Data Visualization, Education/Training, Game Engines, High Performance Graphics Processors, High Resolution Technologies, Multimedia Tools & Applications, Rendering & Modeling, Scientific Visualization, Simulation, Virtual Reality Software/Hardware, Visual Effects Software"
+  },
+  {
+    "name": "BlindSimulator",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234622",
+    "booth_id": "234",
+    "description": "BlindSimulator leverages XR technology to support inclusive urban development and accessibility-driven public policy.\r\nOur immersive simulation enables policymakers, educators, and citizens to experience the challenges faced by people with visual impairments, fostering empathy and informed decision-making.\r\nWe help governments advance social equity, universal design, and human-centered innovation through experiential technology.",
+    "categories": "Education/Training, Virtual Reality Software/Hardware"
+  },
+  {
+    "name": "Bones Studio",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234585",
+    "booth_id": "615",
+    "description": "Perfecting Motion Capture\r\nMotion is at the heart of what we do. Our journey began with motion capture technology, which continues to be foundational to our services. We provide complete solutions from performer casting to final data delivery. We record full performance capture with cutting-edge equipment to ensure precise and natural movement data.\r\n\r\n3D Scanning – Capturing Imperfections\r\nWe operate state-of-the-art 3D scanners that create detailed digital replicas with exceptional fidelity. Our scanning captures what makes people unique – the small details, skin textures, and characteristic expressions that give each person their identity, resulting in truly believable digital humans.\r\n\r\nGameplay Animations – Perfect Synergy\r\nOur evolution continued with the creation of an animation department where we’ve gathered seasoned animators. Our talented team delivers high-quality animations that met standards of several AAA titles. By combining motion capture, 3D scanning, and animation expertise under one roof, we create powerful synergies that benefit our clients through faster delivery, reduced costs, and enhanced quality.\r\n\r\nData for Machine Learning – Fueling the Future\r\nWe’ve become a leader in providing data for machine learning. We create custom-made datasets tailored to specific training needs, while also offering our ready-to-train RigPlay – the largest machine learning dedicated dataset of 3D human motion data available. Our data powers innovation at industry giants like Nvidia and Unity, driving the future of animation technology.",
+    "categories": "3D Scanning, Animation/Film, Artifical Intelligence (AI)"
+  },
+  {
+    "name": "Bournemouth University",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1328",
+    "booth_id": "335",
+    "description": "The National Centre for Computer Animation has been at the forefront of computer graphics and animation education and research in the UK since 1989.\r\nThe aim of the NCCA is to promote science in the service of the arts and to embed a theoretical underpinning within a contemporary professional setting, allowing graduates to leave BU with highly sought-after skills in the computer animation, visual effects and computer games industries.\r\nBournemouth University has been granted Houdini Certified School status by Side Effects Software, is the academic partner for Unreal Engine and a number of our computer animation degrees are accredited by ScreenSkills, indicating the quality of those courses.\r\nOur ArtStation page tells a better story about our students than any socials: \r\nhttps://www.artstation.com/nationalcentreforcomputeranimation",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Animation/Film, Education/Training, Game Engines, Media/Publications, Rendering & Modeling, Scientific Visualization, Simulation"
+  },
+  {
+    "name": "Bria Visual AI Platform",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1330",
+    "booth_id": "725",
+    "description": "Bria AI is a responsible and open visual Generative AI platform for commercial use. It offers text-to-image models trained on licensed data, with source code access for scalable, on-brand content creation. Featuring a patented attribution engine and regulatory compliance, Bria serves leading brands and creative industries.",
+    "categories": "Artifical Intelligence (AI)"
+  },
+  {
+    "name": "CAMPUS VFX | LOST BOYS VANCOUVER",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234572",
+    "booth_id": "337",
+    "description": "Campus VFX | Lost Boys Vancouver is a specialized visual effects school in Canada, offering accelerated, hands-on diploma programs in VFX compositing, effects technical direction, and digital lighting. The school focuses on industry-ready training, mentorship, and project-based learning, preparing students for careers in film, television, and digital media.",
+    "categories": "3D Modeling, Animation/Film, Education/Training, Rendering & Modeling, Visual Effects Software"
+  },
+  {
+    "name": "Captury",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234586",
+    "booth_id": "306",
+    "description": "Captury provides advanced markerless motion capture solutions for full-body, finger, and facial tracking. Their technology is used in 3D game development, VFX, virtual reality, live entertainment, and life sciences, enabling precise, real-time motion data capture for multiple actors without the need for markers.",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Animation/Film, Augmented Reality-Software and Services, Engineering Application, Game Engines, Imaging, Medical Application, Motion Capture Software/Hardware, Rendering & Modeling, Simulation, Streaming Technology, Virtual Reality Software/Hardware, Visual Effects Software"
+  },
+  {
+    "name": "Carnegie Mellon ETC",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1026",
+    "booth_id": "430",
+    "description": "The ETC is the premiere professional graduate program for interactive entertainment as it’s applied across a variety of fields. Our unique, two-year, Master of Entertainment Technology (MET) degree was founded as a joint venture between Carnegie Mellon University’s School of Computer Science and the College of Fine Arts.  The ETC Mission is to create inclusive and interdisciplinary educational opportunities that prepare students for professional careers through project-centric learning, conservatory instruction, community engagement, and industry collaboration. The ETC Vision is to shape students into creative leaders who imagine and build exemplary experiences to entertain, educate, transform, and inspire.",
+    "categories": ""
+  },
+  {
+    "name": "CenterGrid Virtual Studio",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1027",
+    "booth_id": "511",
+    "description": "CenterGrid's Virtual Studio provides high-powered GPU Workstations, Rendering Nodes, High Performance Storage and Network all wrapped with 24 x 7 management and support. We deliver Cloud services for VFX Virtual Production.  Our Virtual Studio is remote worker enabled. CenterGrid offers full-service technology solutions to US businesses that need an expert, trustworthy, and accountable partner. We are committed to excellence by providing continuous IT expertise, guidance, and problem-solving that ensures our customers enjoy a competitive advantage that enables them to succeed and scale effectively into the future.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Data Visualization, Engineering Application, Game Engines, High Performance Graphics Processors, Networking Infrastructure, Online Network Services, Rendering & Modeling, Storage Devices, Streaming Technology, Visual Effects Software"
+  },
+  {
+    "name": "CGS ORIS",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234610",
+    "booth_id": "709",
+    "description": "CGS ORIS | Americas is a leader in high-resolution material scanning and PBR texture creation for digital visualization workflows. Our advanced technologies enable designers, 3D artists, and visualization teams to accurately capture, digitize, and reproduce real-world materials with unmatched realism for use in AR/VR, product configurators, simulation, and architectural visualization.\r\nAt the heart of our offering is the METIS Scanner, engineered specifically for photometric and geometric surface capture—ideal for generating accurate roughness, normal, displacement, and now anisotropic maps for PBR pipelines. Combined with a suite of powerful color management tools, X GAMUT, COLOR TUNER, and CERTIFIED, we deliver complete, integrated solutions from scan to screen to surface.\r\nWhether you're building digital twins, creating immersive room scenes, or populating a CPQ platform with high-fidelity textures, CGS ORIS helps bring your physical materials to life in the digital world. Visit our booth to see how we bridge physical and digital through precision scanning and color science.",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Automotive Applications, Digital Imaging, Imaging, Rendering & Modeling, Simulation, Virtual Reality Software/Hardware, Web 3D"
+  },
+  {
+    "name": "CGTrader",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234601",
+    "booth_id": "322",
+    "description": "CGTrader is the world's largest marketplace for licensable 3D models, custom 3D design, and innovative AI-powered visual solutions.  Founded in 2011 with a mission to be the world's preferred source for 3D content by fostering a designer-first community.\r\n\r\nFor 3D designers, we offer a platform to showcase and sell models to a global audience, with an industry-leading royalty rate.  Designers can also find freelance projects, connect directly with customers, and engage with a vibrant community of over 11 million users for feedback and growth.\r\n\r\nFor businesses or hobbyists in gaming, AR/VR, e-commerce, architecture, and more, CGTrader provides access to over 2 million professional 3D models.  Our enterprise solution, Modelry, empowers companies with scalable 3D and AR experiences to boost engagement and sales.\r\n\r\nCGTrader is a global force with users from over 180 countries, driving the 3D content revolution by making technology more accessible and powerful.  We aim to be at the forefront of the shift towards immersive digital experiences, shaping the future of how 3D content is created, shared, and utilized.",
+    "categories": "3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, CAD/CAM/CAE/CIM, Data Visualization, Digital Imaging, Education/Training, Rendering & Modeling, Scientific Visualization, Simulation, Web 3D"
+  },
+  {
+    "name": "Chat3D",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1316",
+    "booth_id": "529",
+    "description": "Chat3D develops simple to use and quick 3D shape creation solutions for professionals.  Through AI, we bring the best software solution to provide an alternative to standard CAD solutions that quickly generates 3D shapes in an iterative way. This approach not only fosters innovation but also reduces the time taken for development and enhances overall efficiency of clients.   Both engineering industrial clients and video games trust our solution to improve their operations and profitably navigate rapid shifts in business models and customer expectations.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Game Engines, Visual Effects Software"
+  },
+  {
+    "name": "colormass",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234619",
+    "booth_id": "634",
+    "description": "colormass is a SaaS platform that simplifies and scales the management of 3D content - all in one centralized, cloud-based ecosystem. From rendering marketing visuals to building configurators and exporting assets for diverse applications, colormass streamlines every aspect of 3D content management.\r\n\r\nIn addition, colormass offers advanced 3D digitization tools, including an svBRDF scanner, a Tiling Editor, and Material AI - which transforms single images into high-quality PBR materials.\r\n\r\nTrusted by leading brands across the automotive, interior design, apparel, and luxury sectors, colormass enables companies to digitize tens of thousands of new products each year and manage 3D data at scale.",
+    "categories": "3D Graphics, 3D Scanning, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, Digital Imaging, Rendering & Modeling, Web 3D"
+  },
+  {
+    "name": "Computational Visual Media",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234598",
+    "booth_id": "723",
+    "description": "Computational Visual Media is an academic and professional platform dedicated to the advancement of visual computing, computer graphics, and related education. It supports research, collaboration, and knowledge sharing in the field of visual media technologies.",
+    "categories": "Education/Training"
+  },
+  {
+    "name": "Computer Graphics World / COP Communications",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1034",
+    "booth_id": "109",
+    "description": "CGW is the only publication exclusively serving the CG industry for over 40 years. We cover the latest news in VFX, animation, virtual production, game design, AI, CAD, and more.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Data Visualization, Digital Imaging, Visual Effects Software, Workstations"
+  },
+  {
+    "name": "Corbel3D",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1283",
+    "booth_id": "214",
+    "description": "Founded in 2014, Corbel (Pixel Light Effects), is an innovative company specializing in state-of the-art photogrammetry scanning equipment. We are proud to contribute to the advancement of visual storytelling and digital artistry.",
+    "categories": "3D Modeling, 3D Rapid Prototyping, 3D Scanning"
+  },
+  {
+    "name": "CyberGlove Systems",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234630",
+    "booth_id": "535",
+    "description": "CyberGlove Systems is the worldwide leader in data glove technology, offering sophisticated hand-centric 3D motion capture solutions. Their products enable detailed capture of finger, hand, and arm movements for applications in virtual reality, industrial engineering, academic research, and simulation, featuring both kinesthetic force and vibrotactile feedback.",
+    "categories": "3D Graphics, 3D Modeling, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, CAD/CAM/CAE/CIM, Consulting, Education/Training, Engineering Application, Immersive System, Input Devices, Motion Capture Software/Hardware, Robotics and Gadgets, Scientific Visualization, Simulation, Virtual Reality Software/Hardware"
+  },
+  {
+    "name": "Datech Learning",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234633",
+    "booth_id": "235",
+    "description": "Datech Learning is a technology and IT consulting company, providing solutions and services in the fields of information technology, digital transformation, and business process optimization. Their expertise includes IT infrastructure, software development, and digital workflow integration for a variety of industries.",
+    "categories": ""
+  },
+  {
+    "name": "Decart",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234629",
+    "booth_id": "229",
+    "description": "Decart is a technology company specializing in real-time generative AI experiences. Their core platform leverages advanced AI infrastructure to enable efficient training and inference of large generative models, powering applications in gaming, virtual reality, and interactive media. Decart's Oasis engine delivers real-time, interactive 3D content generation for games, simulations, and creative industries.",
+    "categories": "2D Graphics, Artifical Intelligence (AI), Augmented Reality-Software and Services, Game Engines, Immersive System, Interactive Display Technologies, Rendering & Modeling, Streaming Technology"
+  },
+  {
+    "name": "Deemos Tech",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1312",
+    "booth_id": "216",
+    "description": "Rodin & ChatAvatar: Closest to Production-ready 3D Assets Generator\r\nRodin and ChatAvatar by DeemosTech are advanced 3D asset generators. ChatAvatar is production-ready, creating hyper-realistic 3D facial assets with PBR textures from text or images. Rodin, nearing production readiness, generates realistic 3D models from text or images. Both tools use proprietary diffusion models and a Production-Ready Assets dataset, producing CG-friendly assets for Unity, Unreal Engine, and Maya.",
+    "categories": "3D Graphics, 3D Modeling, 3D Rapid Prototyping, Animation/Film, Artifical Intelligence (AI), Rendering & Modeling"
+  },
+  {
+    "name": "Defined.ai",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234587",
+    "booth_id": "325",
+    "description": "Defined.ai is a leading provider of ethical AI data, offering a marketplace for high-quality, ethically sourced training datasets and custom data services. The company enables organizations to accelerate AI development with secure, bias-free data, and partners with major tech companies for advanced AI solutions.",
+    "categories": "Artifical Intelligence (AI)"
+  },
+  {
+    "name": "Dell Technologies",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1040",
+    "booth_id": "301",
+    "description": "We are among the world’s leading technology companies helping to transform people’s lives with extraordinary capabilities. From hybrid cloud solutions to high-performance computing to ambitious social impact and sustainability initiatives, what we do impacts everyone, everywhere.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, CAD/CAM/CAE/CIM, Computer-Video Interfacing, Data Visualization, Digital Imaging, Education/Training, Engineering Application, Eye Tracking Devices, Game Engines, Geographic Information Systems Software, Graphics Accelerator Boards-Hardware, High Performance Graphics Processors, High Resolution Technologies, Imaging, Immersive System, Input Devices, Interactive Display Technologies, Mobile Computing, Monitors/Displays/Terminals, Motion Capture Software/Hardware, Multimedia Tools & Applications, Networking Infrastructure, Rendering & Modeling, Robotics and Gadgets, Scientific Visualization, Simulation, Storage Devices, Streaming Technology, Video Effects Equipment, Virtual Reality Software/Hardware, Visual Effects Software, Web 3D, Workstations"
+  },
+  {
+    "name": "DGG RapidPipeline",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1196",
+    "booth_id": "606",
+    "description": "DGG is a deep tech company founded in 2018 starting with researching automation technology to remove an essential bottleneck in real-time 3D content creation, at the world-famous Fraunhofer institute. Having also been involved in standardization (co-creating the glTF 3D file format and working on open source initiatives), DGG co-founded the Khronos 3D Commerce group and has since then supported developers, platform partners and retailers with its RapidCompact technology that helps to upscale 3D content creation for real-time 3D and XR applications – or, as the startup’s own slogan says, “Making 3D accessible”.",
+    "categories": "3D Graphics, CAD/CAM/CAE/CIM, Rendering & Modeling, Web 3D"
+  },
+  {
+    "name": "Drexel University",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1047",
+    "booth_id": "329",
+    "description": "Drexel University is a comprehensive research university based in Philadelphia, known for its cooperative education program and strong emphasis on experiential learning. The university offers a wide range of academic programs and is recognized for its innovation in higher education and industry partnerships.",
+    "categories": "Education/Training"
+  },
+  {
+    "name": "EA Sports",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234624",
+    "booth_id": "PP443",
+    "description": "EA SPORTS is one of the most iconic brands in entertainment – connecting hundreds of millions around the world to the sports they love through a portfolio of industry-leading video games.",
+    "categories": "3D Graphics, 3D Modeling, Game Engines, Motion Capture Software/Hardware, Rendering & Modeling"
+  },
+  {
+    "name": "EIZO Inc.",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485216",
+    "booth_id": "310",
+    "description": "EIZO is a visual technology company dedicating the last 50 years to developing high-end, specific use monitors. This year EIZO has been awarded a Scientific and Technical Award from the Academy of Motion Picture Arts and Sciences for its ColorEdge CG Series monitors with integrated self-calibration sensors. For Post-Production and VFX, the ColorEdge line of Self-Calibrating Wide Gamut monitors features built-in calibration sensors, uniformity correction, and 3D Programmable LUTs to ensure any professional's most accurate image reproduction monitor.",
+    "categories": "3D Graphics, Animation/Film, Digital Imaging, High Resolution Technologies, Imaging, Interactive Display Technologies, Monitors/Displays/Terminals, Video Effects Equipment, Visual Effects Software"
+  },
+  {
+    "name": "FACEGOOD",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234594",
+    "booth_id": "320",
+    "description": "FACEGOOD provides professional facial motion capture solutions, including hardware and software for high-fidelity facial animation. Their technology is used in film, game development, and virtual production, enabling accurate and real-time facial performance capture for digital characters.",
+    "categories": "Motion Capture Software/Hardware"
+  },
+  {
+    "name": "Foundry",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1062",
+    "booth_id": "528",
+    "description": "Foundry has a heritage of more than 25 years, developing creative software for the Media and Entertainment industry. Its portfolio of award-winning products solves complex visualization challenges to turn incredible ideas into reality. \r\n\r\nWorking with creative leaders around the globe, Foundry products are used to create breathtaking visual effects and animation and have been integral in the making of every VFX Academy Award-winning film for the past decade.",
+    "categories": "Visual Effects Software"
+  },
+  {
+    "name": "FUTUREDAYS",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234582",
+    "booth_id": "611",
+    "description": "FUTUREDAYS focuses on virtual reality hardware and software solutions, providing immersive experiences for entertainment, education, and business applications. Their products aim to enhance user engagement and interactivity in virtual environments.",
+    "categories": "Virtual Reality Software/Hardware"
+  },
+  {
+    "name": "GAMFF",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234612",
+    "booth_id": "714",
+    "description": "GAMFF(Gyeongsangbuk-do International AI·Metaverse Film Festival)\r\n\r\nGAMFF is a groundbreaking global festival where AI technology meets the future of filmmaking.\r\nExploring the convergence of AI, VFX, and immersive media, GAMFF redefines creative storytelling and showcases a new paradigm in film production.\r\nCreators, tech experts, and researchers from around the world gather to collaborate, network, and envision the future of AI-driven content.\r\nThrough international conferences, B2B exhibitions, and immersive showcases, GAMFF fosters a global creative ecosystem.\r\nGyeongsangbuk-do leads the way in accelerating AI and virtual convergence technologies, shaping the future of Korea’s digital content industry.\r\nLeading the Future of AI and Content Creation — Join us at GAMFF 2025!",
+    "categories": "2D Graphics, 3D Graphics, Animation/Film, Artifical Intelligence (AI), Media/Publications, Scientific Visualization"
+  },
+  {
+    "name": "GIGABYTE",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234618",
+    "booth_id": "629",
+    "description": "GIGABYTE is an engineer, visionary, and leader in the world of tech that uses its hardware expertise, patented innovations, and industry leadership to create, inspire, and advance. Renowned for over 30 years of award-winning excellence in motherboards, graphics cards, monitors, storage devices and PC peripherals, GIGABYTE is a cornerstone in the HPC community, providing businesses with server and data center expertise to accelerate their success. At the forefront of evolving technology, GIGABYTE is devoted to inventing smart solutions that enable digitalization from edge to cloud, and allow customers to capture, analyze, and transform digital information into economic data that can benefit humanity and 'Upgrade Your Life'. Please visit https://www.gigabyte.com/ for more information.",
+    "categories": "Artifical Intelligence (AI)"
+  },
+  {
+    "name": "GRACIA AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234595",
+    "booth_id": "323",
+    "description": "Gracia AI specializes in producing completely photorealistic volumetric videos for XR, leveraging Gaussian splatting technology. This allows users to walk around the video and view it from any angle, offering an immersive sense of presence. The technology is the best fit for capturing human performances to improve learning skills in XR. Gracia serves as a one-stop shop for professional creators, providing the necessary technology and integrations to produce and deliver this new type of content.",
+    "categories": "Artifical Intelligence (AI), Augmented Reality-Software and Services, Education/Training, Immersive System, Medical Application, Rendering & Modeling, Virtual Reality Software/Hardware"
+  },
+  {
+    "name": "Greneta",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234620",
+    "booth_id": "707",
+    "description": "Greneta develops an AI-powered 3D optimization engine that dramatically reduces file size—up to 99.6%—while preserving sub-millimeter precision and photorealistic detail.\r\nOur technology enables efficient rendering and seamless asset delivery across AR/VR/XR, digital twins, and simulation environments.\r\nWe help teams overcome performance bottlenecks by streamlining 3D data preparation for real-time applications.",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Immersive System, Online Network Services, Web 3D"
+  },
+  {
+    "name": "Haply Robotics",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234571",
+    "booth_id": "728",
+    "description": "Haply Robotics is a Canadian technology company redefining human–machine interaction through advanced haptic interfaces. Based in Montreal and founded in 2018, Haply builds the world’s most portable, high-fidelity force-feedback devices enabling users to physically feel the digital world.\r\n\r\nAt Haply, we believe touch is a critical part of how humans understand and manipulate their environment. As virtual, augmented, and robotic technologies grow more immersive, haptics becomes essential to close the loop between humans and machines. Our mission is to make touch a universal language in digital experiences accessible, precise, and intuitive.\r\n\r\nOur flagship product, the Inverse3, is a compact 3-DOF force-feedback controller that delivers precise, real-time tactile responses. It allows users to simulate real-world sensations like resistance, vibration, and texture when interacting with digital objects. The Inverse3 X and our MinVerse 3D mouse expand this offering into advanced simulation and extended reality applications. Unlike legacy haptic systems, our devices are portable, affordable, and easy to integrate into a variety of platforms.\r\n\r\nHaply’s technology is trusted by leading organizations in: \r\n\r\nMedical Simulation & Training: Surgeons and trainees use our haptic tools to simulate complex procedures gaining muscle memory and precision without risk.\r\n\r\nTeleoperation & Robotics: Operators control real-world robotic systems with intuitive, physical feedback that improves precision and safety.\r\n\r\n3D Design & Digital Content Creation: Artists and engineers sculpt and manipulate digital models with tools that feel like extensions of their hands.\r\n\r\nExtended Reality (XR): Our haptics bring realism and embodiment to immersive environments—enhancing training, gaming, and remote collaboration.\r\n\r\nAt SIGGRAPH 2025, we are showcasing how haptic feedback is transforming digital interaction. Visitors will experience real-time force feedback in medical simulators, remote robotic control systems, and creative XR workflows. You’ll get hands-on with technology that bridges physical and virtual bringing sensation to otherwise sterile digital spaces.\r\n\r\nBehind our innovation is a team of engineers, designers, and researchers committed to making haptics scalable and developer-friendly. Our open API and SDK allow rapid integration into Unity, ROS, and custom platforms. Whether you’re developing simulations, building robotic systems, or creating immersive digital art, Haply gives your users the ability to feel their work.\r\n\r\nOur work has been recognized globally, including a CES Innovation Award and collaborations with companies.\r\n\r\nHaply is shaping a future where digital interaction is not only visual and auditory, but tactile. We invite you to experience our vision at SIGGRAPH 2025 in Vancouver. Visit us at Booth 728 to try our haptic devices and see how touch can transform your technology.\r\n\r\nTouch the future. Build with Haply.",
+    "categories": "3D Modeling, CAD/CAM/CAE/CIM, Input Devices, Robotics and Gadgets, Simulation"
+  },
+  {
+    "name": "Hosted Advantage",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234578",
+    "booth_id": "610",
+    "description": "Hosted Advantage provides professional 3D printing, rapid prototyping, and CAD services, offering solutions for 3D modeling, scanning, and additive manufacturing. Their expertise includes consultation, design, and production support for industries ranging from aerospace to consumer products, helping clients accelerate product development and optimize engineering workflows.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, CAD/CAM/CAE/CIM, Computer-Video Interfacing, Consulting, Digital Imaging, Education/Training, Engineering Application, Game Engines, Geographic Information Systems Software, Graphics Accelerator Boards-Hardware, High Performance Graphics Processors, High Resolution Technologies, Networking Infrastructure, Online Network Services, Rendering & Modeling, Robotics and Gadgets, Scientific Visualization, Simulation, Storage Devices, Streaming Technology, Video Effects Equipment, Virtual Reality Software/Hardware, Visual Effects Software, Workstations"
+  },
+  {
+    "name": "Houdini",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1156",
+    "booth_id": "717",
+    "description": "For over thirty five years, SideFX has been providing artists with procedural 3D animation and visual effects tools designed to create the highest-quality cinematic results. We are passionate about what our customers do because our roots are in production, both as artists and as pioneering technical innovators.",
+    "categories": "3D Modeling, Visual Effects Software"
+  },
+  {
+    "name": "HP",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1072",
+    "booth_id": "621",
+    "description": "HP (Hewlett-Packard) is a global leader in personal computing, printing, and related hardware and software solutions. Founded in 1939 and headquartered in Palo Alto, California, HP is renowned for its innovation in laptops, desktops, printers, and enterprise IT solutions. The company serves consumers, businesses, and institutions worldwide, focusing on technology that improves lives and work. HP is recognized for its strong brand, extensive product portfolio, and commitment to sustainability and digital transformation.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Data Visualization, Motion Capture Software/Hardware, Rendering & Modeling, Visual Effects Software, Workstations"
+  },
+  {
+    "name": "Huawei",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234596",
+    "booth_id": "635,",
+    "description": "Huawei is a global leader in telecommunications, networking equipment, and consumer electronics, headquartered in Shenzhen, China. Founded in 1987, Huawei provides a wide range of products and services including mobile devices, cloud computing, AI solutions, and 5G infrastructure, serving customers in over 170 countries and driving innovation in digital connectivity worldwide.",
+    "categories": "Telecom equipment, Networking equipment, Consumer electronics, Semiconductors, Artificial intelligence, Cloud computing, Internet of things"
+  },
+  {
+    "name": "IBV- MOVE4D",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485273",
+    "booth_id": "428",
+    "description": "At the Instituto de Biomecánica (IBV), we study the behaviour of the human body and how it interacts with products, the environment and services that people use.\r\nWe combine know-how from biomechanics, ergonomics and emotional engineering, which we apply through different areas of knowledge to several sectors in order to provide a response to their challenges and help foster business innovation.",
+    "categories": "3D Modeling, 3D Scanning"
+  },
+  {
+    "name": "imagine.io",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234591",
+    "booth_id": "420",
+    "description": "Imagine.io is the leading all-in-one product visualization platform, empowering brands to create stunning visual experiences effortlessly using advanced 3D and generative AI technology. Designed specifically for product visuals, Imagine.io enables eCom, marketing, sales, product development, & more teams to produce high-quality product imagery across every essential format—from detailed product silos and inspiring lifestyle scenes, to interactive configurators, immersive 360-degree spins, dynamic videos, and engaging augmented reality experiences. By consolidating these capabilities into a single intuitive solution, Imagine.io streamlines digital asset creation, reduces costs associated with traditional photoshoots, and helps brands scale content efficiently to drive higher conversions and deeper customer engagement.\r\n\r\nThe cutting-edge real-time 3D graphics technology powering the Imagine platform is built by a team of 3D experts with cloud-based rendering technology all wrapped into an easy-to-use web interface.  Creating 3D images in minutes instead of hours or days compared to studio photography at a fraction of the cost. Our 3D content is proven to drastically save time and money while dramatically improving sales and profits through CTR, CVR, and return rate improvements.\r\n\r\nKey Benefits:\r\n-Produce the highest-quality photorealistic 3D images, videos, virtual showrooms, and augmented reality experiences \r\n-Save 70%+ of the costs and 80%+ of the time creating product images\r\n-Improve CTR in Google Shopping, marketplaces, and encourage views deeper on your D2C with better quality lead assets\r\n-Get a massive lift on eCommerce conversion rates (customer studies from 55% to over 500%!)\r\n-Create prototypes faster and get pre-orders before manufacturing\r\n-Automate your 'shotlist' in 3D\r\n-Add more interactive formats to your PDPs where applicable - 360s, augmented reality, configurators\r\n\r\nRecognitions\r\n-Awarded Top 3D eCommerce Product Visualization Platform for 2025 (Retail Tech Insights)\r\n-2024 Finalist Best 3D Visualization & Imaging Company (Furniture Today)\r\n-Trusted by thousands of leading manufacturers, brands, and retailers powering >$20B in GMV on the digital shelf annually",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, CAD/CAM/CAE/CIM, Digital Imaging, Imaging, Multimedia Tools & Applications, Rendering & Modeling"
+  },
+  {
+    "name": "International Computer Concepts",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1082",
+    "booth_id": "713",
+    "description": "For over 25 years International Computer Concepts (ICC) has been a leading specialized technology systems integrator with broad expertise in standard and customized server, workstations, storage, and networking solutions for a wide variety of industries and markets.",
+    "categories": "3D Graphics, 3D Modeling, Artifical Intelligence (AI), Computer-Video Interfacing, Data Visualization, Engineering Application, High Performance Graphics Processors, Scientific Visualization, Visual Effects Software, Workstations"
+  },
+  {
+    "name": "IO Industries Inc.",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1311",
+    "booth_id": "613",
+    "description": "IO Industries Inc. designs cutting-edge digital video equipment. Since 1991 we have focused on providing our customers with high performance and high quality solutions for all types of digital video applications.\r\n\r\n●  Volumetric Capture  \r\n●  4D Face/Body Scanning  \r\n●  Compact POV Shooting  \r\n●  Machine Vision  \r\n●  Advanced Imaging\r\n●  Resolutions up to 8K/65MP \r\n●  Frame Rates into the 1000's of fps",
+    "categories": "3D Scanning, Aerospace Applications, Animation/Film, Artifical Intelligence (AI), Digital Imaging, High Resolution Technologies, Imaging, Motion Capture Software/Hardware, Scientific Visualization, Virtual Reality Software/Hardware"
+  },
+  {
+    "name": "Kwantlen Polytechnic University",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234570",
+    "booth_id": "333",
+    "description": "Entertainment Arts KPU is a space for curious, creative minds to explore, experiment, and shape the future of visual storytelling. Located in British Columbia, our programs in 3D Animation and 3D Modelling, Visual Effects, Game Development, and Foundation in Entertainment Arts are designed for students who learn best by doing and reflecting on the process along the way.\r\nHere, students are encouraged to take creative risks, collaborate with peers, and develop their own artistic voice. Our labs are active studios where ideas are tested, mistakes are welcomed, and iteration is part of the journey. We focus on strong foundations in design, storytelling, and digital craft, while staying closely connected to the evolving needs of the creative industries.\r\nEntertainment Arts KPU is a place to find your direction, push your thinking, and build a body of work that reflects who you are and what you care about. Here, we’re not just preparing students for opportunities in the creative industries, we’re also providing a creative playground for them to grow into artists, storytellers, and collaborators ready to shape what comes next.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, Animation/Film, Digital Imaging, Education/Training, Media/Publications, Rendering & Modeling, Video Effects Equipment"
+  },
+  {
+    "name": "Lightcraft Technology",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234607",
+    "booth_id": "710",
+    "description": "Lightcraft builds Jetset, a breakthrough iOS app that brings virtual production everywhere.",
+    "categories": "Animation/Film, Artifical Intelligence (AI), Augmented Reality-Software and Services, Computer-Video Interfacing, Mobile Computing, Motion Capture Software/Hardware, Virtual Reality Software/Hardware, Visual Effects Software, Web 3D"
+  },
+  {
+    "name": "Lightwheel",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234621",
+    "booth_id": "731",
+    "description": "Lightwheel is accelerating the real-world deployment of AI through simulation, reshaping how machines perceive, learn from, and interact with the physical world. Our offering includes highly generalizable, physics-accurate 3D assets and scenes, teleoperation-based data collection in simulation, and scalable simulation platform solutions. Recognized by industry leaders, Lightwheel is the leading provider of synthetic data and simulation technologies for embodied AI.",
+    "categories": "Robotics and Gadgets, Simulation"
+  },
+  {
+    "name": "Luma AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234627",
+    "booth_id": "733",
+    "description": "Luma AI is a pioneering generative AI company founded in 2021, specializing in transforming text, images, and video into high-quality 3D models and realistic video content. Their flagship products, Genie and Dream Machine, enable users to create interactive 3D assets and cinematic videos with ease, serving industries from gaming and design to marketing and entertainment.",
+    "categories": "Artifical Intelligence (AI)"
+  },
+  {
+    "name": "Lumio 3D",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1228",
+    "booth_id": "321",
+    "description": "Lumio 3D Co., Ltd. develops high-fidelity 3D reflectance and geometry scanning technologies, specializing in rapid and precise 3D face scanning for medical, cosmetic, and VR applications. Their H3 3D Face Scanner and software enable high-resolution, real-time 3D facial modeling, supporting pre-surgical planning and digital communication between doctors and patients.",
+    "categories": "3D Graphics, 3D Scanning"
+  },
+  {
+    "name": "Maxon",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485232",
+    "booth_id": "501",
+    "description": "Maxon makes powerful, user-friendly software that artists and others working in a variety of industries use for 2D/3D design, 3D modeling, motion graphics, animation, filmmaking, digital sculpting, product and architectural visualization, editing, and rendering.",
+    "categories": "3D Graphics, Animation/Film, Rendering & Modeling"
+  },
+  {
+    "name": "Mercenaries Engineering",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1224",
+    "booth_id": "529",
+    "description": "Mercenaries Engineering develops high-end software for the animation and VFX, including Guerilla Station/Guerilla Render & Rumba.\r\nMercenaries Engineering is a leading provider of services for film and series productions, with some of its biggest successes coming from high-profile projects like Arcane, Ford v. Ferrari, John Wick 4, Fireheart, and the highly anticipated Indiana Jones and the Dial of Destiny, and Miraculous the Movie.\r\nThe company's expertise in engineering and first class technical support has allowed it to play a key role in the success of these productions, contributing to their high-quality visual effects and overall production value.",
+    "categories": ""
+  },
+  {
+    "name": "Meshcapade",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234577",
+    "booth_id": "209",
+    "description": "Meshcapade is a technology company leveraging computer vision, graphics, and machine learning to create realistic 3D human avatars from photos, scans, and motion capture data. Their SMPL-based platform powers digital humans for e-commerce, gaming, apparel, and the metaverse, enabling accurate body modeling and animation for virtual environments.",
+    "categories": "Motion Capture Software/Hardware"
+  },
+  {
+    "name": "Metabuild",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234602",
+    "booth_id": "530",
+    "description": "Metabuild is a digital platform for building modeling and simulation, enabling users to create BIM models and digital twins for construction and real estate. The platform leverages AI to automate planning, simulate building performance, and optimize renovation strategies, supporting ESG analysis and portfolio management for the built environment.",
+    "categories": "Artifical Intelligence (AI), Interactive Display Technologies"
+  },
+  {
+    "name": "Microserve",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234613",
+    "booth_id": "431",
+    "description": "We provide innovative IT solutions to businesses of all sizes. Our services include cloud computing, cybersecurity, managed IT services, and more. Trust our team of experts to help your business stay ahead of the curve with cutting-edge technology solutions.",
+    "categories": "Consulting, Education/Training, High Resolution Technologies, Input Devices, Interactive Display Technologies, Mobile Computing, Monitors/Displays/Terminals, Networking Infrastructure, Storage Devices, Video Effects Equipment, Workstations"
+  },
+  {
+    "name": "Moment Factory",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234611",
+    "booth_id": "MF100",
+    "description": "Moment Factory is a multidisciplinary entertainment studio specializing in the creation, design, and production of immersive environments. Combining video, lighting, architecture, sound, and special effects, they craft custom multimedia experiences for public spaces, live events, transportation hubs, and theme parks worldwide.",
+    "categories": ""
+  },
+  {
+    "name": "MOVIN",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234616",
+    "booth_id": "221",
+    "description": "MOVIN is a technology company focused on 3D graphics, animation, and immersive solutions, providing advanced tools and services for augmented reality, robotics, and simulation. Their expertise spans motion capture, AI-driven content, and interactive streaming technologies for entertainment and industrial applications.",
+    "categories": "3D Graphics, Animation/Film, Artifical Intelligence (AI), Augmented Reality-Software and Services, Motion Capture Software/Hardware, Robotics and Gadgets, Simulation, Streaming Technology, Virtual Reality Software/Hardware"
+  },
+  {
+    "name": "NC AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234617",
+    "booth_id": "715",
+    "description": "NC AI, established in February 2025, is an independent AI-specialized subsidiary of NCSOFT.​\r\nWith 14 years of R&D experience, we've applied advanced AI technologies to NCSOFT’s global content, enhancing usability and development efficiency.​\r\nNow, backed by top-tier tech and hands-on expertise, NC AI delivers leading solutions across media content industries such as gaming and commerce.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Rendering & Modeling"
+  },
+  {
+    "name": "NVIDIA",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1348",
+    "booth_id": "P1022",
+    "description": "Since its founding in 1993, NVIDIA has been a pioneer in accelerated computing. The company’s invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined computer graphics, ignited the era of modern AI and is fueling industrial digitalization across markets. NVIDIA is now a full-stack computing company with data-center-scale offerings that are reshaping industry.",
+    "categories": ""
+  },
+  {
+    "name": "Odyssey",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234593",
+    "booth_id": "424",
+    "description": "Stories can change the world: We're an AI lab working to empower creatives to tell never-before-told stories.\r\n\r\nHumans have always been captivated by stories. Our earliest ancestors told tales around campfires. We created the novel, The Iliad, The Odyssey, The Vedas, The Analects, and One Thousand and One Nights. We broadcast pivotal moments to millions on television. We crafted cinematic masterpieces that shaped us, and pioneered visual effects that transported us to far-away lands. We created Casablanca, 2001: A Space Odyssey, The Godfather, Star Wars, Schindler’s List, Jurassic Park, Toy Story, and Interstellar.\r\n\r\nA new technology is emerging: With the rapid advancements in AI, we now see the earliest glimpses of an entirely new medium of entertainment. We call this interactive video—video you can both watch and interact with, imagined entirely by AI in real-time. It's something that looks like video you watch every day, but which you can interact and engage with in compelling ways (with your keyboard, phone, controller, and eventually audio). Consider it an early version of the Holodeck.\r\n\r\nWe're ready to bring this to life: Odyssey was founded by Oliver Cameron and Jeff Hawke, two veterans of self-driving cars and AI. Since then, they've recruited a world-class team of AI researchers from Waymo, Tesla, Meta, Cruise, Wayve, and Microsoft. To deliver on our mission, we've raised significant venture capital from GV, EQT Ventures, Air Street Capital, DCVC, Elad Gil, Garry Tan, Soleio, Jeff Dean, Kyle Vogt, Qasar Younis, Guillermo Rauch, Soumith Chintala, and researchers from OpenAI, DeepMind, Meta, and Midjourney. Ed Catmull, the founder of Pixar, serves on Odyssey’s board.",
+    "categories": "2D Graphics, 3D Graphics, Animation/Film, Artifical Intelligence (AI), Digital Imaging, Game Engines, Immersive System, Multimedia Tools & Applications, Simulation, Streaming Technology"
+  },
+  {
+    "name": "Panoptix AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234632",
+    "booth_id": "529",
+    "description": "PanopticAI is an award-winning deep tech company specializing in camera-based health and wellness monitoring solutions powered by AI and signal processing. Their software transforms consumer devices into real-time biomarker scanners, enabling remote healthcare, telemedicine, and wellness applications with medical-grade accuracy.",
+    "categories": ""
+  },
+  {
+    "name": "PAVILLON FRANCE",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1024",
+    "booth_id": "529",
+    "description": "Cap Digital is the biggest cluster for digital innovation in Europe, with 850 valued members. Cap Digital aims at promoting the Paris Region as one of the world leaders in digital contents, creative industries and services, from an industrial as well as a strategic point of view. Fostering R&D, helping companies to expand, networking our members and showcasing them throughout the world, are some of the activities we undertake to support the creativity and competitiveness of this important sector.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Engineering Application, Game Engines, Rendering & Modeling, Storage Devices, Visual Effects Software"
+  },
+  {
+    "name": "Persistant Studios - PopcornFX",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1225",
+    "booth_id": "529",
+    "description": "PopcornFX is a cutting-edge software company specializing in real-time visual effects solutions for video games, animation, immersive experiences, virtual production, and other interactive applications. We provide powerful tools and technologies that empower developers to create stunning visual effects and immersive experiences.\r\nWith a dedicated team of experts and a passion for innovation, we strive to push the boundaries of what's possible in the realm of visual effects.",
+    "categories": ""
+  },
+  {
+    "name": "Pixar RenderMan",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1248",
+    "booth_id": "201",
+    "description": "Pixar RenderMan is an Academy Award-winning rendering software developed by Pixar Animation Studios, used for creating photorealistic and stylized imagery in feature films, visual effects, and animation. Renowned for its physically-based rendering, advanced shading, and plugin support for major 3D applications, RenderMan is a production-proven tool trusted by leading studios worldwide.",
+    "categories": ""
+  },
+  {
+    "name": "PLASK",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234589",
+    "booth_id": "702",
+    "description": "PLASK is an AI-powered motion capture and animation platform that transforms video footage into professional 3D animations using only a webcam. The web-based tool leverages deep learning to extract precise motion data, making high-quality animation creation accessible and affordable for creators, game developers, and educators. PLASK supports seamless integration with industry-standard 3D software and offers intuitive controls for lighting, camera, and export options.",
+    "categories": "Animation/Film, Artifical Intelligence (AI), Motion Capture Software/Hardware, Web 3D"
+  },
+  {
+    "name": "Puget Systems",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485243",
+    "booth_id": "507",
+    "description": "Puget Systems blends the roles of system integrator, consultant, and workflow expert to provide our customers with tailor-made workstations and servers built to handle demanding workloads. Our process starts with a focus on client needs rather than what we have on the shelf. In fact, there are no pre-built systems on the shelf! Instead, we are a trusted partner who will listen to each unique situation and customize solutions to customer pain points. Those include desktop, rackmount, and mobile workstations, servers, and storage systems with a wide range of available hardware components.\r\n\r\nWe operate across a wide range of industries, with particular specialties in Media & Entertainment, AI & Machine Learning, and Engineering. No matter what your workflow is, though, we can help! Our Puget Labs team researches and tests application performance, while our experienced consultants draw on those results, additional information from our partners, and their own knowledge base to advise each client on the hardware that will best meet their needs. From there, our production team hand-crafts every system to rigorous standards and tests for stability before our shipping department carefully packages them for delivery. Our support staff is then available to help with any hardware difficulties for the life of the computer, including any repairs that may be necessary.",
+    "categories": "3D Graphics, 3D Modeling, Artifical Intelligence (AI), Consulting, Graphics Accelerator Boards-Hardware, High Performance Graphics Processors, Mobile Computing, Rendering & Modeling, Storage Devices, Workstations"
+  },
+  {
+    "name": "Qualisys",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1136",
+    "booth_id": "215",
+    "description": "In the competitive world of animation and film production, time is money. Qualisys solutions are designed to reduce downtime, streamline workflows, and accelerate production schedules. From quick and easy character setup to streamlined customizations of complex skeletons, Qualisys lets studios to focus on creating, not waiting. \r\n\r\nQualisys is a leader in motion capture technology, with over 35 years of experience and expertise in tracking 3D movement, empowering animation and entertainment professionals with reliable tools to bring their creative visions to life. Offering best-in-class mocap hardware, flexible marker sets, and real-time solving and streaming to animation platforms, our solutions ensure unmatched accuracy in capturing intricate performances. \r\n\r\nDesigned with efficiency and reliability in mind, Qualisys helps streamline workflows while meeting the high expectations of today’s production demands. Our systems provide the tools and support you need to excel, recognizing and enhancing the vital behind-the-scenes efforts that make cinematic magic possible.",
+    "categories": "Motion Capture Software/Hardware"
+  },
+  {
+    "name": "REEMO",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1291",
+    "booth_id": "529",
+    "description": "Reemo brings workstations, desktops and apps directly into your browser. A powerful and uncompromised remote experience.\r\n\r\nOur mission is to provide users with a seamless, low-latency browser-based remote experience, reducing bandwidth consumption and delivering exceptional performance. \r\n\r\nWith Reemo, you can effortlessly access and process data on secure locations, all while enjoying unmatched speed and reliability. Whether you're a professional or an enthusiast, Reemo empowers you to work with confidence, agility, and precision, from anywhere.\r\n\r\nJoin us and ask for the ultimate remote desktop experience with Reemo!\r\n\r\n-> hello@reemo.io",
+    "categories": "3D Modeling, Engineering Application, Game Engines, High Resolution Technologies, Immersive System, Multimedia Tools & Applications, Online Network Services, Rendering & Modeling, Streaming Technology, Workstations"
+  },
+  {
+    "name": "RenderHub",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1304",
+    "booth_id": "601",
+    "description": "A friendly community for 3D professionals, indie game developers, Daz Studio users, and amateurs. Buy quality 3D models, get free downloads, and more.",
+    "categories": "3D Graphics, 3D Modeling, CAD/CAM/CAE/CIM, Consulting, Digital Imaging, Game Engines, Immersive System, Rendering & Modeling, Simulation, Web 3D"
+  },
+  {
+    "name": "Roblox",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234588",
+    "booth_id": "734",
+    "description": "Roblox Corporation is a global leader in interactive entertainment and game development. Its platform empowers users to create, share, and experience immersive, user-generated virtual worlds and games. With millions of daily active users and creators worldwide, Roblox is at the forefront of the metaverse revolution, providing robust development tools and fostering a vibrant, collaborative community.",
+    "categories": "Online Network Services, Game Engines, Virtual Reality Software/Hardware, 3D Graphics"
+  },
+  {
+    "name": "ROTOMAKER",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234605",
+    "booth_id": "435",
+    "description": "Rotomaker VFX offers exceptional quality post-production services in visual effects, such as Rotoscopy, Match move, Paint, Keying and Composting. With more than 3000 movies and commercial credits to its name, including acclaimed Hollywood movies, regional movies, and television series, the studio has risen as a formidable name in delivering the international standard output. It is one of the authorized studios in India to work on Hollywood movies, attributed to the rigorous auditions underwent by the likes of APPLE, Amazon, TPN, MPAA, Disney, Marvel Studios, Warner Bros, Sony Pictures , Image works, Paramount,  NBC Universal and other well-known film production studios.\r\nWebsite: www.rotomaker.com\r\nEmail: mike@rotomaker.com",
+    "categories": ""
+  },
+  {
+    "name": "Savannah College of Art and Design",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1151",
+    "booth_id": "434",
+    "description": "Savannah College of Art and Design (SCAD) is a private, nonprofit, accredited university offering more than 100 graduate and undergraduate degree programs in art, design, and creative business. With campuses in Atlanta and Savannah, Georgia, Lacoste, France, and online via SCADnow, SCAD is renowned for its top-ranked programs in animation, visual effects, film, fashion, and digital media, and for its high graduate employment rate.",
+    "categories": "Animation/Film, Education/Training, Game Engines, Immersive System, Motion Capture Software/Hardware, Virtual Reality Software/Hardware, Visual Effects Software"
+  },
+  {
+    "name": "SKY ENGINE AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1292",
+    "booth_id": "729",
+    "description": "SKY ENGINE AI is a generative simulation and deep learning platform that produces fully annotated synthetic data and trains AI computer vision algorithms in parallel at scale. The platform is architected to procedurally generate highly balanced imagery data of photorealistic environments and objects and provides advanced domain adaptation algorithms. \r\n\r\nSKY ENGINE AI platform is a tool for developers: Data Scientists, ML/Software Engineers creating computer vision projects in any industry.",
+    "categories": "3D Graphics, Aerospace Applications, Artifical Intelligence (AI), Automotive Applications, Digital Imaging, Engineering Application, Imaging, Medical Application, Rendering & Modeling, Simulation"
+  },
+  {
+    "name": "Sony",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1305",
+    "booth_id": "101",
+    "description": "Sony Corporation is a global leader in entertainment, technology, and services, renowned for its innovations in consumer electronics, gaming (PlayStation), music, movies, imaging, and sensing solutions. Headquartered in Tokyo, Sony drives creativity and emotion through cutting-edge products and platforms, serving diverse industries and audiences worldwide.",
+    "categories": "Consumer Electronics, Entertainment Technology, Imaging & Sensing Solutions, Games & Network Services, Music, Pictures"
+  },
+  {
+    "name": "Think Tank Training Centre",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1172",
+    "booth_id": "510",
+    "description": "Founded in 2005, Think Tank is a VFX, game art, asset creation, and animation school empowering the next generation of creators. Based in North Vancouver at their state-of-the-art campus, Think Tank also serves their global community through a proprietary teaching platform, Portal. Ranked in 2023 as the #1 Creative institution in Canada by the prestigious website ‘The Rookies’ (www.therookies.co), as well as 1st in 3D Animation in Canada, and 1st in Visual Effects across North America, Think Tank continues to provide students with a high-end education, along with the ability to establish rewarding careers in the TV, Film, and Games industries.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Education/Training, Rendering & Modeling"
+  },
+  {
+    "name": "Tripo AI",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234603",
+    "booth_id": "700",
+    "description": "Tripo AI is a 3D generative AI platform that enables users to create high-quality 3D models from text or image prompts within seconds. Leveraging advanced AI algorithms, Tripo AI streamlines the process of generating detailed, textured 3D assets for applications in gaming, VR/AR, product design, and animation. The platform supports rapid prototyping, real-time rendering, and seamless integration with popular 3D software.",
+    "categories": "3D Graphics, 3D Modeling, Artifical Intelligence (AI), Plug-ins for Software, Rendering & Modeling"
+  },
+  {
+    "name": "Valka.AI s.r.o.",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234628",
+    "booth_id": "115",
+    "description": "Valka.AI is a digital entertainment studio.\r\nBridging realities with intelligence.",
+    "categories": "2D Graphics, 3D Graphics, 3D Modeling, Artifical Intelligence (AI), Computer-Video Interfacing, Digital Imaging, Rendering & Modeling, Simulation"
+  },
+  {
+    "name": "VFXnow",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234604",
+    "booth_id": "534",
+    "description": "VFXnow is a full service hardware and support provider.",
+    "categories": ""
+  },
+  {
+    "name": "Vicon",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1183",
+    "booth_id": "315",
+    "description": "From the first blockbuster movie to use motion capture in 1995 to the creation of the first out–of–the–box, head-mounted facial capture system, Vicon is proud to have been involved in the VFX industry from the beginning.\r\nYou want the best quality characterization, come to the recognized best in the business. Your Vicon system will include our renowned software that draws on many years of experience in capture and post-processing, and overlaying characters on the performance artist’s skeleton. Complete your mocap set-up with our high fidelity, precise cameras, game engine plugins and all the accessories, from suits to markers and more.",
+    "categories": "Motion Capture Software/Hardware, Plug-ins for Software, Rendering & Modeling, Virtual Reality Software/Hardware, Visual Effects Software"
+  },
+  {
+    "name": "Wacom Technology",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1190",
+    "booth_id": "706",
+    "description": "Wacom’s vision is to bring people and technology closer together through natural interface technologies.  Wacom has been the world’s leading manufacturer of interactive pen tablets and displays for 40 years. The advanced technology of Wacom’s intuitive input devices has been used to create some of the most exciting digital art, films, special effects, fashion and designs around the world and provides business and home users with their leading interface technology to express their personality. Founded in Japan in 1983, Wacom is celebrating 40 years of supporting artists and the creative world.",
+    "categories": "Animation/Film, CAD/CAM/CAE/CIM, Computer-Video Interfacing, Digital Imaging, Input Devices, Interactive Display Technologies, Mobile Computing, Monitors/Displays/Terminals"
+  },
+  {
+    "name": "Xencelabs/XOOT",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234573",
+    "booth_id": "617",
+    "description": "Xencelabs is a designer and manufacturer of professional pen tablets and pen displays for digital artists, illustrators, and designers, offering advanced features for natural drawing, customization, and workflow efficiency. XOOT specializes in ergonomic monitor arms for pen and touch displays, providing artists with stable, easily adjustable drawing surfaces to enhance comfort and productivity.",
+    "categories": "Input Devices, Monitors/Displays/Terminals, Robotics and Gadgets, Workstations"
+  },
+  {
+    "name": "XGRIDS",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234576",
+    "booth_id": "413",
+    "description": "XGRIDS is a leading innovator in mobile 3D scanning and AI-powered spatial computing, enabling fast, high-fidelity reconstruction of the real world. Our flagship hardware — the Lixel series handheld SLAM scanners — combined with our proprietary software platform LCC Studio, delivers advanced 3D Gaussian Splatting (3DGS), point cloud processing, and real-time visualization capabilities.\r\n\r\nAt the frontier of visual computing, XGRIDS empowers creators, engineers, and researchers to capture complex environments with cinematic detail and bring them to life across industries — from virtual production and gaming, to architecture, digital twins, and robotics simulation.\r\n\r\nKey innovations include:\r\n\r\n3D Gaussian Splatting editing & publishing tools, optimized for immersive rendering and game engine integration\r\n\r\nMobile SLAM + photorealistic color capture, with centimeter-level precision\r\n\r\nGround-to-air fusion workflows, combining drone and handheld data for complete 3D environments\r\n\r\nAutomated modeling pipelines, enabling fast BIM, CAD, and GIS-ready outputs\r\n\r\nFrom on-set scouting and volumetric video to XR environments and geospatial simulations, XGRIDS brings real-world fidelity to digital workflows.\r\n\r\nLet’s redefine how we capture, compute, and create in 3D.",
+    "categories": "3D Graphics, 3D Modeling, 3D Scanning, Animation/Film, Architecture Applications, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Medical Application, Mobile Computing, Visual Effects Software"
+  },
+  {
+    "name": "XIMEA",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1320",
+    "booth_id": "411",
+    "description": "Big about Small – We love to make cameras small and fast! XIMEA is the premier manufacturer of state-of-the-art digital cameras for scientific and industrial purposes.\r\n\r\nAcclaimed for innovative approaches, our products are designed with the highest quality and usability in mind. A wide range of cameras are on offer, from tiny high resolution USB3 cameras, to cooled scientific cameras and now superfast PCIe cameras. The latest additions to our product line are our sub-miniature USB3.1 cameras and the next generation PCIe cameras with resolutions of 150 MegaPixel and frame rates as high as 4000 frames per second. We provide the right camera for your application by using the newest sensors and the latest technology for data transfer.\r\n\r\nFor those looking to integrate cameras into their products or projects, aggregate multiple cameras into a single data stream, or build a mobile imaging platform (such as drones or robotics), we specialize in customization for diverse applications from aerospace and satellite to self driving cars and multi-camera systems for video production.\r\n\r\nOur cameras are typically the least power-hungry in their segment, which helps keep them cool (literally and figuratively) and facilitates easy integration into mobile applications.\r\nSmall, fast, and lightweight. Come take a look.",
+    "categories": "Aerospace Applications, Animation/Film, Digital Imaging, High Resolution Technologies, Imaging, Motion Capture Software/Hardware, Streaming Technology"
+  },
+  {
+    "name": "Xsens | Movella",
+    "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234574",
+    "booth_id": "514",
+    "description": "𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 𝘁𝗵𝗲 𝗡𝗲𝘅𝘁 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗫𝘀𝗲𝗻𝘀 𝗠𝗼𝘁𝗶𝗼𝗻 𝗖𝗮𝗽𝘁𝘂𝗿𝗲\r\nXsens is setting a new standard in inertial motion capture for film, VFX, and virtual production. With the release of Xsens Animate 2025, professionals can achieve AAA-quality data with lifelike motion, faster setup, and minimal cleanup, anywhere the creative process takes them. Seamless integration with Unreal Engine and leading industry tools ensures smooth workflows from capture to final frame.\r\n\r\nAt SIGGRAPH, we’ll demonstrate both our latest software innovations and a preview of upcoming technical advancements, all designed to enhance real-time workflows and elevate visual storytelling. From previs to post, Xsens empowers studios to focus on performance. \r\n\r\n𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝘁𝗼 𝗠𝗼𝘃𝗲 𝗬𝗼𝘂.",
+    "categories": "3D Graphics, 3D Modeling, Animation/Film, Education/Training, Motion Capture Software/Hardware"
+  }
+]

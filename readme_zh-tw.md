@@ -82,6 +82,25 @@
     notebooks/01_build_grid.ipynb
     ```
 
+4.  **提取攤位詳細資訊 (可選)**: 從線上展覽目錄中提取額外的參展商資訊，以增強導航內容。
+    
+    **流程：**
+    1. 造訪 `https://siggraph25.mapyourshow.com/8_0/explore/exhibitor-gallery.cfm`
+    2. 展開所有參展商以顯示完整清單
+    3. 將 HTML 頁面儲存為 `booth.html`
+    4. 執行攤位詳細資訊提取腳本：
+    ```bash
+    # 從 HTML 解析基本攤位資料
+    python scripts/booth_detail/parse_booth_data.py
+    
+    # 取得詳細描述與分類資訊
+    python scripts/booth_detail/fetch_booth_details.py
+    ```
+    
+    **輸出**: `booth_data_detailed.json` 包含所有 92+ 家參展商的攤位名稱、網址、描述與分類。
+    
+    > 詳細使用方法請見 [`scripts/booth_detail/README.md`](scripts/booth_detail/README.md)
+
 ---
 
 ## 🚀 主要工作流程

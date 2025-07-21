@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 73,
+        "name": "Lumio",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group。",
+    "目的地就在前方的 Lumio。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 15.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 73,
+    "booth_id": "321",
+    "grid_name": "Lumio",
+    "display_name": "Lumio: Lumio 3D",
+    "companies": [
+      {
+        "name": "Lumio 3D",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1228",
+        "booth_id": "321",
+        "description": "Lumio 3D Co., Ltd. develops high-fidelity 3D reflectance and geometry scanning technologies, specializing in rapid and precise 3D face scanning for medical, cosmetic, and VR applications. Their H3 3D Face Scanner and software enable high-resolution, real-time 3D facial modeling, supporting pre-surgical planning and digital communication between doctors and patients.",
+        "categories": "3D Graphics, 3D Scanning"
+      }
+    ]
+  }
+}

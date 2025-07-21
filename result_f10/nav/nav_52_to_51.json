@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 28,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 48,
+        "name": "Microserve",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 51,
+        "name": "Metabuild",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "看到右手邊的 Microserve後右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Metabuild。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 31.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 51,
+    "booth_id": "530",
+    "grid_name": "Metabuild",
+    "display_name": "Metabuild: Metabuild",
+    "companies": [
+      {
+        "name": "Metabuild",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234602",
+        "booth_id": "530",
+        "description": "Metabuild is a digital platform for building modeling and simulation, enabling users to create BIM models and digital twins for construction and real estate. The platform leverages AI to automate planning, simulate building performance, and optimize renovation strategies, supporting ESG analysis and portfolio management for the built environment.",
+        "categories": "Artifical Intelligence (AI), Interactive Display Technologies"
+      }
+    ]
+  }
+}

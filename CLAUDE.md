@@ -28,11 +28,15 @@ python scripts/precompute_routes.py --start 52 --allow-diag
 # Visualize precomputed routes
 python scripts/batch_visualize.py routes/52_to_all.json --show-stats
 
-# Generate natural language navigation
-python scripts/generate_navigation.py --start 52 --end 10
+# Generate natural language navigation (text format with company names)
+python scripts/generate_navigation.py --start 52 --end 10 --format text
 
-# Batch generate navigation for all targets
-python scripts/generate_navigation.py --start 52 --batch
+# Generate enhanced JSON with booth details  
+python scripts/generate_navigation.py --start 52 --end 10 --format json
+
+# Batch generate navigation for all targets (both formats)
+python scripts/generate_navigation.py --start 52 --batch --format text
+python scripts/generate_navigation.py --start 52 --batch --format json
 
 # Generate with custom configuration
 python scripts/generate_navigation.py --start 52 --end 10 --config config/high_precision.yaml
@@ -59,7 +63,9 @@ python scripts/test_navigation.py
 
 ### Data Flow Pipeline
 ```
-bboxes_*.json → data/grid.json → routes/*.json → navigation_results/*.txt
+bboxes_*.json → data/grid.json → routes/*.json → navigation_results/*.{txt,json}
+                     ↓
+booth_data_detailed.json → Enhanced navigation with company information
 ```
 
 ### Core Modules (`core/`)
@@ -94,7 +100,10 @@ bboxes_*.json → data/grid.json → routes/*.json → navigation_results/*.txt
 - `visualize_routes.py`: Single route visualization tool
 
 #### Navigation Text Generation
-- `generate_navigation.py`: CLI for converting routes to Chinese navigation instructions
+- `generate_navigation.py`: Enhanced CLI for converting routes to Chinese navigation instructions
+  - **Booth Data Integration**: Automatically loads `booth_data_detailed.json` for company information
+  - **Dual Format Output**: Text format (.txt) with clean navigation, JSON format (.json) with rich metadata
+  - **Smart Display Names**: Uses company names instead of booth numbers (e.g., "Dell Technologies: Dell Technologies")
 - `test_navigation.py`: Unit tests for navigation logic
 
 ### Configuration Files
@@ -103,30 +112,37 @@ bboxes_*.json → data/grid.json → routes/*.json → navigation_results/*.txt
 - **`data/grid_types.json`**: Type metadata defining walkability, costs, colors
 - **`data/grid_meta.json`**: Unit size and coordinate system metadata
 - **`data/ocr_results.json`**: OCR output before merging to grid
+- **`booth_data_detailed.json`**: Enhanced exhibitor information with company names, descriptions, and categories
 - **`config/*.yaml`**: Navigation system configuration files for different scenarios
 
 ## Current Development Phase
 
-The project has completed **Phase 1.3 - Sequence Booth Counting System** of navigation text generation. Recent achievements:
+The project has completed **Phase 1.4 - Enhanced Booth Data Integration** of navigation text generation. Recent achievements:
 
 ### ✅ Completed Features
+- **Rich Booth Information Integration**: Integrates `booth_data_detailed.json` with complete exhibitor details
+- **Smart Display Names**: Uses actual company names instead of generic booth numbers
+- **Dual Format Output**: Clean text format (.txt) and rich JSON format (.json) with metadata
+- **Multi-Company Support**: Handles booths with multiple exhibitors using "Parent: Child1 | Child2" format
 - **Coverage-based Landmark Selection**: Ensures landmarks described as "passing by" have sufficient visibility along the path
 - **Sequence Booth Counting**: Booth count directly corresponds to landmark descriptions for semantic consistency
-- **Intelligent Distance Grading**: Smart selection between booth counting, single landmarks, and multiple landmarks
 - **YAML Configuration System**: Flexible parameter adjustment for different scenarios
 
-### 🔧 Recent Improvements (Phase 1.3)
-- **Problem Solved**: Fixed semantic inconsistency where system would say "5 booths" but only mention 1-2 landmarks
-- **Technical Change**: Replaced four-direction path scanning with sequence-based counting
-- **Result**: Perfect alignment between booth count and landmark descriptions
+### 🔧 Recent Improvements (Phase 1.4)
+- **Enhanced User Experience**: Navigation titles now show actual company names (e.g., "Dell Technologies" instead of "Booth 52")
+- **Clean Text Output**: Removed statistical clutter from text format, focusing on navigation instructions
+- **Rich JSON Metadata**: Added complete exhibitor information including descriptions, categories, and booth IDs
+- **Backward Compatibility**: Existing step data structure remains unchanged
 
 ### 📊 System Status
 - **Path Planning Success Rate**: 100% (92/92 paths)
-- **Navigation Text Quality**: Human-verified Chinese natural language
+- **Navigation Text Quality**: Human-verified Chinese natural language with company names
 - **OCR Recognition Accuracy**: >90%
+- **Booth Data Integration**: 92+ exhibitors with complete information
 
 ### 🎯 Next Phase
-- **Phase 2.0 - Orientation Calculation Optimization**: Improve side calculation logic for better left/right/front classification
+- **Phase 2.0 - Multi-language Support**: Add English navigation output capabilities
+- **Phase 2.1 - Real-time Navigation**: Develop interactive navigation with current position tracking
 
 ## Documentation Structure
 

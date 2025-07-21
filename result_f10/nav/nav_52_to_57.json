@@ -1,0 +1,83 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 10,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 17,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 102,
+        "name": "Job Fair",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "south"
+    },
+    {
+      "step_id": 7,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 57,
+        "name": "Huawei",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過右手邊的Sony。",
+    "看到右手邊的 Sony後右轉。",
+    "直走經過右手邊的Sony、Compute Graphics World / COP Communications，約 2 個攤位。",
+    "走到Job Fair前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Huawei。"
+  ],
+  "metadata": {
+    "total_steps": 7,
+    "total_distance_units": 29.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 57,
+    "booth_id": "PP449",
+    "grid_name": "Huawei",
+    "display_name": "Huawei",
+    "companies": []
+  }
+}

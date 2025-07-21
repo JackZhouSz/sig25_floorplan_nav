@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 65,
+        "name": "Captury",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "走過 1 個攤位。",
+    "目的地就在前方的 Captury。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 1.0,
+    "estimated_booths": 1
+  },
+  "target_info": {
+    "idx": 65,
+    "booth_id": "306",
+    "grid_name": "Captury",
+    "display_name": "Captury: Captury",
+    "companies": [
+      {
+        "name": "Captury",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234586",
+        "booth_id": "306",
+        "description": "Captury provides advanced markerless motion capture solutions for full-body, finger, and facial tracking. Their technology is used in 3D game development, VFX, virtual reality, live entertainment, and life sciences, enabling precise, real-time motion data capture for multiple actors without the need for markers.",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Animation/Film, Augmented Reality-Software and Services, Engineering Application, Game Engines, Imaging, Medical Application, Motion Capture Software/Hardware, Rendering & Modeling, Simulation, Streaming Technology, Virtual Reality Software/Hardware, Visual Effects Software"
+      }
+    ]
+  }
+}

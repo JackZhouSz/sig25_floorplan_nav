@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 67 的導航指令 ===
-
-總距離: 1.0 units
-約等於: 1 個攤位
-總步驟: 2
+=== 從 Dell Technologies: Dell Technologies 到 Abstract Group: Abstract Group 的導航指令 ===
 
 導航指令:
 1. 走過 1 個攤位。

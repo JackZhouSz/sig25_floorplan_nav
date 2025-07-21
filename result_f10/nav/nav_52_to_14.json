@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "north"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 14,
+        "name": "PLASK",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過前方的Maxon。",
+    "目的地就在前方的 PLASK。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 15.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 14,
+    "booth_id": "702",
+    "grid_name": "PLASK",
+    "display_name": "PLASK: PLASK",
+    "companies": [
+      {
+        "name": "PLASK",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234589",
+        "booth_id": "702",
+        "description": "PLASK is an AI-powered motion capture and animation platform that transforms video footage into professional 3D animations using only a webcam. The web-based tool leverages deep learning to extract precise motion data, making high-quality animation creation accessible and affordable for creators, game developers, and educators. PLASK supports seamless integration with industry-standard 3D software and offers intuitive controls for lighting, camera, and export options.",
+        "categories": "Animation/Film, Artifical Intelligence (AI), Motion Capture Software/Hardware, Web 3D"
+      }
+    ]
+  }
+}

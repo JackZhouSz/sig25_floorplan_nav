@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 27,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 84,
+        "name": "Kwantlen Polytechnic University",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 Kwantlen Polytechnic University。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 27.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 84,
+    "booth_id": "333",
+    "grid_name": "Kwantlen Polytechnic University",
+    "display_name": "Kwantlen Polytechnic University: Kwantlen Polytechnic University",
+    "companies": [
+      {
+        "name": "Kwantlen Polytechnic University",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234570",
+        "booth_id": "333",
+        "description": "Entertainment Arts KPU is a space for curious, creative minds to explore, experiment, and shape the future of visual storytelling. Located in British Columbia, our programs in 3D Animation and 3D Modelling, Visual Effects, Game Development, and Foundation in Entertainment Arts are designed for students who learn best by doing and reflecting on the process along the way.\r\nHere, students are encouraged to take creative risks, collaborate with peers, and develop their own artistic voice. Our labs are active studios where ideas are tested, mistakes are welcomed, and iteration is part of the journey. We focus on strong foundations in design, storytelling, and digital craft, while staying closely connected to the evolving needs of the creative industries.\r\nEntertainment Arts KPU is a place to find your direction, push your thinking, and build a body of work that reflects who you are and what you care about. Here, we’re not just preparing students for opportunities in the creative industries, we’re also providing a creative playground for them to grow into artists, storytellers, and collaborators ready to shape what comes next.",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, Animation/Film, Digital Imaging, Education/Training, Media/Publications, Rendering & Modeling, Video Effects Equipment"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 27,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 80,
+        "name": "432",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "目的地就在前方的 432。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 27.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 80,
+    "booth_id": "432",
+    "grid_name": "432",
+    "display_name": "432",
+    "companies": []
+  }
+}

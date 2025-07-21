@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 31,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 82,
+        "name": "CAMPUS VFX | LOST BOYS VANCOUVER",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 CAMPUS VFX | LOST BOYS VANCOUVER。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 31.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 82,
+    "booth_id": "337",
+    "grid_name": "CAMPUS VFX | LOST BOYS VANCOUVER",
+    "display_name": "CAMPUS VFX | LOST BOYS VANCOUVER: CAMPUS VFX | LOST BOYS VANCOUVER",
+    "companies": [
+      {
+        "name": "CAMPUS VFX | LOST BOYS VANCOUVER",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234572",
+        "booth_id": "337",
+        "description": "Campus VFX | Lost Boys Vancouver is a specialized visual effects school in Canada, offering accelerated, hands-on diploma programs in VFX compositing, effects technical direction, and digital lighting. The school focuses on industry-ready training, mentorship, and project-based learning, preparing students for careers in film, television, and digital media.",
+        "categories": "3D Modeling, Animation/Film, Education/Training, Rendering & Modeling, Visual Effects Software"
+      }
+    ]
+  }
+}

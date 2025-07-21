@@ -1,0 +1,36 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 31,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 88,
+        "name": "336",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 336。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 31.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 88,
+    "booth_id": "336",
+    "grid_name": "336",
+    "display_name": "336",
+    "companies": []
+  }
+}

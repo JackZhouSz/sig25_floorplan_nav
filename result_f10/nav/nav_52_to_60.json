@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 60,
+        "name": "Deemos Tech",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過左手邊的Pixar RenderMan。",
+    "走到Sony前右轉。",
+    "直走經過右手邊的Meshcapadapade。",
+    "目的地就在前方的 Deemos Tech。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 16.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 60,
+    "booth_id": "216",
+    "grid_name": "Deemos Tech",
+    "display_name": "Deemos Tech: Deemos Tech",
+    "companies": [
+      {
+        "name": "Deemos Tech",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1312",
+        "booth_id": "216",
+        "description": "Rodin & ChatAvatar: Closest to Production-ready 3D Assets Generator\r\nRodin and ChatAvatar by DeemosTech are advanced 3D asset generators. ChatAvatar is production-ready, creating hyper-realistic 3D facial assets with PBR textures from text or images. Rodin, nearing production readiness, generates realistic 3D models from text or images. Both tools use proprietary diffusion models and a Production-Ready Assets dataset, producing CG-friendly assets for Unity, Unreal Engine, and Maya.",
+        "categories": "3D Graphics, 3D Modeling, 3D Rapid Prototyping, Animation/Film, Artifical Intelligence (AI), Rendering & Modeling"
+      }
+    ]
+  }
+}

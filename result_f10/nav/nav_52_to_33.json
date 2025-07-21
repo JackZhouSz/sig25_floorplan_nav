@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 33,
+        "name": "Wacom Technology",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 33,
+        "name": "Wacom Technology",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "走到Wacom Technology前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Wacom Technology。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 16.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 33,
+    "booth_id": "706",
+    "grid_name": "Wacom Technology",
+    "display_name": "Wacom Technology: Wacom Technology",
+    "companies": [
+      {
+        "name": "Wacom Technology",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1190",
+        "booth_id": "706",
+        "description": "Wacom’s vision is to bring people and technology closer together through natural interface technologies.  Wacom has been the world’s leading manufacturer of interactive pen tablets and displays for 40 years. The advanced technology of Wacom’s intuitive input devices has been used to create some of the most exciting digital art, films, special effects, fashion and designs around the world and provides business and home users with their leading interface technology to express their personality. Founded in Japan in 1983, Wacom is celebrating 40 years of supporting artists and the creative world.",
+        "categories": "Animation/Film, CAD/CAM/CAE/CIM, Computer-Video Interfacing, Digital Imaging, Input Devices, Interactive Display Technologies, Mobile Computing, Monitors/Displays/Terminals"
+      }
+    ]
+  }
+}

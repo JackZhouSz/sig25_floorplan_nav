@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "north"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 13,
+        "name": "Tripo AI",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過左手邊的Maxon。",
+    "目的地就在前方的 Tripo AI。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 15.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 13,
+    "booth_id": "700",
+    "grid_name": "Tripo AI",
+    "display_name": "Tripo AI: Tripo AI",
+    "companies": [
+      {
+        "name": "Tripo AI",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234603",
+        "booth_id": "700",
+        "description": "Tripo AI is a 3D generative AI platform that enables users to create high-quality 3D models from text or image prompts within seconds. Leveraging advanced AI algorithms, Tripo AI streamlines the process of generating detailed, textured 3D assets for applications in gaming, VR/AR, product design, and animation. The platform supports rapid prototyping, real-time rendering, and seamless integration with popular 3D software.",
+        "categories": "3D Graphics, 3D Modeling, Artifical Intelligence (AI), Plug-ins for Software, Rendering & Modeling"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 77,
+        "name": "Defined.ai",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 Defined.ai。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 19.0,
+    "estimated_booths": 8
+  },
+  "target_info": {
+    "idx": 77,
+    "booth_id": "325",
+    "grid_name": "Defined.ai",
+    "display_name": "Defined.ai: Defined.ai",
+    "companies": [
+      {
+        "name": "Defined.ai",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234587",
+        "booth_id": "325",
+        "description": "Defined.ai is a leading provider of ethical AI data, offering a marketplace for high-quality, ethically sourced training datasets and custom data services. The company enables organizations to accelerate AI development with secure, bias-free data, and partners with major tech companies for advanced AI solutions.",
+        "categories": "Artifical Intelligence (AI)"
+      }
+    ]
+  }
+}

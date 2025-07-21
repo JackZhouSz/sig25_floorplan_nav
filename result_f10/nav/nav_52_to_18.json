@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 18,
+        "name": "Puget Systems",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 18,
+        "name": "Puget Systems",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Abstract Group。",
+    "走到Puget Systems前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Puget Systems。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 8.0,
+    "estimated_booths": 3
+  },
+  "target_info": {
+    "idx": 18,
+    "booth_id": "507",
+    "grid_name": "Puget Systems",
+    "display_name": "Puget Systems: Puget Systems",
+    "companies": [
+      {
+        "name": "Puget Systems",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485243",
+        "booth_id": "507",
+        "description": "Puget Systems blends the roles of system integrator, consultant, and workflow expert to provide our customers with tailor-made workstations and servers built to handle demanding workloads. Our process starts with a focus on client needs rather than what we have on the shelf. In fact, there are no pre-built systems on the shelf! Instead, we are a trusted partner who will listen to each unique situation and customize solutions to customer pain points. Those include desktop, rackmount, and mobile workstations, servers, and storage systems with a wide range of available hardware components.\r\n\r\nWe operate across a wide range of industries, with particular specialties in Media & Entertainment, AI & Machine Learning, and Engineering. No matter what your workflow is, though, we can help! Our Puget Labs team researches and tests application performance, while our experienced consultants draw on those results, additional information from our partners, and their own knowledge base to advise each client on the hardware that will best meet their needs. From there, our production team hand-crafts every system to rigorous standards and tests for stability before our shipping department carefully packages them for delivery. Our support staff is then available to help with any hardware difficulties for the life of the computer, including any repairs that may be necessary.",
+        "categories": "3D Graphics, 3D Modeling, Artifical Intelligence (AI), Consulting, Graphics Accelerator Boards-Hardware, High Performance Graphics Processors, Mobile Computing, Rendering & Modeling, Storage Devices, Workstations"
+      }
+    ]
+  }
+}

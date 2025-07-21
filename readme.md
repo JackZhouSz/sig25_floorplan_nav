@@ -8,29 +8,54 @@
 
 ![Navigation Route Visualization](result_f10/booth/viz_52_to_1.png)
 
-**Generated Navigation Instructions (Chinese):**
+**Generated Navigation Instructions (Chinese Text Format):**
 
 ```
-=== 從攤位 52 到攤位 1 的導航指令 ===
-
-總距離: 46.0 units
-約等於: 18 個攤位
-總步驟: 7
+=== 從 Dell Technologies: Dell Technologies 到 Luma AI: Luma AI 的導航指令 ===
 
 導航指令:
-1. 面向Abstract Group攤位，準備出發。
-2. 直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。
-3. 走到Connection Lounge前右轉。
-4. 直走經過左手邊的Odyssey，走至Bria Visual AI Platform前，約 2 個攤位。
-5. 走到Bria Visual AI Platform前左轉。
-6. 直走經過右手邊的SKY ENGINE AI。
-7. 目的地就在前方的 Luma AI。
+1. 走過 1 個攤位。
+2. 看到左手邊的 Dell Technologies後左轉。
+3. 直走經過前方的Puget Systems。
+4. 走到Puget Systems前左轉。
+5. 直走經過前方的Puget Systems。
+...
+26. 目的地就在前方的 Luma AI。
+```
+
+**Enhanced JSON Format with Booth Details:**
+
+```json
+{
+  "steps": [...],
+  "instructions": [...],
+  "metadata": {
+    "total_steps": 26,
+    "total_distance_units": 45.46,
+    "estimated_booths": 18
+  },
+  "target_info": {
+    "idx": 1,
+    "booth_id": "733",
+    "grid_name": "Luma AI",
+    "display_name": "Luma AI: Luma AI",
+    "companies": [
+      {
+        "name": "Luma AI",
+        "description": "Luma AI is a pioneering generative AI company...",
+        "categories": "Artificial Intelligence (AI)"
+      }
+    ]
+  }
+}
 ```
 
 This example demonstrates:
-- **Precise Path Visualization**: Clear route visualization with highlighted start/end points
-- **Natural Language Instructions**: Human-readable Chinese navigation with landmark references
-- **Semantic Consistency**: Booth count matches actual landmark descriptions (e.g., "約 3 個攤位" with 3 landmarks mentioned)
+- **Enhanced Booth Identification**: Uses actual company names instead of generic booth numbers in titles
+- **Clean Text Format**: Removed statistical information for cleaner navigation focus
+- **Rich JSON Metadata**: Added detailed company information from exhibition database
+- **Multi-Company Support**: Handles booths with multiple exhibitors using "Parent: Child1 | Child2" format
+- **Semantic Consistency**: Booth count matches actual landmark descriptions
 - **Spatial Awareness**: Accurate left/right/front directions based on movement analysis
 
 ---
@@ -167,32 +192,40 @@ python scripts/precompute_routes.py --start 1 --allow-diag
     -   Outputs to `visualizations_by_type/{type}/viz_{src}_to_{dst}.png`
     -   All cells are drawn with 30 % opacity; start/end cells highlighted.
 
-### Step 5: Natural Language Navigation Generation (NEW)
+### Step 5: Natural Language Navigation Generation with Enhanced Booth Integration
 
-The system now supports converting paths into natural Chinese navigation instructions:
+The system now supports converting paths into natural Chinese navigation instructions with rich booth information:
 
-1. **Single Route Navigation**
+1. **Single Route Navigation (Text Format)**
    ```bash
-   python scripts/generate_navigation.py --start 52 --end 10
+   python scripts/generate_navigation.py --start 52 --end 10 --format text
    ```
 
-2. **Batch Navigation Generation**
+2. **Single Route Navigation (JSON Format with Booth Details)**
    ```bash
-   python scripts/generate_navigation.py --start 52 --batch
+   python scripts/generate_navigation.py --start 52 --end 10 --format json
    ```
 
-3. **Custom Configuration Navigation**
+3. **Batch Navigation Generation**
+   ```bash
+   python scripts/generate_navigation.py --start 52 --batch --format text
+   python scripts/generate_navigation.py --start 52 --batch --format json
+   ```
+
+4. **Custom Configuration Navigation**
    ```bash
    python scripts/generate_navigation.py --start 52 --end 10 --config config/high_precision.yaml
    ```
 
-**Navigation Features**:
-- **Coverage-based Landmark Selection**: Ensures landmarks described as "passing by" actually have sufficient visibility along the path
+**Enhanced Navigation Features**:
+- **Rich Booth Information**: Integrates data from `booth_data_detailed.json` for complete exhibitor details
+- **Smart Display Names**: Uses actual company names (e.g., "Dell Technologies: Dell Technologies" instead of "Booth 52")
+- **Multi-Company Support**: Handles booths with multiple exhibitors using "Parent: Child1 | Child2 | Child3" format
+- **Dual Output Formats**:
+  - **Text (.txt)**: Clean navigation instructions without statistical clutter
+  - **JSON (.json)**: Complete structured data including company descriptions, categories, and booth metadata
+- **Coverage-based Landmark Selection**: Ensures landmarks described as "passing by" have sufficient visibility
 - **Sequence Booth Counting**: Booth count matches landmark descriptions for semantic consistency
-- **Smart Distance Grading**: 
-  - ≤3 units: "Pass by 2 booths"
-  - 4-15 units: "Go straight past Art Gallery on your left, about 5 booths"
-  - >15 units: "Go straight past Maxon, Blender, Puget Systems ahead, about 2 minutes"
 
 ### Step 6: Automated Execution
 

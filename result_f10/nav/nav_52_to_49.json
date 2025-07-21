@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 23,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 49,
+        "name": "AlmaLinux OS Foundation",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 49,
+        "name": "AlmaLinux OS Foundation",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到AlmaLinux OS Foundation前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 AlmaLinux OS Foundation。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 24.0,
+    "estimated_booths": 10
+  },
+  "target_info": {
+    "idx": 49,
+    "booth_id": "429",
+    "grid_name": "AlmaLinux OS Foundation",
+    "display_name": "AlmaLinux OS Foundation: AlmaLinux OS Foundation",
+    "companies": [
+      {
+        "name": "AlmaLinux OS Foundation",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1306",
+        "booth_id": "429",
+        "description": "AlmaLinux OS is an open source, community-governed and forever-free enterprise Linux distribution focused on long-term stability and delivering a robust production-grade platform. With millions of downloads from a network of over 350 mirrors, AlmaLinux is an enterprise Linux distribution compatible with RHEL(r) and pre-Stream CentOS, and powers projects for governments, the defense sector, and scientific research institutions as well as numerous global business sectors and the web hosting industry. Adopted by some of today’s foremost open source ecosystem projects such as VMware, GitLab and Tenable, it’s available on all major public cloud platforms including AWS, Azure, Google Cloud, and Oracle OCI. The AlmaLinux OS Foundation is a 501(c)(6) non-profit created for the benefit of the AlmaLinux OS community. Visit https://almalinux.org",
+        "categories": "Engineering Application, Multimedia Tools & Applications, Networking Infrastructure, Workstations"
+      }
+    ]
+  }
+}

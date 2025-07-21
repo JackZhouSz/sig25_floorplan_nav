@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 68,
+        "name": "Vicon",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過前方的Abstract Group。",
+    "目的地就在前方的 Vicon。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 9.0,
+    "estimated_booths": 4
+  },
+  "target_info": {
+    "idx": 68,
+    "booth_id": "315",
+    "grid_name": "Vicon",
+    "display_name": "Vicon: Vicon",
+    "companies": [
+      {
+        "name": "Vicon",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1183",
+        "booth_id": "315",
+        "description": "From the first blockbuster movie to use motion capture in 1995 to the creation of the first out–of–the–box, head-mounted facial capture system, Vicon is proud to have been involved in the VFX industry from the beginning.\r\nYou want the best quality characterization, come to the recognized best in the business. Your Vicon system will include our renowned software that draws on many years of experience in capture and post-processing, and overlaying characters on the performance artist’s skeleton. Complete your mocap set-up with our high fidelity, precise cameras, game engine plugins and all the accessories, from suits to markers and more.",
+        "categories": "Motion Capture Software/Hardware, Plug-ins for Software, Rendering & Modeling, Virtual Reality Software/Hardware, Visual Effects Software"
+      }
+    ]
+  }
+}

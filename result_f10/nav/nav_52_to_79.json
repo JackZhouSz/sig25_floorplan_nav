@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 25,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 79,
+        "name": "Carnegie Mellon ETC",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "目的地就在前方的 Carnegie Mellon ETC。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 25.0,
+    "estimated_booths": 10
+  },
+  "target_info": {
+    "idx": 79,
+    "booth_id": "430",
+    "grid_name": "Carnegie Mellon ETC",
+    "display_name": "Carnegie Mellon ETC: Carnegie Mellon ETC",
+    "companies": [
+      {
+        "name": "Carnegie Mellon ETC",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1026",
+        "booth_id": "430",
+        "description": "The ETC is the premiere professional graduate program for interactive entertainment as it’s applied across a variety of fields. Our unique, two-year, Master of Entertainment Technology (MET) degree was founded as a joint venture between Carnegie Mellon University’s School of Computer Science and the College of Fine Arts.  The ETC Mission is to create inclusive and interdisciplinary educational opportunities that prepare students for professional careers through project-centric learning, conservatory instruction, community engagement, and industry collaboration. The ETC Vision is to shape students into creative leaders who imagine and build exemplary experiences to entertain, educate, transform, and inspire.",
+        "categories": ""
+      }
+    ]
+  }
+}

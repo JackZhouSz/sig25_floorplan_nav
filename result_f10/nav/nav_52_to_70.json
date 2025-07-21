@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 73,
+        "name": "Lumio",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "south"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 70,
+        "name": "MOVININ",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的Abstract Group。",
+    "走到Lumio前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 MOVININ。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 17.0,
+    "estimated_booths": 7
+  },
+  "target_info": {
+    "idx": 70,
+    "booth_id": "221",
+    "grid_name": "MOVININ",
+    "display_name": "MOVININ: MOVIN",
+    "companies": [
+      {
+        "name": "MOVIN",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234616",
+        "booth_id": "221",
+        "description": "MOVIN is a technology company focused on 3D graphics, animation, and immersive solutions, providing advanced tools and services for augmented reality, robotics, and simulation. Their expertise spans motion capture, AI-driven content, and interactive streaming technologies for entertainment and industrial applications.",
+        "categories": "3D Graphics, Animation/Film, Artifical Intelligence (AI), Augmented Reality-Software and Services, Motion Capture Software/Hardware, Robotics and Gadgets, Simulation, Streaming Technology, Virtual Reality Software/Hardware"
+      }
+    ]
+  }
+}

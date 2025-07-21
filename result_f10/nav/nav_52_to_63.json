@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 63,
+        "name": "Compute Graphics World / COP Communications",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過左手邊的Pixar RenderMan。",
+    "走到Sony前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Compute Graphics World / COP Communications。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 8.0,
+    "estimated_booths": 3
+  },
+  "target_info": {
+    "idx": 63,
+    "booth_id": "109",
+    "grid_name": "Compute Graphics World / COP Communications",
+    "display_name": "Compute Graphics World / COP Communications: Computer Graphics World / COP Communications",
+    "companies": [
+      {
+        "name": "Computer Graphics World / COP Communications",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1034",
+        "booth_id": "109",
+        "description": "CGW is the only publication exclusively serving the CG industry for over 40 years. We cover the latest news in VFX, animation, virtual production, game design, AI, CAD, and more.",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Data Visualization, Digital Imaging, Visual Effects Software, Workstations"
+      }
+    ]
+  }
+}

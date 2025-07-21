@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 13,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 15,
+        "name": "RenderHub",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 30,
+        "name": "IO Industries Inc.",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "走到RenderHub前左轉。",
+    "直走經過左手邊的RapidPipeline。",
+    "目的地就在前方的 IO Industries Inc.。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 20.0,
+    "estimated_booths": 8
+  },
+  "target_info": {
+    "idx": 30,
+    "booth_id": "613",
+    "grid_name": "IO Industries Inc.",
+    "display_name": "IO Industries Inc.: IO Industries Inc.",
+    "companies": [
+      {
+        "name": "IO Industries Inc.",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1311",
+        "booth_id": "613",
+        "description": "IO Industries Inc. designs cutting-edge digital video equipment. Since 1991 we have focused on providing our customers with high performance and high quality solutions for all types of digital video applications.\r\n\r\n●  Volumetric Capture  \r\n●  4D Face/Body Scanning  \r\n●  Compact POV Shooting  \r\n●  Machine Vision  \r\n●  Advanced Imaging\r\n●  Resolutions up to 8K/65MP \r\n●  Frame Rates into the 1000's of fps",
+        "categories": "3D Scanning, Aerospace Applications, Animation/Film, Artifical Intelligence (AI), Digital Imaging, High Resolution Technologies, Imaging, Motion Capture Software/Hardware, Scientific Visualization, Virtual Reality Software/Hardware"
+      }
+    ]
+  }
+}

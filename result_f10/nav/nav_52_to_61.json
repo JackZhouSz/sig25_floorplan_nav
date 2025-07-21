@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 61,
+        "name": "Corbel3D",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過左手邊的Pixar RenderMan。",
+    "走到Sony前右轉。",
+    "直走經過右手邊的Meshcapadapade。",
+    "目的地就在前方的 Corbel3D。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 14.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 61,
+    "booth_id": "214",
+    "grid_name": "Corbel3D",
+    "display_name": "Corbel3D: Corbel3D",
+    "companies": [
+      {
+        "name": "Corbel3D",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1283",
+        "booth_id": "214",
+        "description": "Founded in 2014, Corbel (Pixel Light Effects), is an innovative company specializing in state-of the-art photogrammetry scanning equipment. We are proud to contribute to the advancement of visual storytelling and digital artistry.",
+        "categories": "3D Modeling, 3D Rapid Prototyping, 3D Scanning"
+      }
+    ]
+  }
+}

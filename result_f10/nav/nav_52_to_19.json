@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 18,
+        "name": "Puget Systems",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 19,
+        "name": "CenterGrid Virtual Studio",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Abstract Group。",
+    "走到Puget Systems前左轉。",
+    "直走經過右手邊的Puget Systems。",
+    "目的地就在前方的 CenterGrid Virtual Studio。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 12.0,
+    "estimated_booths": 5
+  },
+  "target_info": {
+    "idx": 19,
+    "booth_id": "511",
+    "grid_name": "CenterGrid Virtual Studio",
+    "display_name": "CenterGrid Virtual Studio: CenterGrid Virtual Studio",
+    "companies": [
+      {
+        "name": "CenterGrid Virtual Studio",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1027",
+        "booth_id": "511",
+        "description": "CenterGrid's Virtual Studio provides high-powered GPU Workstations, Rendering Nodes, High Performance Storage and Network all wrapped with 24 x 7 management and support. We deliver Cloud services for VFX Virtual Production.  Our Virtual Studio is remote worker enabled. CenterGrid offers full-service technology solutions to US businesses that need an expert, trustworthy, and accountable partner. We are committed to excellence by providing continuous IT expertise, guidance, and problem-solving that ensures our customers enjoy a competitive advantage that enables them to succeed and scale effectively into the future.",
+        "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Data Visualization, Engineering Application, Game Engines, High Performance Graphics Processors, Networking Infrastructure, Online Network Services, Rendering & Modeling, Storage Devices, Streaming Technology, Visual Effects Software"
+      }
+    ]
+  }
+}

@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 78 的導航指令 ===
-
-總距離: 23.0 units
-約等於: 9 個攤位
-總步驟: 2
+=== 從 Dell Technologies: Dell Technologies 到 IBV-MOVE4D: IBV- MOVE4D 的導航指令 ===
 
 導航指令:
 1. 直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。

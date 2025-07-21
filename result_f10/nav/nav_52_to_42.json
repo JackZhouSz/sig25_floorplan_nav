@@ -1,0 +1,109 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 16,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 43,
+        "name": "PAVILLON",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 8,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "north"
+    },
+    {
+      "step_id": 9,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 42,
+        "name": "GIGABYTE",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Backlight，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走穿越Connection Lounge。",
+    "看到左手邊的 Connection Lounge後左轉。",
+    "直走穿越Connection Lounge。",
+    "走到PAVILLON前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 GIGABYTE。"
+  ],
+  "metadata": {
+    "total_steps": 9,
+    "total_distance_units": 36.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 42,
+    "booth_id": "629",
+    "grid_name": "GIGABYTE",
+    "display_name": "GIGABYTE: GIGABYTE",
+    "companies": [
+      {
+        "name": "GIGABYTE",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234618",
+        "booth_id": "629",
+        "description": "GIGABYTE is an engineer, visionary, and leader in the world of tech that uses its hardware expertise, patented innovations, and industry leadership to create, inspire, and advance. Renowned for over 30 years of award-winning excellence in motherboards, graphics cards, monitors, storage devices and PC peripherals, GIGABYTE is a cornerstone in the HPC community, providing businesses with server and data center expertise to accelerate their success. At the forefront of evolving technology, GIGABYTE is devoted to inventing smart solutions that enable digitalization from edge to cloud, and allow customers to capture, analyze, and transform digital information into economic data that can benefit humanity and 'Upgrade Your Life'. Please visit https://www.gigabyte.com/ for more information.",
+        "categories": "Artifical Intelligence (AI)"
+      }
+    ]
+  }
+}

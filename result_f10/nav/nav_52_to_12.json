@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 12,
+        "name": "Blender",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "目的地就在前方的 Blender。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 19.0,
+    "estimated_booths": 8
+  },
+  "target_info": {
+    "idx": 12,
+    "booth_id": "701",
+    "grid_name": "Blender",
+    "display_name": "Blender: Blender",
+    "companies": [
+      {
+        "name": "Blender",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234575",
+        "booth_id": "701",
+        "description": "Blender is a free and open-source 3D creation suite that supports the entire 3D pipeline, including modeling, rigging, animation, simulation, rendering, compositing, and motion tracking. It is widely used by artists, studios, and developers for creating films, visual effects, art, 3D games, and more, and is supported by a global community.",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, Animation/Film, Architecture Applications, Automotive Applications, Data Visualization, Education/Training, Game Engines, High Performance Graphics Processors, High Resolution Technologies, Multimedia Tools & Applications, Rendering & Modeling, Scientific Visualization, Simulation, Virtual Reality Software/Hardware, Visual Effects Software"
+      }
+    ]
+  }
+}

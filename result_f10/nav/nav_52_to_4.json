@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 4,
+        "name": "Bria Visual AI Platform",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "直走經過左手邊的Wacom Technology、PLASK、Lightcraft Technology，約 3 個攤位。",
+    "目的地就在前方的 Bria Visual AI Platform。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 38.0,
+    "estimated_booths": 15
+  },
+  "target_info": {
+    "idx": 4,
+    "booth_id": "725",
+    "grid_name": "Bria Visual AI Platform",
+    "display_name": "Bria Visual AI Platform: Bria Visual AI Platform",
+    "companies": [
+      {
+        "name": "Bria Visual AI Platform",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1330",
+        "booth_id": "725",
+        "description": "Bria AI is a responsible and open visual Generative AI platform for commercial use. It offers text-to-image models trained on licensed data, with source code access for scalable, on-brand content creation. Featuring a patented attribution engine and regulatory compliance, Bria serves leading brands and creative industries.",
+        "categories": "Artifical Intelligence (AI)"
+      }
+    ]
+  }
+}

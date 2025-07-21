@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 12,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 17,
+        "name": "RapidPipeline",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 20,
+        "name": "Hosted Advantage",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "看到左手邊的 RapidPipeline後左轉。",
+    "直走經過前方的RapidPipeline。",
+    "目的地就在前方的 Hosted Advantage。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 17.0,
+    "estimated_booths": 7
+  },
+  "target_info": {
+    "idx": 20,
+    "booth_id": "610",
+    "grid_name": "Hosted Advantage",
+    "display_name": "Hosted Advantage: Hosted Advantage",
+    "companies": [
+      {
+        "name": "Hosted Advantage",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234578",
+        "booth_id": "610",
+        "description": "Hosted Advantage provides professional 3D printing, rapid prototyping, and CAD services, offering solutions for 3D modeling, scanning, and additive manufacturing. Their expertise includes consultation, design, and production support for industries ranging from aerospace to consumer products, helping clients accelerate product development and optimize engineering workflows.",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, CAD/CAM/CAE/CIM, Computer-Video Interfacing, Consulting, Digital Imaging, Education/Training, Engineering Application, Game Engines, Geographic Information Systems Software, Graphics Accelerator Boards-Hardware, High Performance Graphics Processors, High Resolution Technologies, Networking Infrastructure, Online Network Services, Rendering & Modeling, Robotics and Gadgets, Scientific Visualization, Simulation, Storage Devices, Streaming Technology, Video Effects Equipment, Virtual Reality Software/Hardware, Visual Effects Software, Workstations"
+      }
+    ]
+  }
+}

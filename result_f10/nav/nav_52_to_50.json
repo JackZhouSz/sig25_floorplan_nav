@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 23,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 49,
+        "name": "AlmaLinux OS Foundation",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 50,
+        "name": "Foundry",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到AlmaLinux OS Foundation前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Foundry。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 26.0,
+    "estimated_booths": 10
+  },
+  "target_info": {
+    "idx": 50,
+    "booth_id": "528",
+    "grid_name": "Foundry",
+    "display_name": "Foundry: Foundry",
+    "companies": [
+      {
+        "name": "Foundry",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1062",
+        "booth_id": "528",
+        "description": "Foundry has a heritage of more than 25 years, developing creative software for the Media and Entertainment industry. Its portfolio of award-winning products solves complex visualization challenges to turn incredible ideas into reality. \r\n\r\nWorking with creative leaders around the globe, Foundry products are used to create breathtaking visual effects and animation and have been integral in the making of every VFX Academy Award-winning film for the past decade.",
+        "categories": "Visual Effects Software"
+      }
+    ]
+  }
+}

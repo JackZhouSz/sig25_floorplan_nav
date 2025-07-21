@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 62 的導航指令 ===
-
-總距離: 28.0 units
-約等於: 11 個攤位
-總步驟: 7
+=== 從 Dell Technologies: Dell Technologies 到 Valka.AI: Valka.AI s.r.o. 的導航指令 ===
 
 導航指令:
 1. 面向Pixar RenderMan攤位，準備出發。

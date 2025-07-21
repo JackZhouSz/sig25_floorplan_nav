@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 17,
+        "name": "RapidPipeline",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 17,
+        "name": "RapidPipeline",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems。",
+    "走到RapidPipeline前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 RapidPipeline。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 10.0,
+    "estimated_booths": 4
+  },
+  "target_info": {
+    "idx": 17,
+    "booth_id": "606",
+    "grid_name": "RapidPipeline",
+    "display_name": "RapidPipeline: DGG RapidPipeline",
+    "companies": [
+      {
+        "name": "DGG RapidPipeline",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1196",
+        "booth_id": "606",
+        "description": "DGG is a deep tech company founded in 2018 starting with researching automation technology to remove an essential bottleneck in real-time 3D content creation, at the world-famous Fraunhofer institute. Having also been involved in standardization (co-creating the glTF 3D file format and working on open source initiatives), DGG co-founded the Khronos 3D Commerce group and has since then supported developers, platform partners and retailers with its RapidCompact technology that helps to upscale 3D content creation for real-time 3D and XR applications – or, as the startup’s own slogan says, “Making 3D accessible”.",
+        "categories": "3D Graphics, CAD/CAM/CAE/CIM, Rendering & Modeling, Web 3D"
+      }
+    ]
+  }
+}

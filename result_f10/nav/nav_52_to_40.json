@@ -1,0 +1,109 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 20,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 46,
+        "name": "VFXnow",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 8,
+      "action": "continue",
+      "distance_units": 8,
+      "direction": "north"
+    },
+    {
+      "step_id": 9,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 40,
+        "name": "Roblox",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走穿越Connection Lounge。",
+    "走到Connection Lounge前左轉。",
+    "直走穿越Connection Lounge。",
+    "走到VFXnow前右轉。",
+    "直走經過右手邊的PAVILLON。",
+    "目的地就在前方的 Roblox。"
+  ],
+  "metadata": {
+    "total_steps": 9,
+    "total_distance_units": 44.0,
+    "estimated_booths": 18
+  },
+  "target_info": {
+    "idx": 40,
+    "booth_id": "734",
+    "grid_name": "Roblox",
+    "display_name": "Roblox: Roblox",
+    "companies": [
+      {
+        "name": "Roblox",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234588",
+        "booth_id": "734",
+        "description": "Roblox Corporation is a global leader in interactive entertainment and game development. Its platform empowers users to create, share, and experience immersive, user-generated virtual worlds and games. With millions of daily active users and creators worldwide, Roblox is at the forefront of the metaverse revolution, providing robust development tools and fostering a vibrant, collaborative community.",
+        "categories": "Online Network Services, Game Engines, Virtual Reality Software/Hardware, 3D Graphics"
+      }
+    ]
+  }
+}

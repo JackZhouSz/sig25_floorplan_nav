@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 29,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 47,
+        "name": "ROТОMAKЕR",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 47,
+        "name": "ROТОMAKЕR",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到ROТОMAKЕR前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 ROТОMAKЕR。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 30.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 47,
+    "booth_id": "435",
+    "grid_name": "ROТОMAKЕR",
+    "display_name": "ROТОMAKЕR: ROTOMAKER",
+    "companies": [
+      {
+        "name": "ROTOMAKER",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234605",
+        "booth_id": "435",
+        "description": "Rotomaker VFX offers exceptional quality post-production services in visual effects, such as Rotoscopy, Match move, Paint, Keying and Composting. With more than 3000 movies and commercial credits to its name, including acclaimed Hollywood movies, regional movies, and television series, the studio has risen as a formidable name in delivering the international standard output. It is one of the authorized studios in India to work on Hollywood movies, attributed to the rigorous auditions underwent by the likes of APPLE, Amazon, TPN, MPAA, Disney, Marvel Studios, Warner Bros, Sony Pictures , Image works, Paramount,  NBC Universal and other well-known film production studios.\r\nWebsite: www.rotomaker.com\r\nEmail: mike@rotomaker.com",
+        "categories": ""
+      }
+    ]
+  }
+}

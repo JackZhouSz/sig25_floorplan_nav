@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 44 的導航指令 ===
-
-總距離: 38.0 units
-約等於: 15 個攤位
-總步驟: 9
+=== 從 Dell Technologies: Dell Technologies 到 colormass: colormass 的導航指令 ===
 
 導航指令:
 1. 面向Abstract Group攤位，準備出發。

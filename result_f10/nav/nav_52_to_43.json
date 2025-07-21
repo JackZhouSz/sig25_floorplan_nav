@@ -1,0 +1,126 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 16,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 43,
+        "name": "PAVILLON",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Backlight，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走穿越Connection Lounge。",
+    "看到左手邊的 Connection Lounge後左轉。",
+    "直走穿越Connection Lounge。",
+    "目的地就在前方的 PAVILLON。"
+  ],
+  "metadata": {
+    "total_steps": 7,
+    "total_distance_units": 34.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 43,
+    "booth_id": "529",
+    "grid_name": "PAVILLON",
+    "display_name": "PAVILLON: Chat3D | Mercenaries Engineering | Panoptix AI | PAVILLON FRANCE | Persistant Studios - PopcornFX | REEMO",
+    "companies": [
+      {
+        "name": "Chat3D",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1316",
+        "booth_id": "529",
+        "description": "Chat3D develops simple to use and quick 3D shape creation solutions for professionals.  Through AI, we bring the best software solution to provide an alternative to standard CAD solutions that quickly generates 3D shapes in an iterative way. This approach not only fosters innovation but also reduces the time taken for development and enhances overall efficiency of clients.   Both engineering industrial clients and video games trust our solution to improve their operations and profitably navigate rapid shifts in business models and customer expectations.",
+        "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Game Engines, Visual Effects Software"
+      },
+      {
+        "name": "Mercenaries Engineering",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1224",
+        "booth_id": "529",
+        "description": "Mercenaries Engineering develops high-end software for the animation and VFX, including Guerilla Station/Guerilla Render & Rumba.\r\nMercenaries Engineering is a leading provider of services for film and series productions, with some of its biggest successes coming from high-profile projects like Arcane, Ford v. Ferrari, John Wick 4, Fireheart, and the highly anticipated Indiana Jones and the Dial of Destiny, and Miraculous the Movie.\r\nThe company's expertise in engineering and first class technical support has allowed it to play a key role in the success of these productions, contributing to their high-quality visual effects and overall production value.",
+        "categories": ""
+      },
+      {
+        "name": "Panoptix AI",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234632",
+        "booth_id": "529",
+        "description": "PanopticAI is an award-winning deep tech company specializing in camera-based health and wellness monitoring solutions powered by AI and signal processing. Their software transforms consumer devices into real-time biomarker scanners, enabling remote healthcare, telemedicine, and wellness applications with medical-grade accuracy.",
+        "categories": ""
+      },
+      {
+        "name": "PAVILLON FRANCE",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1024",
+        "booth_id": "529",
+        "description": "Cap Digital is the biggest cluster for digital innovation in Europe, with 850 valued members. Cap Digital aims at promoting the Paris Region as one of the world leaders in digital contents, creative industries and services, from an industrial as well as a strategic point of view. Fostering R&D, helping companies to expand, networking our members and showcasing them throughout the world, are some of the activities we undertake to support the creativity and competitiveness of this important sector.",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Engineering Application, Game Engines, Rendering & Modeling, Storage Devices, Visual Effects Software"
+      },
+      {
+        "name": "Persistant Studios - PopcornFX",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1225",
+        "booth_id": "529",
+        "description": "PopcornFX is a cutting-edge software company specializing in real-time visual effects solutions for video games, animation, immersive experiences, virtual production, and other interactive applications. We provide powerful tools and technologies that empower developers to create stunning visual effects and immersive experiences.\r\nWith a dedicated team of experts and a passion for innovation, we strive to push the boundaries of what's possible in the realm of visual effects.",
+        "categories": ""
+      },
+      {
+        "name": "REEMO",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1291",
+        "booth_id": "529",
+        "description": "Reemo brings workstations, desktops and apps directly into your browser. A powerful and uncompromised remote experience.\r\n\r\nOur mission is to provide users with a seamless, low-latency browser-based remote experience, reducing bandwidth consumption and delivering exceptional performance. \r\n\r\nWith Reemo, you can effortlessly access and process data on secure locations, all while enjoying unmatched speed and reliability. Whether you're a professional or an enthusiast, Reemo empowers you to work with confidence, agility, and precision, from anywhere.\r\n\r\nJoin us and ask for the ultimate remote desktop experience with Reemo!\r\n\r\n-> hello@reemo.io",
+        "categories": "3D Modeling, Engineering Application, Game Engines, High Resolution Technologies, Immersive System, Multimedia Tools & Applications, Online Network Services, Rendering & Modeling, Streaming Technology, Workstations"
+      }
+    ]
+  }
+}

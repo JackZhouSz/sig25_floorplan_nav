@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 26 的導航指令 ===
-
-總距離: 12.0 units
-約等於: 5 個攤位
-總步驟: 5
+=== 從 Dell Technologies: Dell Technologies 到 4Dviews: 4Dviews 的導航指令 ===
 
 導航指令:
 1. 面向Abstract Group攤位，準備出發。

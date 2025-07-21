@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 23,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 86,
+        "name": "Decart",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 Decart。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 23.0,
+    "estimated_booths": 9
+  },
+  "target_info": {
+    "idx": 86,
+    "booth_id": "229",
+    "grid_name": "Decart",
+    "display_name": "Decart: Decart",
+    "companies": [
+      {
+        "name": "Decart",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234629",
+        "booth_id": "229",
+        "description": "Decart is a technology company specializing in real-time generative AI experiences. Their core platform leverages advanced AI infrastructure to enable efficient training and inference of large generative models, powering applications in gaming, virtual reality, and interactive media. Decart's Oasis engine delivers real-time, interactive 3D content generation for games, simulations, and creative industries.",
+        "categories": "2D Graphics, Artifical Intelligence (AI), Augmented Reality-Software and Services, Game Engines, Immersive System, Interactive Display Technologies, Rendering & Modeling, Streaming Technology"
+      }
+    ]
+  }
+}

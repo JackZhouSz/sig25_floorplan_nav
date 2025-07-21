@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 66,
+        "name": "EIZO Inc.",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group。",
+    "目的地就在前方的 EIZO Inc.。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 5.0,
+    "estimated_booths": 2
+  },
+  "target_info": {
+    "idx": 66,
+    "booth_id": "310",
+    "grid_name": "EIZO Inc.",
+    "display_name": "EIZO Inc.: EIZO Inc.",
+    "companies": [
+      {
+        "name": "EIZO Inc.",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485216",
+        "booth_id": "310",
+        "description": "EIZO is a visual technology company dedicating the last 50 years to developing high-end, specific use monitors. This year EIZO has been awarded a Scientific and Technical Award from the Academy of Motion Picture Arts and Sciences for its ColorEdge CG Series monitors with integrated self-calibration sensors. For Post-Production and VFX, the ColorEdge line of Self-Calibrating Wide Gamut monitors features built-in calibration sensors, uniformity correction, and 3D Programmable LUTs to ensure any professional's most accurate image reproduction monitor.",
+        "categories": "3D Graphics, Animation/Film, Digital Imaging, High Resolution Technologies, Imaging, Interactive Display Technologies, Monitors/Displays/Terminals, Video Effects Equipment, Visual Effects Software"
+      }
+    ]
+  }
+}

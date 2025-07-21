@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Greneta。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 20.0,
+    "estimated_booths": 8
+  },
+  "target_info": {
+    "idx": 11,
+    "booth_id": "707",
+    "grid_name": "Greneta",
+    "display_name": "Greneta: Greneta",
+    "companies": [
+      {
+        "name": "Greneta",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234620",
+        "booth_id": "707",
+        "description": "Greneta develops an AI-powered 3D optimization engine that dramatically reduces file size—up to 99.6%—while preserving sub-millimeter precision and photorealistic detail.\r\nOur technology enables efficient rendering and seamless asset delivery across AR/VR/XR, digital twins, and simulation environments.\r\nWe help teams overcome performance bottlenecks by streamlining 3D data preparation for real-time applications.",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Immersive System, Online Network Services, Web 3D"
+      }
+    ]
+  }
+}

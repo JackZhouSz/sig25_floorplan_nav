@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 6,
+        "name": "ASRock Rack Inc.",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "直走經過左手邊的Wacom Technology。",
+    "目的地就在前方的 ASRock Rack Inc.。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 34.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 6,
+    "booth_id": "721",
+    "grid_name": "ASRock Rack Inc.",
+    "display_name": "ASRock Rack Inc.: ASRock Rack Inc.",
+    "companies": [
+      {
+        "name": "ASRock Rack Inc.",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485298",
+        "booth_id": "721",
+        "description": "ASRock Rack is a leading server hardware vendor with a passion for reimagining the future. Built on our dedication to exceptional innovation, we design and manufacture motherboards and servers.\r\n\r\nFounded and operating in Taipei, Taiwan, ASRock Rack delivers scalable and highly reliable products for a wide range of applications, including Server Appliances, High-Performance Computing, AI, Cloud Computing, Hyper-Scalers, and Storage Server.\r\n\r\nSince 2013 ASRock Rack has built a large ecosystem of technology and distribution partners worldwide, and we aim to continue our growth. Our dedication and experience enable us to push the limits of technology from the cloud to the edge for our global customers.",
+        "categories": "Artifical Intelligence (AI), Mobile Computing, Virtual Reality Software/Hardware, Workstations"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 71,
+        "name": "FACEGOOD",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group。",
+    "目的地就在前方的 FACEGOOD。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 15.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 71,
+    "booth_id": "320",
+    "grid_name": "FACEGOOD",
+    "display_name": "FACEGOOD: FACEGOOD",
+    "companies": [
+      {
+        "name": "FACEGOOD",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234594",
+        "booth_id": "320",
+        "description": "FACEGOOD provides professional facial motion capture solutions, including hardware and software for high-fidelity facial animation. Their technology is used in film, game development, and virtual production, enabling accurate and real-time facial performance capture for digital characters.",
+        "categories": "Motion Capture Software/Hardware"
+      }
+    ]
+  }
+}

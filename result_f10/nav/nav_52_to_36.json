@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 18,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 33,
+        "name": "Wacom Technology",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 36,
+        "name": "GAMFF",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "看到左手邊的 Wacom Technology後左轉。",
+    "直走經過前方的Wacom Technology。",
+    "目的地就在前方的 GAMFF。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 27.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 36,
+    "booth_id": "714",
+    "grid_name": "GAMFF",
+    "display_name": "GAMFF: GAMFF",
+    "companies": [
+      {
+        "name": "GAMFF",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234612",
+        "booth_id": "714",
+        "description": "GAMFF(Gyeongsangbuk-do International AI·Metaverse Film Festival)\r\n\r\nGAMFF is a groundbreaking global festival where AI technology meets the future of filmmaking.\r\nExploring the convergence of AI, VFX, and immersive media, GAMFF redefines creative storytelling and showcases a new paradigm in film production.\r\nCreators, tech experts, and researchers from around the world gather to collaborate, network, and envision the future of AI-driven content.\r\nThrough international conferences, B2B exhibitions, and immersive showcases, GAMFF fosters a global creative ecosystem.\r\nGyeongsangbuk-do leads the way in accelerating AI and virtual convergence technologies, shaping the future of Korea’s digital content industry.\r\nLeading the Future of AI and Content Creation — Join us at GAMFF 2025!",
+        "categories": "2D Graphics, 3D Graphics, Animation/Film, Artifical Intelligence (AI), Media/Publications, Scientific Visualization"
+      }
+    ]
+  }
+}

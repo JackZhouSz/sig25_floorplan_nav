@@ -1,0 +1,60 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 52,
+        "name": "Dell Technologies",
+        "side": "behind"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "east"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "south"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 126,
+        "name": "Moment Factory",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以後方的 Dell Technologies為參考點，準備出發。",
+    "直走約 4 個攤位。",
+    "在此處右轉。",
+    "直走約 4 個攤位。",
+    "目的地就在前方的 Moment Factory。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 22.0,
+    "estimated_booths": 9
+  },
+  "target_info": {
+    "idx": 126,
+    "booth_id": null,
+    "grid_name": "Moment Factory",
+    "display_name": "Moment Factory",
+    "companies": []
+  }
+}

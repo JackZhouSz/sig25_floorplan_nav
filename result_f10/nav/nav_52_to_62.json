@@ -1,0 +1,91 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 10,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 17,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 102,
+        "name": "Job Fair",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 7,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 62,
+        "name": "Valka.AI",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過右手邊的Sony。",
+    "看到右手邊的 Sony後右轉。",
+    "直走經過右手邊的Sony、Compute Graphics World / COP Communications，約 2 個攤位。",
+    "走到Job Fair前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Valka.AI。"
+  ],
+  "metadata": {
+    "total_steps": 7,
+    "total_distance_units": 28.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 62,
+    "booth_id": "115",
+    "grid_name": "Valka.AI",
+    "display_name": "Valka.AI: Valka.AI s.r.o.",
+    "companies": [
+      {
+        "name": "Valka.AI s.r.o.",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234628",
+        "booth_id": "115",
+        "description": "Valka.AI is a digital entertainment studio.\r\nBridging realities with intelligence.",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, Artifical Intelligence (AI), Computer-Video Interfacing, Digital Imaging, Rendering & Modeling, Simulation"
+      }
+    ]
+  }
+}

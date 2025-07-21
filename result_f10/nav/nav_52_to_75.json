@@ -1,0 +1,36 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 17,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 75,
+        "name": "Odyssey",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的XIMEA、XGRIDS、Backlight，約 3 個攤位。",
+    "目的地就在前方的 Odyssey。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 17.0,
+    "estimated_booths": 7
+  },
+  "target_info": {
+    "idx": 75,
+    "booth_id": 424,
+    "grid_name": "Odyssey",
+    "display_name": "Odyssey",
+    "companies": []
+  }
+}

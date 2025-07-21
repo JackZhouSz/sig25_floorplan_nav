@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 29,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 83,
+        "name": "Bournemouth University",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 Bournemouth University。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 29.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 83,
+    "booth_id": "335",
+    "grid_name": "Bournemouth University",
+    "display_name": "Bournemouth University: Bournemouth University",
+    "companies": [
+      {
+        "name": "Bournemouth University",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1328",
+        "booth_id": "335",
+        "description": "The National Centre for Computer Animation has been at the forefront of computer graphics and animation education and research in the UK since 1989.\r\nThe aim of the NCCA is to promote science in the service of the arts and to embed a theoretical underpinning within a contemporary professional setting, allowing graduates to leave BU with highly sought-after skills in the computer animation, visual effects and computer games industries.\r\nBournemouth University has been granted Houdini Certified School status by Side Effects Software, is the academic partner for Unreal Engine and a number of our computer animation degrees are accredited by ScreenSkills, indicating the quality of those courses.\r\nOur ArtStation page tells a better story about our students than any socials: \r\nhttps://www.artstation.com/nationalcentreforcomputeranimation",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Animation/Film, Education/Training, Game Engines, Media/Publications, Rendering & Modeling, Scientific Visualization, Simulation"
+      }
+    ]
+  }
+}

@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 1 的導航指令 ===
-
-總距離: 46.0 units
-約等於: 18 個攤位
-總步驟: 7
+=== 從 Dell Technologies: Dell Technologies 到 Luma AI: Luma AI 的導航指令 ===
 
 導航指令:
 1. 面向Abstract Group攤位，準備出發。

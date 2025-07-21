@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 13,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 15,
+        "name": "RenderHub",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 32,
+        "name": "ALLSIDES",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "走到RenderHub前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 ALLSIDES。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 16.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 32,
+    "booth_id": "609",
+    "grid_name": "ALLSIDES",
+    "display_name": "ALLSIDES: ALLSIDES",
+    "companies": [
+      {
+        "name": "ALLSIDES",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234584",
+        "booth_id": "609",
+        "description": "ALLSIDES, formerly Covision Media, is a cutting-edge A.I. technology company specializing in high-performance 3D scanning. Our revolutionary 3D scanners can automatically convert any physical object into a reality-grade and relightable 3D digital twin in a matter of minutes. The scanner is trusted by leading brands in the industry, including Inditex Group (Zara, Massimo Dutti, Bershka etc), Meta, adidas and NUREG, GORE-Tex, La Sportiva, and other top-tier tech and e-commerce companies, to mass-produce tens of thousands of reality-grade 3D assets. These assets are ideal for a wide range of applications, including Virtual Try-On, 2D virtual product photography, 3D e-commerce, and video from 3D.",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Artifical Intelligence (AI), Data Visualization, Game Engines, High Resolution Technologies, Rendering & Modeling"
+      }
+    ]
+  }
+}

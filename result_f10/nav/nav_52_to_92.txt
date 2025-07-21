@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 92 的導航指令 ===
-
-總距離: 36.0 units
-約等於: 14 個攤位
-總步驟: 5
+=== 從 Dell Technologies: Dell Technologies 到 CyberGlove Systems 的導航指令 ===
 
 導航指令:
 1. 面向Pixar RenderMan攤位，準備出發。

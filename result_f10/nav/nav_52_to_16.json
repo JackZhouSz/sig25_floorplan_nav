@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 16,
+        "name": "Maxon",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過左手邊的Abstract Group。",
+    "目的地就在前方的 Maxon。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 7.0,
+    "estimated_booths": 3
+  },
+  "target_info": {
+    "idx": 16,
+    "booth_id": "501",
+    "grid_name": "Maxon",
+    "display_name": "Maxon: Maxon",
+    "companies": [
+      {
+        "name": "Maxon",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485232",
+        "booth_id": "501",
+        "description": "Maxon makes powerful, user-friendly software that artists and others working in a variety of industries use for 2D/3D design, 3D modeling, motion graphics, animation, filmmaking, digital sculpting, product and architectural visualization, editing, and rendering.",
+        "categories": "3D Graphics, Animation/Film, Rendering & Modeling"
+      }
+    ]
+  }
+}

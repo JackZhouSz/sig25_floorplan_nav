@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 30 的導航指令 ===
-
-總距離: 20.0 units
-約等於: 8 個攤位
-總步驟: 5
+=== 從 Dell Technologies: Dell Technologies 到 IO Industries Inc.: IO Industries Inc. 的導航指令 ===
 
 導航指令:
 1. 以左手邊的 Abstract Group為參考點，準備出發。

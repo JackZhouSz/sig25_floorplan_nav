@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 25,
+        "name": "Backlight",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 25,
+        "name": "Backlight",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過前方的Abstract Group。",
+    "走到Backlight前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Backlight。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 10.0,
+    "estimated_booths": 4
+  },
+  "target_info": {
+    "idx": 25,
+    "booth_id": "415",
+    "grid_name": "Backlight",
+    "display_name": "Backlight: Backlight",
+    "companies": [
+      {
+        "name": "Backlight",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1065",
+        "booth_id": "415",
+        "description": "Backlight replaces broken media workflows with simple, AI-powered products designed to make teams faster and businesses stronger. Through our integrated suite of video solutions, including Iconik, Wildmoka, Ftrack, Celtx, and Zype, we empower creative and production teams to focus on what matters most: crafting compelling stories that drive impact. \r\n\r\nIconik – Media asset management that handles all your assets securely with full visibility. AI-powered search finds what you need instantly.\r\n\r\nCinesync – Real-time review and collaboration. Get approvals quickly and securely, wherever your team is located.\r\n\r\nFtrack – Project management that studios trust to deliver complex productions on time and under budget.\r\n\r\nSee what seamless workflows actually look like.\r\n‍\r\nKill pipeline bottlenecks.\r\nStop the start-stop cycle that kills creative momentum. Streamlined review and asset management keeps projects flowing from one asset to the next.\r\n‍\r\nGlobal teams, zero distance.\r\nCollaborate like you're in the same room, even across continents and time zones. No more shipping drives internationally.\r\n‍\r\nFind assets in seconds, not hours.\r\nAI-powered search cuts through 200TB archives instantly. Spend time creating, not hunting through folders.\r\n‍\r\nIterate at creative speed.\r\nWhen your director wants three lighting options before lunch, you deliver them. In original quality. Every time.\r\n‍\r\nNever lose context.\r\nEvery revision, note, and approval travels with your asset. Get the full story behind every creative decision.",
+        "categories": "Animation/Film, Multimedia Tools & Applications, Streaming Technology, Visual Effects Software"
+      }
+    ]
+  }
+}

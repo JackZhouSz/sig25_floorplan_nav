@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 29,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 47,
+        "name": "ROТОMAKЕR",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 45,
+        "name": "535",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到ROТОMAKЕR前右轉。",
+    "直走經過左手邊的VFXnow。",
+    "目的地就在前方的 535。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 36.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 45,
+    "booth_id": "535",
+    "grid_name": "535",
+    "display_name": "535: CyberGlove Systems",
+    "companies": [
+      {
+        "name": "CyberGlove Systems",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234630",
+        "booth_id": "535",
+        "description": "CyberGlove Systems is the worldwide leader in data glove technology, offering sophisticated hand-centric 3D motion capture solutions. Their products enable detailed capture of finger, hand, and arm movements for applications in virtual reality, industrial engineering, academic research, and simulation, featuring both kinesthetic force and vibrotactile feedback.",
+        "categories": "3D Graphics, 3D Modeling, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, CAD/CAM/CAE/CIM, Consulting, Education/Training, Engineering Application, Immersive System, Input Devices, Motion Capture Software/Hardware, Robotics and Gadgets, Scientific Visualization, Simulation, Virtual Reality Software/Hardware"
+      }
+    ]
+  }
+}

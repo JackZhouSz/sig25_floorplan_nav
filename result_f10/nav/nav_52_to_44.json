@@ -1,0 +1,109 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 20,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 46,
+        "name": "VFXnow",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 8,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "north"
+    },
+    {
+      "step_id": 9,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 44,
+        "name": "colormass",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走穿越Connection Lounge。",
+    "走到Connection Lounge前左轉。",
+    "直走穿越Connection Lounge。",
+    "走到VFXnow前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 colormass。"
+  ],
+  "metadata": {
+    "total_steps": 9,
+    "total_distance_units": 38.0,
+    "estimated_booths": 15
+  },
+  "target_info": {
+    "idx": 44,
+    "booth_id": "634",
+    "grid_name": "colormass",
+    "display_name": "colormass: colormass",
+    "companies": [
+      {
+        "name": "colormass",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234619",
+        "booth_id": "634",
+        "description": "colormass is a SaaS platform that simplifies and scales the management of 3D content - all in one centralized, cloud-based ecosystem. From rendering marketing visuals to building configurators and exporting assets for diverse applications, colormass streamlines every aspect of 3D content management.\r\n\r\nIn addition, colormass offers advanced 3D digitization tools, including an svBRDF scanner, a Tiling Editor, and Material AI - which transforms single images into high-quality PBR materials.\r\n\r\nTrusted by leading brands across the automotive, interior design, apparel, and luxury sectors, colormass enables companies to digitize tens of thousands of new products each year and manage 3D data at scale.",
+        "categories": "3D Graphics, 3D Scanning, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, Digital Imaging, Rendering & Modeling, Web 3D"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 20,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 38,
+        "name": "HP",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 39,
+        "name": "Haply Robotics",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走穿越Connection Lounge。",
+    "走到HP前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Haply Robotics。"
+  ],
+  "metadata": {
+    "total_steps": 7,
+    "total_distance_units": 38.0,
+    "estimated_booths": 15
+  },
+  "target_info": {
+    "idx": 39,
+    "booth_id": "728",
+    "grid_name": "Haply Robotics",
+    "display_name": "Haply Robotics: Haply Robotics",
+    "companies": [
+      {
+        "name": "Haply Robotics",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234571",
+        "booth_id": "728",
+        "description": "Haply Robotics is a Canadian technology company redefining human–machine interaction through advanced haptic interfaces. Based in Montreal and founded in 2018, Haply builds the world’s most portable, high-fidelity force-feedback devices enabling users to physically feel the digital world.\r\n\r\nAt Haply, we believe touch is a critical part of how humans understand and manipulate their environment. As virtual, augmented, and robotic technologies grow more immersive, haptics becomes essential to close the loop between humans and machines. Our mission is to make touch a universal language in digital experiences accessible, precise, and intuitive.\r\n\r\nOur flagship product, the Inverse3, is a compact 3-DOF force-feedback controller that delivers precise, real-time tactile responses. It allows users to simulate real-world sensations like resistance, vibration, and texture when interacting with digital objects. The Inverse3 X and our MinVerse 3D mouse expand this offering into advanced simulation and extended reality applications. Unlike legacy haptic systems, our devices are portable, affordable, and easy to integrate into a variety of platforms.\r\n\r\nHaply’s technology is trusted by leading organizations in: \r\n\r\nMedical Simulation & Training: Surgeons and trainees use our haptic tools to simulate complex procedures gaining muscle memory and precision without risk.\r\n\r\nTeleoperation & Robotics: Operators control real-world robotic systems with intuitive, physical feedback that improves precision and safety.\r\n\r\n3D Design & Digital Content Creation: Artists and engineers sculpt and manipulate digital models with tools that feel like extensions of their hands.\r\n\r\nExtended Reality (XR): Our haptics bring realism and embodiment to immersive environments—enhancing training, gaming, and remote collaboration.\r\n\r\nAt SIGGRAPH 2025, we are showcasing how haptic feedback is transforming digital interaction. Visitors will experience real-time force feedback in medical simulators, remote robotic control systems, and creative XR workflows. You’ll get hands-on with technology that bridges physical and virtual bringing sensation to otherwise sterile digital spaces.\r\n\r\nBehind our innovation is a team of engineers, designers, and researchers committed to making haptics scalable and developer-friendly. Our open API and SDK allow rapid integration into Unity, ROS, and custom platforms. Whether you’re developing simulations, building robotic systems, or creating immersive digital art, Haply gives your users the ability to feel their work.\r\n\r\nOur work has been recognized globally, including a CES Innovation Award and collaborations with companies.\r\n\r\nHaply is shaping a future where digital interaction is not only visual and auditory, but tactile. We invite you to experience our vision at SIGGRAPH 2025 in Vancouver. Visit us at Booth 728 to try our haptic devices and see how touch can transform your technology.\r\n\r\nTouch the future. Build with Haply.",
+        "categories": "3D Modeling, CAD/CAM/CAE/CIM, Input Devices, Robotics and Gadgets, Simulation"
+      }
+    ]
+  }
+}

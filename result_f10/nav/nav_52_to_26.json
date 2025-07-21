@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 26,
+        "name": "4Dviews",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 26,
+        "name": "4Dviews",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過前方的Abstract Group。",
+    "走到4Dviews前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 4Dviews。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 12.0,
+    "estimated_booths": 5
+  },
+  "target_info": {
+    "idx": 26,
+    "booth_id": "417",
+    "grid_name": "4Dviews",
+    "display_name": "4Dviews: 4Dviews",
+    "companies": [
+      {
+        "name": "4Dviews",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234625",
+        "booth_id": "417",
+        "description": "4Dviews is a software development company specializing in 3D modeling, 3D scanning, animation, and augmented reality solutions. They provide advanced tools and services for immersive systems, education, and streaming technology, supporting industries that require high-quality 3D content and visualization.",
+        "categories": "3D Modeling, 3D Scanning, Animation/Film, Augmented Reality-Software and Services, Education/Training, Immersive System, Streaming Technology"
+      }
+    ]
+  }
+}

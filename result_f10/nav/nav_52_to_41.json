@@ -1,0 +1,101 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 20,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 46,
+        "name": "VFXnow",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 8,
+      "action": "continue",
+      "distance_units": 6,
+      "direction": "north"
+    },
+    {
+      "step_id": 9,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 41,
+        "name": "Huawei",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走穿越Connection Lounge。",
+    "走到Connection Lounge前左轉。",
+    "直走穿越Connection Lounge。",
+    "走到VFXnow前右轉。",
+    "直走經過右手邊的PAVILLON。",
+    "目的地就在前方的 Huawei。"
+  ],
+  "metadata": {
+    "total_steps": 9,
+    "total_distance_units": 42.0,
+    "estimated_booths": 17
+  },
+  "target_info": {
+    "idx": 41,
+    "booth_id": "635",
+    "grid_name": "Huawei",
+    "display_name": "Huawei",
+    "companies": []
+  }
+}

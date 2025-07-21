@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 8,
+        "name": "NC AI",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "直走經過左手邊的Wacom Technology。",
+    "目的地就在前方的 NC AI。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 28.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 8,
+    "booth_id": "715",
+    "grid_name": "NC AI",
+    "display_name": "NC AI: NC AI",
+    "companies": [
+      {
+        "name": "NC AI",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234617",
+        "booth_id": "715",
+        "description": "NC AI, established in February 2025, is an independent AI-specialized subsidiary of NCSOFT.​\r\nWith 14 years of R&D experience, we've applied advanced AI technologies to NCSOFT’s global content, enhancing usability and development efficiency.​\r\nNow, backed by top-tier tech and hands-on expertise, NC AI delivers leading solutions across media content industries such as gaming and commerce.",
+        "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Rendering & Modeling"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 13,
+      "direction": "north"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 15,
+        "name": "RenderHub",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過前方的Maxon。",
+    "目的地就在前方的 RenderHub。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 13.0,
+    "estimated_booths": 5
+  },
+  "target_info": {
+    "idx": 15,
+    "booth_id": "601",
+    "grid_name": "RenderHub",
+    "display_name": "RenderHub: RenderHub",
+    "companies": [
+      {
+        "name": "RenderHub",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1304",
+        "booth_id": "601",
+        "description": "A friendly community for 3D professionals, indie game developers, Daz Studio users, and amateurs. Buy quality 3D models, get free downloads, and more.",
+        "categories": "3D Graphics, 3D Modeling, CAD/CAM/CAE/CIM, Consulting, Digital Imaging, Game Engines, Immersive System, Rendering & Modeling, Simulation, Web 3D"
+      }
+    ]
+  }
+}

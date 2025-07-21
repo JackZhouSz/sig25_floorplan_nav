@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 14,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 26,
+        "name": "4Dviews",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 27,
+        "name": "Xsens | Movella",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過前方的Abstract Group。",
+    "看到右手邊的 4Dviews後右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Xsens | Movella。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 17.0,
+    "estimated_booths": 7
+  },
+  "target_info": {
+    "idx": 27,
+    "booth_id": "514",
+    "grid_name": "Xsens | Movella",
+    "display_name": "Xsens | Movella: Xsens | Movella",
+    "companies": [
+      {
+        "name": "Xsens | Movella",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234574",
+        "booth_id": "514",
+        "description": "𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 𝘁𝗵𝗲 𝗡𝗲𝘅𝘁 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗶𝗼𝗻 𝗼𝗳 𝗫𝘀𝗲𝗻𝘀 𝗠𝗼𝘁𝗶𝗼𝗻 𝗖𝗮𝗽𝘁𝘂𝗿𝗲\r\nXsens is setting a new standard in inertial motion capture for film, VFX, and virtual production. With the release of Xsens Animate 2025, professionals can achieve AAA-quality data with lifelike motion, faster setup, and minimal cleanup, anywhere the creative process takes them. Seamless integration with Unreal Engine and leading industry tools ensures smooth workflows from capture to final frame.\r\n\r\nAt SIGGRAPH, we’ll demonstrate both our latest software innovations and a preview of upcoming technical advancements, all designed to enhance real-time workflows and elevate visual storytelling. From previs to post, Xsens empowers studios to focus on performance. \r\n\r\n𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝘁𝗼 𝗠𝗼𝘃𝗲 𝗬𝗼𝘂.",
+        "categories": "3D Graphics, 3D Modeling, Animation/Film, Education/Training, Motion Capture Software/Hardware"
+      }
+    ]
+  }
+}

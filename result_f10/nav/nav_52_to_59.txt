@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 59 的導航指令 ===
-
-總距離: 27.0 units
-約等於: 11 個攤位
-總步驟: 5
+=== 從 Dell Technologies: Dell Technologies 到 NVIDIA: NVIDIA 的導航指令 ===
 
 導航指令:
 1. 面向Pixar RenderMan攤位，準備出發。

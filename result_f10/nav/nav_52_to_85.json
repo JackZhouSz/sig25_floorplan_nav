@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 23,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 85,
+        "name": "Drexel University",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 Drexel University。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 23.0,
+    "estimated_booths": 9
+  },
+  "target_info": {
+    "idx": 85,
+    "booth_id": "329",
+    "grid_name": "Drexel University",
+    "display_name": "Drexel University: Drexel University",
+    "companies": [
+      {
+        "name": "Drexel University",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1047",
+        "booth_id": "329",
+        "description": "Drexel University is a comprehensive research university based in Philadelphia, known for its cooperative education program and strong emphasis on experiential learning. The university offers a wide range of academic programs and is recognized for its innovation in higher education and industry partnerships.",
+        "categories": "Education/Training"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 13,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 15,
+        "name": "RenderHub",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 28,
+        "name": "Xencelabs/XOOT",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "走到RenderHub前左轉。",
+    "直走經過左手邊的RapidPipeline。",
+    "目的地就在前方的 Xencelabs/XOOT。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 24.0,
+    "estimated_booths": 10
+  },
+  "target_info": {
+    "idx": 28,
+    "booth_id": "617",
+    "grid_name": "Xencelabs/XOOT",
+    "display_name": "Xencelabs/XOOT: Xencelabs/XOOT",
+    "companies": [
+      {
+        "name": "Xencelabs/XOOT",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234573",
+        "booth_id": "617",
+        "description": "Xencelabs is a designer and manufacturer of professional pen tablets and pen displays for digital artists, illustrators, and designers, offering advanced features for natural drawing, customization, and workflow efficiency. XOOT specializes in ergonomic monitor arms for pen and touch displays, providing artists with stable, easily adjustable drawing surfaces to enhance comfort and productivity.",
+        "categories": "Input Devices, Monitors/Displays/Terminals, Robotics and Gadgets, Workstations"
+      }
+    ]
+  }
+}

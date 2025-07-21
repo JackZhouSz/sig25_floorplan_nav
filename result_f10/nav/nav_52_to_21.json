@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 12,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 17,
+        "name": "RapidPipeline",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 21,
+        "name": "Autodesk",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "看到左手邊的 RapidPipeline後左轉。",
+    "直走經過前方的RapidPipeline。",
+    "目的地就在前方的 Autodesk。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 21.0,
+    "estimated_booths": 8
+  },
+  "target_info": {
+    "idx": 21,
+    "booth_id": "515",
+    "grid_name": "Autodesk",
+    "display_name": "Autodesk: Autodesk",
+    "companies": [
+      {
+        "name": "Autodesk",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1206",
+        "booth_id": "515",
+        "description": "Autodesk is changing how the world is designed and made. Our technology spans media and entertainment, architecture, engineering, construction, product design, and manufacturing, empowering innovators everywhere to solve challenges big and small. From mesmerizing blockbusters to immersive game worlds and cutting-edge animation, our software provides artists and studios with the right tools to work, the ability to think flexibly, and the power to transform dreams into reality.",
+        "categories": "3D Graphics, 3D Modeling, Animation/Film, Artifical Intelligence (AI), Motion Capture Software/Hardware, Rendering & Modeling, Simulation, Visual Effects Software"
+      }
+    ]
+  }
+}

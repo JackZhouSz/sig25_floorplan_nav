@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 11,
+      "direction": "south"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 55,
+        "name": "Animation Magazine",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Sony。",
+    "目的地就在前方的 Animation Magazine。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 11.0,
+    "estimated_booths": 4
+  },
+  "target_info": {
+    "idx": 55,
+    "booth_id": "100",
+    "grid_name": "Animation Magazine",
+    "display_name": "Animation Magazine: Animation Magazine",
+    "companies": [
+      {
+        "name": "Animation Magazine",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1013",
+        "booth_id": "100",
+        "description": "Animation Magazine is the no. 1 source for information about the business, art, technology and visual effects of animation. This monthly print/digital publication and daily newsletter offer informative and insightful in-depth articles as well as timely news items to readers worldwide. Editorial content covers all forms of animation, including feature film, television, gaming, anime, technology, commercials, conferences, events and trends in the animation industry. The Magazine also hosts the World Animation and VFX Summit , November 3-6 at the Garland Hotel in No. Hollywood, California. Get a FREE digital or discounted print 1-yr subscription with promo code AMINTRO24. www.animationmagazine.net/subscribe",
+        "categories": "Education/Training, Media/Publications, Online Network Services"
+      }
+    ]
+  }
+}

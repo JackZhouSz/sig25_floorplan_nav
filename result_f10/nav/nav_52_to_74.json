@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 15,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 74,
+        "name": "imagine.io",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過前方的Abstract Group。",
+    "目的地就在前方的 imagine.io。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 15.0,
+    "estimated_booths": 6
+  },
+  "target_info": {
+    "idx": 74,
+    "booth_id": "420",
+    "grid_name": "imagine.io",
+    "display_name": "imagine.io: imagine.io",
+    "companies": [
+      {
+        "name": "imagine.io",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234591",
+        "booth_id": "420",
+        "description": "Imagine.io is the leading all-in-one product visualization platform, empowering brands to create stunning visual experiences effortlessly using advanced 3D and generative AI technology. Designed specifically for product visuals, Imagine.io enables eCom, marketing, sales, product development, & more teams to produce high-quality product imagery across every essential format—from detailed product silos and inspiring lifestyle scenes, to interactive configurators, immersive 360-degree spins, dynamic videos, and engaging augmented reality experiences. By consolidating these capabilities into a single intuitive solution, Imagine.io streamlines digital asset creation, reduces costs associated with traditional photoshoots, and helps brands scale content efficiently to drive higher conversions and deeper customer engagement.\r\n\r\nThe cutting-edge real-time 3D graphics technology powering the Imagine platform is built by a team of 3D experts with cloud-based rendering technology all wrapped into an easy-to-use web interface.  Creating 3D images in minutes instead of hours or days compared to studio photography at a fraction of the cost. Our 3D content is proven to drastically save time and money while dramatically improving sales and profits through CTR, CVR, and return rate improvements.\r\n\r\nKey Benefits:\r\n-Produce the highest-quality photorealistic 3D images, videos, virtual showrooms, and augmented reality experiences \r\n-Save 70%+ of the costs and 80%+ of the time creating product images\r\n-Improve CTR in Google Shopping, marketplaces, and encourage views deeper on your D2C with better quality lead assets\r\n-Get a massive lift on eCommerce conversion rates (customer studies from 55% to over 500%!)\r\n-Create prototypes faster and get pre-orders before manufacturing\r\n-Automate your 'shotlist' in 3D\r\n-Add more interactive formats to your PDPs where applicable - 360s, augmented reality, configurators\r\n\r\nRecognitions\r\n-Awarded Top 3D eCommerce Product Visualization Platform for 2025 (Retail Tech Insights)\r\n-2024 Finalist Best 3D Visualization & Imaging Company (Furniture Today)\r\n-Trusted by thousands of leading manufacturers, brands, and retailers powering >$20B in GMV on the digital shelf annually",
+        "categories": "2D Graphics, 3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, Automotive Applications, CAD/CAM/CAE/CIM, Digital Imaging, Imaging, Multimedia Tools & Applications, Rendering & Modeling"
+      }
+    ]
+  }
+}

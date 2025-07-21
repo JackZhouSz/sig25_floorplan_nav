@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 10,
+        "name": "CGS ORIS",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 CGS ORIS。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 22.0,
+    "estimated_booths": 9
+  },
+  "target_info": {
+    "idx": 10,
+    "booth_id": "709",
+    "grid_name": "CGS ORIS",
+    "display_name": "CGS ORIS: CGS ORIS",
+    "companies": [
+      {
+        "name": "CGS ORIS",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234610",
+        "booth_id": "709",
+        "description": "CGS ORIS | Americas is a leader in high-resolution material scanning and PBR texture creation for digital visualization workflows. Our advanced technologies enable designers, 3D artists, and visualization teams to accurately capture, digitize, and reproduce real-world materials with unmatched realism for use in AR/VR, product configurators, simulation, and architectural visualization.\r\nAt the heart of our offering is the METIS Scanner, engineered specifically for photometric and geometric surface capture—ideal for generating accurate roughness, normal, displacement, and now anisotropic maps for PBR pipelines. Combined with a suite of powerful color management tools, X GAMUT, COLOR TUNER, and CERTIFIED, we deliver complete, integrated solutions from scan to screen to surface.\r\nWhether you're building digital twins, creating immersive room scenes, or populating a CPQ platform with high-fidelity textures, CGS ORIS helps bring your physical materials to life in the digital world. Visit our booth to see how we bridge physical and digital through precision scanning and color science.",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Automotive Applications, Digital Imaging, Imaging, Rendering & Modeling, Simulation, Virtual Reality Software/Hardware, Web 3D"
+      }
+    ]
+  }
+}

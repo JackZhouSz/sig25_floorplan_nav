@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 25,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 48,
+        "name": "Microserve",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 48,
+        "name": "Microserve",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到Microserve前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Microserve。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 26.0,
+    "estimated_booths": 10
+  },
+  "target_info": {
+    "idx": 48,
+    "booth_id": "431",
+    "grid_name": "Microserve",
+    "display_name": "Microserve: Microserve",
+    "companies": [
+      {
+        "name": "Microserve",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234613",
+        "booth_id": "431",
+        "description": "We provide innovative IT solutions to businesses of all sizes. Our services include cloud computing, cybersecurity, managed IT services, and more. Trust our team of experts to help your business stay ahead of the curve with cutting-edge technology solutions.",
+        "categories": "Consulting, Education/Training, High Resolution Technologies, Input Devices, Interactive Display Technologies, Mobile Computing, Monitors/Displays/Terminals, Networking Infrastructure, Storage Devices, Video Effects Equipment, Workstations"
+      }
+    ]
+  }
+}

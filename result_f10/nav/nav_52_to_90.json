@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 29,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 83,
+        "name": "Bournemouth University",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "south"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 90,
+        "name": "235",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "走到Bournemouth University前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 235。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 31.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 90,
+    "booth_id": "235",
+    "grid_name": "235",
+    "display_name": "235: Datech Learning",
+    "companies": [
+      {
+        "name": "Datech Learning",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234633",
+        "booth_id": "235",
+        "description": "Datech Learning is a technology and IT consulting company, providing solutions and services in the fields of information technology, digital transformation, and business process optimization. Their expertise includes IT infrastructure, software development, and digital workflow integration for a variety of industries.",
+        "categories": ""
+      }
+    ]
+  }
+}

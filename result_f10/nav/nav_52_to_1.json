@@ -1,0 +1,91 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 20,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 94,
+        "name": "Connection Lounge",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 4,
+        "name": "Bria Visual AI Platform",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "west"
+    },
+    {
+      "step_id": 7,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 1,
+        "name": "Luma AI",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "走到Connection Lounge前右轉。",
+    "直走經過左手邊的Odyssey，走至Bria Visual AI Platform前，約 2 個攤位。",
+    "走到Bria Visual AI Platform前左轉。",
+    "直走經過右手邊的SKY ENGINE AI。",
+    "目的地就在前方的 Luma AI。"
+  ],
+  "metadata": {
+    "total_steps": 7,
+    "total_distance_units": 46.0,
+    "estimated_booths": 18
+  },
+  "target_info": {
+    "idx": 1,
+    "booth_id": "733",
+    "grid_name": "Luma AI",
+    "display_name": "Luma AI: Luma AI",
+    "companies": [
+      {
+        "name": "Luma AI",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234627",
+        "booth_id": "733",
+        "description": "Luma AI is a pioneering generative AI company founded in 2021, specializing in transforming text, images, and video into high-quality 3D models and realistic video content. Their flagship products, Genie and Dream Machine, enable users to create interactive 3D assets and cinematic videos with ease, serving industries from gaming and design to marketing and entertainment.",
+        "categories": "Artifical Intelligence (AI)"
+      }
+    ]
+  }
+}

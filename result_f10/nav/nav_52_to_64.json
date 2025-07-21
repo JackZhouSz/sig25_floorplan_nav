@@ -1,0 +1,62 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "south"
+    },
+    {
+      "step_id": 2,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 3,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "west"
+    },
+    {
+      "step_id": 4,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 64,
+        "name": "Meshcapadapade",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "走過 1 個攤位。",
+    "走到Pixar RenderMan前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Meshcapadapade。"
+  ],
+  "metadata": {
+    "total_steps": 4,
+    "total_distance_units": 5.0,
+    "estimated_booths": 2
+  },
+  "target_info": {
+    "idx": 64,
+    "booth_id": "209",
+    "grid_name": "Meshcapadapade",
+    "display_name": "Meshcapadapade: Meshcapade",
+    "companies": [
+      {
+        "name": "Meshcapade",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234577",
+        "booth_id": "209",
+        "description": "Meshcapade is a technology company leveraging computer vision, graphics, and machine learning to create realistic 3D human avatars from photos, scans, and motion capture data. Their SMPL-based platform powers digital humans for e-commerce, gaming, apparel, and the metaverse, enabling accurate body modeling and animation for virtual environments.",
+        "categories": "Motion Capture Software/Hardware"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 9,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 69,
+        "name": "Qualisysys",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group。",
+    "目的地就在前方的 Qualisysys。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 9.0,
+    "estimated_booths": 4
+  },
+  "target_info": {
+    "idx": 69,
+    "booth_id": "215",
+    "grid_name": "Qualisysys",
+    "display_name": "Qualisysys: Qualisys",
+    "companies": [
+      {
+        "name": "Qualisys",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1136",
+        "booth_id": "215",
+        "description": "In the competitive world of animation and film production, time is money. Qualisys solutions are designed to reduce downtime, streamline workflows, and accelerate production schedules. From quick and easy character setup to streamlined customizations of complex skeletons, Qualisys lets studios to focus on creating, not waiting. \r\n\r\nQualisys is a leader in motion capture technology, with over 35 years of experience and expertise in tracking 3D movement, empowering animation and entertainment professionals with reliable tools to bring their creative visions to life. Offering best-in-class mocap hardware, flexible marker sets, and real-time solving and streaming to animation platforms, our solutions ensure unmatched accuracy in capturing intricate performances. \r\n\r\nDesigned with efficiency and reliability in mind, Qualisys helps streamline workflows while meeting the high expectations of today’s production demands. Our systems provide the tools and support you need to excel, recognizing and enhancing the vital behind-the-scenes efforts that make cinematic magic possible.",
+        "categories": "Motion Capture Software/Hardware"
+      }
+    ]
+  }
+}

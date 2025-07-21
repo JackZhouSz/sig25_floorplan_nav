@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 18,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 33,
+        "name": "Wacom Technology",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 34,
+        "name": "Lightcraft Technology",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "看到左手邊的 Wacom Technology後左轉。",
+    "直走經過前方的Wacom Technology。",
+    "目的地就在前方的 Lightcraft Technology。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 23.0,
+    "estimated_booths": 9
+  },
+  "target_info": {
+    "idx": 34,
+    "booth_id": "710",
+    "grid_name": "Lightcraft Technology",
+    "display_name": "Lightcraft Technology: Lightcraft Technology",
+    "companies": [
+      {
+        "name": "Lightcraft Technology",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234607",
+        "booth_id": "710",
+        "description": "Lightcraft builds Jetset, a breakthrough iOS app that brings virtual production everywhere.",
+        "categories": "Animation/Film, Artifical Intelligence (AI), Augmented Reality-Software and Services, Computer-Video Interfacing, Mobile Computing, Motion Capture Software/Hardware, Virtual Reality Software/Hardware, Visual Effects Software, Web 3D"
+      }
+    ]
+  }
+}

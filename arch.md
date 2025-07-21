@@ -187,6 +187,69 @@ def count_sequence_booths(landmarks: List) -> int:
 3. **中文習慣**: 「左手邊的A、B、C」比「左側A，右側B，左側C」更自然
 4. **配置靈活**: 所有閾值可透過YAML配置調整，適應不同場景
 
+#### 攤位資料整合增強 (最新功能)
+**設計目標**: 提供豐富的參展商資訊，提升導航體驗
+
+##### 資料來源與整合流程
+```python
+# 攤位資料載入流程
+def load_booth_data():
+    # 從 booth_data_detailed.json 載入詳細參展商資料
+    booth_data = load_json("booth_data_detailed.json")  
+    # 從 data/grid.json 載入網格基礎資料
+    grid_data = load_json("data/grid.json")
+    
+    # 建立 booth_id 到多家公司的映射
+    booth_id_to_companies = group_by_booth_id(booth_data)
+    # 建立 idx 到網格單元的映射  
+    idx_to_cell = index_by_idx(grid_data)
+```
+
+##### 增強的輸出格式
+**文字格式改進**:
+- **標題增強**: 從「攤位 52 到攤位 1」→「Dell Technologies: Dell Technologies 到 Luma AI: Luma AI」
+- **統計資訊移除**: 移除總距離、攤位數、總步驟等技術性統計，專注導航指引
+- **清晰結構**: 純粹的編號導航指令列表
+
+**JSON 格式增強**:
+```json
+{
+  "steps": [...],           // 保持原有結構化步驟資料
+  "instructions": [...],    // 保持原有中文指令
+  "metadata": {...},        // 保持原有統計資訊 
+  "target_info": {          // 新增：目標攤位完整資訊
+    "idx": 1,
+    "booth_id": "733", 
+    "grid_name": "Luma AI",
+    "display_name": "Luma AI: Luma AI",
+    "companies": [
+      {
+        "name": "Luma AI",
+        "description": "Luma AI is a pioneering generative AI company...",
+        "categories": "Artificial Intelligence (AI)"
+      }
+    ]
+  }
+}
+```
+
+##### 多參展商處理邏輯
+```python
+def format_display_name(grid_name: str, companies: List) -> str:
+    if companies:
+        company_names = [c['name'] for c in companies]
+        return f"{grid_name}: {' | '.join(company_names)}"
+    return grid_name
+    
+# 範例輸出: "Microsoft: Microsoft Azure | Microsoft AI"
+```
+
+#### 整合的技術價值
+1. **使用體驗**: 使用者看到實際公司名稱而非抽象編號
+2. **資訊豐富**: JSON 格式提供完整的參展商背景資訊
+3. **多公司支援**: 正確處理一個攤位多家公司的複雜情況
+4. **向後相容**: 不影響現有步驟資料結構
+
 ### 4. OCR識別模組 (`core/ocr_ollama.py`)
 
 #### 設計理念
@@ -260,7 +323,10 @@ side_calculation:
 - `batch_visualize.py`: 批次生成路徑視覺化圖片
 
 ### 導航生成腳本  
-- `generate_navigation.py`: CLI工具，生成自然語言導航指引
+- `generate_navigation.py`: 增強的CLI工具，支援攤位資料整合的自然語言導航指引
+  - **雙格式輸出**: 支援簡潔文字格式(.txt) 與豐富JSON格式(.json)
+  - **攤位資料整合**: 自動載入並整合 `booth_data_detailed.json` 中的參展商資訊
+  - **智慧命名**: 使用實際公司名稱取代攤位編號
 - `test_navigation.py`: 導航系統單元測試
 
 ### 批次執行腳本
@@ -276,6 +342,8 @@ data/
 ├── grid_types.json        # 類型元數據(可行走性、顯示顏色等)
 ├── ocr_results.json       # OCR識別結果
 └── ocr_report.txt         # OCR處理報告
+
+booth_data_detailed.json   # 參展商詳細資料(名稱、描述、分類等)
 ```
 
 ### 輸出結果結構
@@ -284,8 +352,8 @@ routes/                    # 預運算路徑
 ├── 52_to_all.json        # 從攤位52到所有其他攤位的路徑
 
 navigation_results/        # 導航文字結果  
-├── nav_52_to_10.json     # 結構化導航數據
-└── nav_52_to_10.txt      # 純文字導航指引
+├── nav_52_to_10.json     # 結構化導航數據(含參展商詳細資訊)
+└── nav_52_to_10.txt      # 簡潔文字導航指引(使用公司名稱)
 
 visualizations_by_type/    # 視覺化結果
 └── booth/

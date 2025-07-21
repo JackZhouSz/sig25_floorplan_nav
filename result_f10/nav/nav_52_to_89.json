@@ -1,0 +1,65 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 4,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 65,
+        "name": "Captury",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 31,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 89,
+        "name": "237",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過前方的Pixar RenderMan。",
+    "看到右手邊的 Captury後右轉。",
+    "直走經過左手邊的Compute Graphics World / COP Communications，走至MOVININ前，約 2 個攤位。",
+    "目的地就在前方的 237。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 35.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 89,
+    "booth_id": "237",
+    "grid_name": "237",
+    "display_name": "237",
+    "companies": []
+  }
+}

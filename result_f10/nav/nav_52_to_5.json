@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 17,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 5,
+        "name": "Computational Visual Media",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "直走經過左手邊的Wacom Technology、PLASK、Lightcraft Technology，約 3 個攤位。",
+    "目的地就在前方的 Computational Visual Media。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 36.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 5,
+    "booth_id": "723",
+    "grid_name": "Computational Visual Media",
+    "display_name": "Computational Visual Media: Computational Visual Media",
+    "companies": [
+      {
+        "name": "Computational Visual Media",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234598",
+        "booth_id": "723",
+        "description": "Computational Visual Media is an academic and professional platform dedicated to the advancement of visual computing, computer graphics, and related education. It supports research, collaboration, and knowledge sharing in the field of visual media technologies.",
+        "categories": "Education/Training"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "走過 1 個攤位。",
+    "目的地就在前方的 Abstract Group。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 1.0,
+    "estimated_booths": 1
+  },
+  "target_info": {
+    "idx": 67,
+    "booth_id": "307",
+    "grid_name": "Abstract Group",
+    "display_name": "Abstract Group: Abstract Group",
+    "companies": [
+      {
+        "name": "Abstract Group",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1080",
+        "booth_id": "307",
+        "description": "Abstract is a group of companies focused on developing bleeding-edge 3D technology. Our tech enables a diverse range of clients to deliver their projects on time, with massive cost-saving and on top of all, having much more fun while they're doing it. From leading game developers to VFX studios and the most beloved brands, they have one thing in common — they’re all using our products.",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Automotive Applications, CAD/CAM/CAE/CIM, Game Engines, Online Network Services, Plug-ins for Software, Rendering & Modeling"
+      }
+    ]
+  }
+}

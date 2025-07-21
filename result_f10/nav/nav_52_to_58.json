@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 10,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 17,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 58,
+        "name": "AuraML",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過右手邊的Sony。",
+    "看到右手邊的 Sony後右轉。",
+    "直走經過右手邊的Sony、Compute Graphics World / COP Communications，約 2 個攤位。",
+    "目的地就在前方的 AuraML。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 27.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 58,
+    "booth_id": "PP451",
+    "grid_name": "AuraML",
+    "display_name": "AuraML: AuraML",
+    "companies": [
+      {
+        "name": "AuraML",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234609",
+        "booth_id": "PP451",
+        "description": "Generative simulation for Industrial robots.",
+        "categories": "Artifical Intelligence (AI), Robotics and Gadgets, Simulation"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 23,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 78,
+        "name": "IBV-MOVE4D",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "目的地就在前方的 IBV-MOVE4D。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 23.0,
+    "estimated_booths": 9
+  },
+  "target_info": {
+    "idx": 78,
+    "booth_id": "428",
+    "grid_name": "IBV-MOVE4D",
+    "display_name": "IBV-MOVE4D: IBV- MOVE4D",
+    "companies": [
+      {
+        "name": "IBV- MOVE4D",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=485273",
+        "booth_id": "428",
+        "description": "At the Instituto de Biomecánica (IBV), we study the behaviour of the human body and how it interacts with products, the environment and services that people use.\r\nWe combine know-how from biomechanics, ergonomics and emotional engineering, which we apply through different areas of knowledge to several sectors in order to provide a response to their challenges and help foster business innovation.",
+        "categories": "3D Modeling, 3D Scanning"
+      }
+    ]
+  }
+}

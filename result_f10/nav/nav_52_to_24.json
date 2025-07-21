@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 24,
+        "name": "XGRIDS",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 24,
+        "name": "XGRIDS",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過前方的Abstract Group。",
+    "走到XGRIDS前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 XGRIDS。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 8.0,
+    "estimated_booths": 3
+  },
+  "target_info": {
+    "idx": 24,
+    "booth_id": "413",
+    "grid_name": "XGRIDS",
+    "display_name": "XGRIDS: XGRIDS",
+    "companies": [
+      {
+        "name": "XGRIDS",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234576",
+        "booth_id": "413",
+        "description": "XGRIDS is a leading innovator in mobile 3D scanning and AI-powered spatial computing, enabling fast, high-fidelity reconstruction of the real world. Our flagship hardware — the Lixel series handheld SLAM scanners — combined with our proprietary software platform LCC Studio, delivers advanced 3D Gaussian Splatting (3DGS), point cloud processing, and real-time visualization capabilities.\r\n\r\nAt the frontier of visual computing, XGRIDS empowers creators, engineers, and researchers to capture complex environments with cinematic detail and bring them to life across industries — from virtual production and gaming, to architecture, digital twins, and robotics simulation.\r\n\r\nKey innovations include:\r\n\r\n3D Gaussian Splatting editing & publishing tools, optimized for immersive rendering and game engine integration\r\n\r\nMobile SLAM + photorealistic color capture, with centimeter-level precision\r\n\r\nGround-to-air fusion workflows, combining drone and handheld data for complete 3D environments\r\n\r\nAutomated modeling pipelines, enabling fast BIM, CAD, and GIS-ready outputs\r\n\r\nFrom on-set scouting and volumetric video to XR environments and geospatial simulations, XGRIDS brings real-world fidelity to digital workflows.\r\n\r\nLet’s redefine how we capture, compute, and create in 3D.",
+        "categories": "3D Graphics, 3D Modeling, 3D Scanning, Animation/Film, Architecture Applications, Artifical Intelligence (AI), CAD/CAM/CAE/CIM, Medical Application, Mobile Computing, Visual Effects Software"
+      }
+    ]
+  }
+}

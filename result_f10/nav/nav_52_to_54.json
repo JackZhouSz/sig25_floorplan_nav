@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "south"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過左手邊的Pixar RenderMan。",
+    "目的地就在前方的 Sony。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 5.0,
+    "estimated_booths": 2
+  },
+  "target_info": {
+    "idx": 54,
+    "booth_id": "101",
+    "grid_name": "Sony",
+    "display_name": "Sony: Sony",
+    "companies": [
+      {
+        "name": "Sony",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1305",
+        "booth_id": "101",
+        "description": "Sony Corporation is a global leader in entertainment, technology, and services, renowned for its innovations in consumer electronics, gaming (PlayStation), music, movies, imaging, and sensing solutions. Headquartered in Tokyo, Sony drives creativity and emotion through cutting-edge products and platforms, serving diverse industries and audiences worldwide.",
+        "categories": "Consumer Electronics, Entertainment Technology, Imaging & Sensing Solutions, Games & Network Services, Music, Pictures"
+      }
+    ]
+  }
+}

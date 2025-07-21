@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 23,
+        "name": "XIMEA",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 3,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 22,
+        "name": "Think Tank Training Centre",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過前方的Abstract Group。",
+    "走到XIMEA前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 Think Tank Training Centre。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 8.0,
+    "estimated_booths": 3
+  },
+  "target_info": {
+    "idx": 22,
+    "booth_id": "510",
+    "grid_name": "Think Tank Training Centre",
+    "display_name": "Think Tank Training Centre: Think Tank Training Centre",
+    "companies": [
+      {
+        "name": "Think Tank Training Centre",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1172",
+        "booth_id": "510",
+        "description": "Founded in 2005, Think Tank is a VFX, game art, asset creation, and animation school empowering the next generation of creators. Based in North Vancouver at their state-of-the-art campus, Think Tank also serves their global community through a proprietary teaching platform, Portal. Ranked in 2023 as the #1 Creative institution in Canada by the prestigious website ‘The Rookies’ (www.therookies.co), as well as 1st in 3D Animation in Canada, and 1st in Visual Effects across North America, Think Tank continues to provide students with a high-end education, along with the ability to establish rewarding careers in the TV, Film, and Games industries.",
+        "categories": "3D Graphics, 3D Modeling, Animation/Film, Education/Training, Rendering & Modeling"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 19,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 11,
+        "name": "Greneta",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 7,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 9,
+        "name": "International Computer Computer Concepts",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過左手邊的Puget Systems、RapidPipeline、Wacom Technology，約 3 個攤位。",
+    "走到Greneta前左轉。",
+    "直走經過左手邊的Wacom Technology。",
+    "目的地就在前方的 International Computer Computer Concepts。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 26.0,
+    "estimated_booths": 10
+  },
+  "target_info": {
+    "idx": 9,
+    "booth_id": "713",
+    "grid_name": "International Computer Computer Concepts",
+    "display_name": "International Computer Computer Concepts: International Computer Concepts",
+    "companies": [
+      {
+        "name": "International Computer Concepts",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1082",
+        "booth_id": "713",
+        "description": "For over 25 years International Computer Concepts (ICC) has been a leading specialized technology systems integrator with broad expertise in standard and customized server, workstations, storage, and networking solutions for a wide variety of industries and markets.",
+        "categories": "3D Graphics, 3D Modeling, Artifical Intelligence (AI), Computer-Video Interfacing, Data Visualization, Engineering Application, High Performance Graphics Processors, Scientific Visualization, Visual Effects Software, Workstations"
+      }
+    ]
+  }
+}

@@ -1,8 +1,4 @@
-=== 從攤位 52 到攤位 15 的導航指令 ===
-
-總距離: 13.0 units
-約等於: 5 個攤位
-總步驟: 2
+=== 從 Dell Technologies: Dell Technologies 到 RenderHub: RenderHub 的導航指令 ===
 
 導航指令:
 1. 直走經過前方的Maxon。

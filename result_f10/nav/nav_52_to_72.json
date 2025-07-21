@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 17,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 72,
+        "name": "CGTrader",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的Abstract Group、Vicon，約 2 個攤位。",
+    "目的地就在前方的 CGTrader。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 17.0,
+    "estimated_booths": 7
+  },
+  "target_info": {
+    "idx": 72,
+    "booth_id": "322",
+    "grid_name": "CGTrader",
+    "display_name": "CGTrader: CGTrader",
+    "companies": [
+      {
+        "name": "CGTrader",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234601",
+        "booth_id": "322",
+        "description": "CGTrader is the world's largest marketplace for licensable 3D models, custom 3D design, and innovative AI-powered visual solutions.  Founded in 2011 with a mission to be the world's preferred source for 3D content by fostering a designer-first community.\r\n\r\nFor 3D designers, we offer a platform to showcase and sell models to a global audience, with an industry-leading royalty rate.  Designers can also find freelance projects, connect directly with customers, and engage with a vibrant community of over 11 million users for feedback and growth.\r\n\r\nFor businesses or hobbyists in gaming, AR/VR, e-commerce, architecture, and more, CGTrader provides access to over 2 million professional 3D models.  Our enterprise solution, Modelry, empowers companies with scalable 3D and AR experiences to boost engagement and sales.\r\n\r\nCGTrader is a global force with users from over 180 countries, driving the 3D content revolution by making technology more accessible and powerful.  We aim to be at the forefront of the shift towards immersive digital experiences, shaping the future of how 3D content is created, shared, and utilized.",
+        "categories": "3D Graphics, 3D Modeling, 3D Rapid Prototyping, 3D Scanning, Aerospace Applications, Animation/Film, Architecture Applications, Artifical Intelligence (AI), Augmented Reality-Software and Services, CAD/CAM/CAE/CIM, Data Visualization, Digital Imaging, Education/Training, Rendering & Modeling, Scientific Visualization, Simulation, Web 3D"
+      }
+    ]
+  }
+}

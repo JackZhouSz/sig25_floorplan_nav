@@ -1,0 +1,36 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 29,
+      "direction": "west"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 81,
+        "name": "Savannah College of Art and Design",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。",
+    "目的地就在前方的 Savannah College of Art and Design。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 29.0,
+    "estimated_booths": 12
+  },
+  "target_info": {
+    "idx": 81,
+    "booth_id": 434,
+    "grid_name": "Savannah College of Art and Design",
+    "display_name": "Savannah College of Art and Design",
+    "companies": []
+  }
+}

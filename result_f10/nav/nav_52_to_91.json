@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 29,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 91,
+        "name": "BlindSimulator",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過左手邊的Pixar RenderMan。",
+    "走到Sony前右轉。",
+    "直走經過右手邊的Pixar RenderMan、Meshcapadapade、Qualisysys，約 3 個攤位。",
+    "目的地就在前方的 BlindSimulator。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 34.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 91,
+    "booth_id": "234",
+    "grid_name": "BlindSimulator",
+    "display_name": "BlindSimulator: BlindSimulator",
+    "companies": [
+      {
+        "name": "BlindSimulator",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234622",
+        "booth_id": "234",
+        "description": "BlindSimulator leverages XR technology to support inclusive urban development and accessibility-driven public policy.\r\nOur immersive simulation enables policymakers, educators, and citizens to experience the challenges faced by people with visual impairments, fostering empathy and informed decision-making.\r\nWe help governments advance social equity, universal design, and human-centered innovation through experiential technology.",
+        "categories": "Education/Training, Virtual Reality Software/Hardware"
+      }
+    ]
+  }
+}

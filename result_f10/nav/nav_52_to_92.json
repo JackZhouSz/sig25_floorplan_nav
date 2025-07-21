@@ -1,0 +1,65 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 31,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 92,
+        "name": "CyberGlove Systems",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過左手邊的Pixar RenderMan。",
+    "走到Sony前右轉。",
+    "直走經過右手邊的Meshcapadapade，走至Compute Graphics World / COP Communications前，約 2 個攤位。",
+    "目的地就在前方的 CyberGlove Systems。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 36.0,
+    "estimated_booths": 14
+  },
+  "target_info": {
+    "idx": 92,
+    "booth_id": "236",
+    "grid_name": "CyberGlove Systems",
+    "display_name": "CyberGlove Systems",
+    "companies": []
+  }
+}

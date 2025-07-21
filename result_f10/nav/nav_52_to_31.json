@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "left"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 13,
+      "direction": "north"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 15,
+        "name": "RenderHub",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 31,
+        "name": "FUTUREDAYS",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "以左手邊的 Abstract Group為參考點，準備出發。",
+    "直走經過前方的Maxon。",
+    "走到RenderHub前左轉。",
+    "直走經過左手邊的RapidPipeline。",
+    "目的地就在前方的 FUTUREDAYS。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 18.0,
+    "estimated_booths": 7
+  },
+  "target_info": {
+    "idx": 31,
+    "booth_id": "611",
+    "grid_name": "FUTUREDAYS",
+    "display_name": "FUTUREDAYS: FUTUREDAYS",
+    "companies": [
+      {
+        "name": "FUTUREDAYS",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234582",
+        "booth_id": "611",
+        "description": "FUTUREDAYS focuses on virtual reality hardware and software solutions, providing immersive experiences for entertainment, education, and business applications. Their products aim to enhance user engagement and interactivity in virtual environments.",
+        "categories": "Virtual Reality Software/Hardware"
+      }
+    ]
+  }
+}

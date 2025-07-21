@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "south"
+    },
+    {
+      "step_id": 2,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "走過 1 個攤位。",
+    "目的地就在前方的 Pixar RenderMan。"
+  ],
+  "metadata": {
+    "total_steps": 2,
+    "total_distance_units": 1.0,
+    "estimated_booths": 1
+  },
+  "target_info": {
+    "idx": 53,
+    "booth_id": "201",
+    "grid_name": "Pixar RenderMan",
+    "display_name": "Pixar RenderMan: Pixar RenderMan",
+    "companies": [
+      {
+        "name": "Pixar RenderMan",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1248",
+        "booth_id": "201",
+        "description": "Pixar RenderMan is an Academy Award-winning rendering software developed by Pixar Animation Studios, used for creating photorealistic and stylized imagery in feature films, visual effects, and animation. Renowned for its physically-based rendering, advanced shading, and plugin support for major 3D applications, RenderMan is a production-proven tool trusted by leading studios worldwide.",
+        "categories": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 67,
+        "name": "Abstract Group",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 5,
+      "direction": "west"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 23,
+        "name": "XIMEA",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 1,
+      "direction": "north"
+    },
+    {
+      "step_id": 5,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 23,
+        "name": "XIMEA",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Abstract Group攤位，準備出發。",
+    "直走經過前方的Abstract Group。",
+    "走到XIMEA前右轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 XIMEA。"
+  ],
+  "metadata": {
+    "total_steps": 5,
+    "total_distance_units": 6.0,
+    "estimated_booths": 2
+  },
+  "target_info": {
+    "idx": 23,
+    "booth_id": "411",
+    "grid_name": "XIMEA",
+    "display_name": "XIMEA: XIMEA",
+    "companies": [
+      {
+        "name": "XIMEA",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1320",
+        "booth_id": "411",
+        "description": "Big about Small – We love to make cameras small and fast! XIMEA is the premier manufacturer of state-of-the-art digital cameras for scientific and industrial purposes.\r\n\r\nAcclaimed for innovative approaches, our products are designed with the highest quality and usability in mind. A wide range of cameras are on offer, from tiny high resolution USB3 cameras, to cooled scientific cameras and now superfast PCIe cameras. The latest additions to our product line are our sub-miniature USB3.1 cameras and the next generation PCIe cameras with resolutions of 150 MegaPixel and frame rates as high as 4000 frames per second. We provide the right camera for your application by using the newest sensors and the latest technology for data transfer.\r\n\r\nFor those looking to integrate cameras into their products or projects, aggregate multiple cameras into a single data stream, or build a mobile imaging platform (such as drones or robotics), we specialize in customization for diverse applications from aerospace and satellite to self driving cars and multi-camera systems for video production.\r\n\r\nOur cameras are typically the least power-hungry in their segment, which helps keep them cool (literally and figuratively) and facilitates easy integration into mobile applications.\r\nSmall, fast, and lightweight. Come take a look.",
+        "categories": "Aerospace Applications, Animation/Film, Digital Imaging, High Resolution Technologies, Imaging, Motion Capture Software/Hardware, Streaming Technology"
+      }
+    ]
+  }
+}

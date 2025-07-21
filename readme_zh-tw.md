@@ -8,29 +8,54 @@
 
 ![導航路徑視覺化](result_f10/booth/viz_52_to_1.png)
 
-**生成的導航指令（中文）：**
+**生成的導航指令（文字格式）：**
 
 ```
-=== 從攤位 52 到攤位 1 的導航指令 ===
-
-總距離: 46.0 units
-約等於: 18 個攤位
-總步驟: 7
+=== 從 Dell Technologies: Dell Technologies 到 Luma AI: Luma AI 的導航指令 ===
 
 導航指令:
-1. 面向Abstract Group攤位，準備出發。
-2. 直走經過右手邊的XIMEA、XGRIDS、Connection Lounge，約 3 個攤位。
-3. 走到Connection Lounge前右轉。
-4. 直走經過左手邊的Odyssey，走至Bria Visual AI Platform前，約 2 個攤位。
-5. 走到Bria Visual AI Platform前左轉。
-6. 直走經過右手邊的SKY ENGINE AI。
-7. 目的地就在前方的 Luma AI。
+1. 走過 1 個攤位。
+2. 看到左手邊的 Dell Technologies後左轉。
+3. 直走經過前方的Puget Systems。
+4. 走到Puget Systems前左轉。
+5. 直走經過前方的Puget Systems。
+...
+26. 目的地就在前方的 Luma AI。
+```
+
+**強化的 JSON 格式（包含攤位詳細資訊）：**
+
+```json
+{
+  "steps": [...],
+  "instructions": [...],
+  "metadata": {
+    "total_steps": 26,
+    "total_distance_units": 45.46,
+    "estimated_booths": 18
+  },
+  "target_info": {
+    "idx": 1,
+    "booth_id": "733",
+    "grid_name": "Luma AI",
+    "display_name": "Luma AI: Luma AI",
+    "companies": [
+      {
+        "name": "Luma AI",
+        "description": "Luma AI 是一家開創性的生成式 AI 公司...",
+        "categories": "人工智慧 (AI)"
+      }
+    ]
+  }
+}
 ```
 
 這個範例展示了：
-- **精確路徑視覺化**：清楚的路徑視覺化，標示起點與終點
-- **自然語言指令**：人性化的中文導航，包含地標參考
-- **語意一致性**：攤位數量與地標描述一致（如「約 3 個攤位」對應 3 個地標）
+- **強化攤位識別**：使用實際公司名稱取代通用攤位編號作為標題
+- **簡潔文字格式**：移除統計資訊，專注於清晰的導航指引
+- **豐富的 JSON 元資料**：從展覽資料庫添加完整的公司資訊
+- **多公司支援**：使用「父名稱: 子公司1 | 子公司2」格式處理多參展商攤位
+- **語意一致性**：攤位數量與地標描述一致
 - **空間感知能力**：基於移動分析的準確左右前方向判斷
 
 ---
@@ -170,32 +195,40 @@ python scripts/precompute_routes.py --start 1 --allow-diag
    - 輸出至 `visualizations_by_type/{type}/viz_{src}_to_{dst}.png`
    - 全域格子以 30 % 透明度顯示，起 / 終點格子 60 % 不透明度高亮
 
-### 步驟 5: 自然語言導航生成（NEW）
+### 步驟 5: 強化攤位整合的自然語言導航生成
 
-系統已支援將路徑轉換為符合中文使用習慣的自然語言導航指引：
+系統已支援將路徑轉換為包含豐富攤位資訊的中文自然語言導航指引：
 
-1. **單一路徑導航生成**
+1. **單一路徑導航生成（文字格式）**
    ```bash
-   python scripts/generate_navigation.py --start 52 --end 10
+   python scripts/generate_navigation.py --start 52 --end 10 --format text
    ```
 
-2. **批次導航生成**
+2. **單一路徑導航生成（JSON 格式含攤位詳細資訊）**
    ```bash
-   python scripts/generate_navigation.py --start 52 --batch
+   python scripts/generate_navigation.py --start 52 --end 10 --format json
    ```
 
-3. **自訂配置導航**
+3. **批次導航生成**
+   ```bash
+   python scripts/generate_navigation.py --start 52 --batch --format text
+   python scripts/generate_navigation.py --start 52 --batch --format json
+   ```
+
+4. **自訂配置導航**
    ```bash
    python scripts/generate_navigation.py --start 52 --end 10 --config config/high_precision.yaml
    ```
 
-**導航特色**:
+**強化導航特色**:
+- **豐富攤位資訊**: 整合 `booth_data_detailed.json` 的完整參展商詳細資料
+- **智慧顯示名稱**: 使用實際公司名稱（如「Dell Technologies: Dell Technologies」而非「攤位 52」）
+- **多公司支援**: 使用「父名稱: 子公司1 | 子公司2 | 子公司3」格式處理多參展商攤位
+- **雙重輸出格式**:
+  - **文字 (.txt)**: 簡潔的導航指令，無統計資訊干擾
+  - **JSON (.json)**: 完整結構化資料，包含公司描述、分類與攤位元資料
 - **覆蓋率導向地標選擇**: 確保「經過」的地標確實在路徑上有足夠可見度
 - **序列攤位計數**: 攤位數量與地標描述保持語意一致
-- **智能距離分級**: 
-  - ≤3單位: 「走過2個攤位」
-  - 4-15單位: 「直走經過左手邊的Art Gallery，約5個攤位」
-  - >15單位: 「直走經過前方的Maxon、Blender、Puget Systems，約2分鐘」
 
 ### 步驟 6: 自動化執行
 

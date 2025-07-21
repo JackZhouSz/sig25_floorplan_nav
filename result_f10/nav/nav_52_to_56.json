@@ -1,0 +1,91 @@
+{
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "orient",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 53,
+        "name": "Pixar RenderMan",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 2,
+      "action": "continue",
+      "distance_units": 10,
+      "direction": "south"
+    },
+    {
+      "step_id": 3,
+      "action": "turn_right",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 54,
+        "name": "Sony",
+        "side": "right"
+      }
+    },
+    {
+      "step_id": 4,
+      "action": "continue",
+      "distance_units": 16,
+      "direction": "west"
+    },
+    {
+      "step_id": 5,
+      "action": "turn_left",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 102,
+        "name": "Job Fair",
+        "side": "front"
+      }
+    },
+    {
+      "step_id": 6,
+      "action": "continue",
+      "distance_units": 2,
+      "direction": "south"
+    },
+    {
+      "step_id": 7,
+      "action": "arrive",
+      "distance_units": 0,
+      "landmark": {
+        "idx": 56,
+        "name": "EA Sports",
+        "side": "front"
+      }
+    }
+  ],
+  "instructions": [
+    "面向Pixar RenderMan攤位，準備出發。",
+    "直走經過右手邊的Sony。",
+    "看到右手邊的 Sony後右轉。",
+    "直走經過右手邊的Sony、Compute Graphics World / COP Communications，約 2 個攤位。",
+    "走到Job Fair前左轉。",
+    "走過 1 個攤位。",
+    "目的地就在前方的 EA Sports。"
+  ],
+  "metadata": {
+    "total_steps": 7,
+    "total_distance_units": 28.0,
+    "estimated_booths": 11
+  },
+  "target_info": {
+    "idx": 56,
+    "booth_id": "PP443",
+    "grid_name": "EA Sports",
+    "display_name": "EA Sports: EA Sports",
+    "companies": [
+      {
+        "name": "EA Sports",
+        "url": "https://siggraph25.mapyourshow.com/8_0/exhibitor/exhibitor-details.cfm?exhid=1234624",
+        "booth_id": "PP443",
+        "description": "EA SPORTS is one of the most iconic brands in entertainment – connecting hundreds of millions around the world to the sports they love through a portfolio of industry-leading video games.",
+        "categories": "3D Graphics, 3D Modeling, Game Engines, Motion Capture Software/Hardware, Rendering & Modeling"
+      }
+    ]
+  }
+}
